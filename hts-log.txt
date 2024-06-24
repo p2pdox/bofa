@@ -1,0 +1,19 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 24 Jun 2024 13:20:46 at https://message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/index.php#FP +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/index.php#FP -O1 "C:\My Web Sites\BOFA" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:20:52	Warning: 	Found for https://message.bankofamerica.com/robots.txt
+13:20:52	Warning: 	File has moved from https://message.bankofamerica.com/robots.txt to https://www.bankofamerica.com/banking-information/error-page-en.html
+13:21:32	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/robots.txt (from primary/primary)
+13:21:32	Warning: 	Retry after error -5 (Unable to get server's address: No such host is known. ) at link primary/FP (from primary/primary)
+13:23:47	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link primary/FP (from primary/primary)
+13:23:50	Warning: 	File not parsed, looks like binary: https://message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/images/icons/new/icon_plus_blue.svg
+13:23:50	Warning: 	Warning: store application/octet-stream without scan: C:/My Web Sites/BOFA/message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/images/icons/new/icon_plus_blue.svg
+13:23:50	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/FP (from primary/primary)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 4 seconds : 301 links scanned, 296 files written (16679007 bytes overall) [13621063 bytes received at 74027 bytes/sec], 15732436 bytes transferred using HTTP compression in 279 files, ratio 76%
+(2 errors, 6 warnings, 0 messages)

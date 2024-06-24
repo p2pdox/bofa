@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+message.bankofamerica.com	TRUE	/	FALSE	1999999999	BIGipServerpool_about.bankofamerica.com_8443	!7C/Ye9qmZmQz7a8EWkfXyihbp6SjKYqvPfr7Vh52WXu1Pxt8TP2AYZ98UnxHvI0NrL5OgcQ/bmElqQ==
+

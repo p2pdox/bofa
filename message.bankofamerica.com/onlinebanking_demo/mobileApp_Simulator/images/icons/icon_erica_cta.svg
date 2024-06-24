@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>erica icon</title>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-14.0%" y="-10.0%" width="128.0%" height="128.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11" transform="translate(-331.000000, -720.000000)">
+            <g id="Group" transform="translate(325.000000, 712.000000)">
+                <g id="Icon/MDA_Affordance" transform="translate(10.000000, 10.000000)">
+                    <g id="Oval" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#E31837" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="E" transform="translate(9.000000, 13.000000)" fill="#FFFFFF">
+                        <path d="M21.6779655,0.126854679 C16.4925506,-0.229579524 7.66933111,0.0474748531 9.59232693e-14,2.49977708 C1.08948641,4.14679533 1.04242195,4.17345028 2.00228497,5.74458929 C10.0863634,3.2210122 17.5839263,2.60892612 24.1046119,2.62682486 C23.2017858,1.62393256 22.3886888,0.798477602 21.6779655,0.126854679 Z" id="Path"></path>
+                        <path d="M34.257498,17.0386193 C33.9274271,16.4704388 33.6003548,15.9153587 33.2772639,15.3779172 C32.7960288,14.6097931 32.4216623,14.0711847 32.342232,13.9580147 C25.8845821,14.1106815 15.7792503,16.0172417 8.52030159,19.2680853 C9.15443162,20.8800819 9.68400072,22.2997226 10.3032356,24.1734687 C21.6465141,19.7911933 28.6442951,18.2954132 34.4909961,17.4696996 C34.4136515,17.3240404 34.3358188,17.1803238 34.257498,17.0386193 Z" id="Path"></path>
+                        <path d="M27.1313949,6.33229109 C21.2558862,6.08390214 11.8977501,6.99262856 4.29426006,9.98360225 C4.8354023,11.0099091 5.52933804,12.3884983 6.30280233,14.0663217 C16.8814161,10.678378 22.8312706,9.70693893 29.4526722,9.48001554 C28.1508053,7.56074439 27.3638501,6.60428538 27.1313949,6.33229109 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

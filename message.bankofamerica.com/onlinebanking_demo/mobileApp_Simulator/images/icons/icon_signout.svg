@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon-header-alerts</title>
+    <desc>Created with Sketch.</desc>
+    <g id="8.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ad---us-trust-asset" transform="translate(-327.000000, -45.000000)">
+            <g id="header-5-icons">
+                <g id="icon-header-alerts" transform="translate(327.000000, 45.000000)">
+                    <rect id="icon-bounding-box"  x="0" y="0" width="42" height="42"></rect>
+                    <g id="icon-header-log-out" transform="translate(11.000000, 9.000000)" fill="#919191">
+                        <g id="icon-header-alerts">
+                            <polyline id="Fill-1" points="15.75 0 15.75 1.33333333 1.3125 1.33333333 1.3125 22.6666667 15.75 22.6666667 15.75 24 0 24 0 0 15.75 0"></polyline>
+                            <polyline id="Fill-2" points="13.5279375 5.49466667 21 12 13.5279375 18.5053333 12.6735 17.4946667 18.2175 12.6666667 5.25 12.6666667 5.25 11.3333333 18.2175 11.3333333 12.6735 6.50533333 13.5279375 5.49466667"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

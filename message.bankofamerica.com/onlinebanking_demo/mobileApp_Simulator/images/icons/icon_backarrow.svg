@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="24px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>header/icon/back</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11" transform="translate(-19.000000, -41.000000)" fill="#646464">
+            <g id="Group" transform="translate(19.500000, 32.000000)">
+                <g id="core/icon/brand/system-left" transform="translate(0.000000, 9.000000)">
+                    <path d="M0,12.0006777 L12.0385983,0 C12.6795328,0.639746993 13,0.959620489 13,0.959620489 C13,0.959620489 9.30760112,4.63997289 1.92280335,12.0006777 L13,23.0417349 C12.3590656,23.6805783 12.0385983,24 12.0385983,24 L0,12.0006777 Z" id="icon-system-left"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

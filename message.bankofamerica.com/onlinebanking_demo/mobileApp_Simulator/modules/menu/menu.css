@@ -1,0 +1,265 @@
+/* CSS Document */
+/* main menu*/
+#global_footer_menu {
+    z-index: 100 !important;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+#global_footer_menu.fadeIn {
+	pointer-events: auto;
+}
+
+.menu {
+	display: block;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+ 	border-top: 1px solid #d1c9c0;
+	background-color: #f8f8f8;
+	padding-top: 10px;
+	z-index: 5;
+	box-sizing: border-box;
+}
+.menu.fadeIn {
+	pointer-events: auto;
+}
+.menu a{
+	display: inline-block;
+	color: #6d6d72 !important;
+	font-weight: normal !important;
+	line-height: 10px;
+	width: 24%;
+	text-align: center;
+}
+/* Added span:nth-child(3) to accommodate the Spanish navigation */
+.menu a span:nth-child(2),
+.menu a span:nth-child(3) {
+	font-family: "connections", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif !important;
+	font-size: 10px !important;
+}
+.menu a.accounts {
+	width: 24%;
+}
+.menu a.transfers {
+	width: 20%;
+}
+.menu a.bill_pay {
+	width: 24%;
+}
+.menu a.pay_and_transfer {
+	width: 24%;
+}
+.menu a.deposit_checks {
+	width: 24%;
+}
+.menu a.menu_more {
+	width: 24%;
+}
+.menu a.menu_trade {
+	width: 24%;
+}
+.menu a.on {
+	color: #0073cf!important;
+}
+.menu a span.menu_icon {
+	display: block;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 3px;
+	
+}
+a.accounts span.menu_icon {
+	background: url("../../images/icons/accounts%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.bill_pay span.menu_icon {
+	background: url("../../images/icons/bill_pay%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.pay_and_transfer span.menu_icon {
+	background: url("../../images/icons/bill_pay%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.transfers span.menu_icon {
+	background: url("../../images/icons/transfer%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.deposit_checks span.menu_icon {
+	background: url("../../images/icons/deposits%402x.svg") no-repeat center center;
+	background-size: 24px 22px;
+}
+a.menu_more span.menu_icon {
+	background: url("../../images/icons/menu%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+	display: block;
+}
+a.menu_trade span.menu_icon {
+	background: url("../../images/icons/trade.svg") no-repeat center center;
+	background-size: 24px 24px;
+	display: block;
+}
+a.accounts.on span.menu_icon {
+	background: url("../../images/icons/accounts_on%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.bill_pay.on span.menu_icon {
+	background: url("../../images/icons/bill_pay_on%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.pay_and_transfer.on span.menu_icon {
+	background: url("../../images/icons/bill_pay_on%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.transfers.on span.menu_icon {
+	background: url("../../images/icons/transfer_on%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.deposit_checks.on span.menu_icon {
+	background: url("../../images/icons/deposits_on%402x.svg") no-repeat center center;
+	background-size: 24px 22px;
+}
+a.menu_more.on span.menu_icon {
+	background: url("../../images/icons/menu_on%402x.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+a.menu_trade.on span.menu_icon {
+	background: url("../../images/icons/trade_on.svg") no-repeat center center;
+	background-size: 24px 24px;
+}
+
+.menu_indicator{ display: none; }
+
+/* Custom page transitions */
+.pop2.in {
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -webkit-animation-name: popIn;
+    -moz-animation-name: popIn;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+    transform-origin: center;
+}  
+.pop2.out {
+    -webkit-animation-name: popOut;
+    -moz-animation-name: popOut;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-duration: 100ms;
+    -moz-animation-duration: 100ms;
+    transform-origin: center;
+}
+@-webkit-keyframes popIn {
+    from { -webkit-transform: scale(.95) }
+    to { -webkit-transform: scale(1) }
+}
+@-webkit-keyframes popOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@-moz-keyframes popIn {
+    from { -webkit-transform: scale(.95) }
+    to { -webkit-transform: scale(1) }
+}
+@-moz-keyframes popOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/*Brian Adds*/
+.menu_flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	min-height: 25px;
+	margin-bottom: 5px;
+}
+
+.menu_flex figure { width:33%; }
+.menu_flex figcaption {
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.content_bg ul li a span.all_deals {
+	display:block;
+	float:left;
+	padding:1px 6px;
+	margin-right: 20px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 10px;
+	background-color:#FF0000;
+	color:#fff !important;
+}
+
+/* OneApp Headers */
+ul.bofa_menu_header li:first-child {
+    border: none;
+    padding: 0;
+    border-radius: 12px 12px 0 0;
+}
+ul.merrill_menu_header li:first-child {
+    border: none;
+    padding: 0;
+    border-radius: 12px 12px 0 0;
+}
+#menu_more .content_bg h2.bofa_menu_header {
+    background: url(../../images/cardHeaders/h2_text_only_image_background_consumer.svg) 0 0 no-repeat #ae1829;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: unset;
+    text-transform: unset;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+    margin: 0;
+    overflow: hidden;
+    height: 50px;
+    width: unset;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+    border-radius: 12px 12px 0 0;
+}
+#menu_more .content_bg h2.bofa_menu_header.merrill {
+    background: url(../../images/cardHeaders/h2_text_only_image_background_investing.svg) 0 0 no-repeat #0a2069;
+}
+#menu_more .content_bg h2.bofa_menu_header span {
+    margin: 12px 15px;
+}
+#menu_more .menu_more_customer {
+	display: flex;
+}
+#menu_more .menu_more_customer img {
+    opacity: 50%;
+}
+#menu_more .menu_more_customer div:first-child {
+	flex-basis: 50px;
+	padding: 0 16px 0 4px;
+}
+#menu_more .menu_more_header {
+	display: flex;
+}
+#menu_more .menu_more_header.profile img {
+	padding-left:5px;
+}
+#menu_more .menu_more_header div:first-child {
+	flex-basis: 25px;
+    padding: 0 5px;
+}
+#menu_more .menu_more_header div:last-child {
+	font-size: 17px;
+	font-weight: bold;
+}

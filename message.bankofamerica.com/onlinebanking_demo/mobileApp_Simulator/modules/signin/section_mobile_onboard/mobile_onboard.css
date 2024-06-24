@@ -1,0 +1,537 @@
+/* CSS Document */
+#mobile_authorization {
+	width: 100%;
+	min-height: 667px;
+	top: 680px;
+	z-index: 8000;
+    background-color:#ffffff;
+	color:#000;
+	float:left;
+	width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+.mo_charlotte_cityscape{
+	background-image: url(images/NC_Charlotte.jpg);
+    /* background: #677380 url(/onlinebanking_demo/mobileApp_Simulator/modules/signin/section_mobile_onboard/images/NC_Charlotte.jpg) no-repeat 0 0!important; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #677380!important;
+}
+#mobile_authorization a {
+	color:#0052c2;
+}
+.mobile_onboard_header { 
+	background-color: #e00024;
+	width: 100%;
+	height:20px;
+	position:fixed;
+	z-index: 10;
+}
+#mobile_authorization .mobile_onboard_container {
+	position: absolute;
+	top: 0;
+	min-width: 100%;
+}
+#mobile_authorization .scroll_me  {
+	min-height: 667px;
+	height: 1000px;
+	overflow: hidden; /* to hide scrollbar on #stage */
+}
+#mobile_authorization .mo_stage {
+	position: absolute;
+	display:none;
+    width: 100%;
+	text-align: center;
+}
+#mobile_authorization .mo_stage_left {
+    text-align: left;
+}
+#mobile_authorization .mo_stage_left div, #mobile_authorization .mo_stage_left p {
+    margin: 0 0 0 10px;
+}
+#mo_get_auth_code ul {
+    margin: 0 30px 10px 10px;
+}
+#mo_get_auth_code p {
+    padding-top: 20px;
+    width: 95%;
+}
+#mobile_authorization .mo_start {
+	display:block;
+}
+#mo_select_email{
+	left:-375px;
+}
+#mo_select_email p {
+    padding-top: 20px;
+    width: 95%;
+}
+#mo_select_email ul {
+	margin: 0 35px 0 15px;
+}
+#mo_enter_auth_code .input_contain {
+    width: 90%;
+}
+#mo_enter_auth_code p {
+    padding-top: 20px;
+    width: 95%;
+}
+#mobile_authorization input:not([type|="submit"]):not([type|="radio"]):not([type|="checkbox"]), #mobile_authorization input.passcodes {
+    box-shadow: none !important;
+    box-sizing: border-box!important;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+	border-radius: 5.35px;
+}
+#mo_security_preferences p {
+    padding-top: 20px;
+    width: 95%;
+}
+#mo_security_preferences .container {
+    display: flex;
+}
+#mo_security_preferences p {
+    font-size: 14px;
+    margin: 0 0 20px 15px!important;
+}
+#mo_security_preferences img.mo_check_remember {
+    padding-right: 20px;
+    top: 5px;
+    position: relative;
+}
+#mo_security_preferences ul {
+    padding-left: 0!important;
+}
+#mo_security_preferences li {
+    height: 40px;
+}
+#mo_security_preferences .checkmark strong {
+    color: #000;
+    font-size: 16px;
+}
+#mo_security_preferences .checkmark {
+	font-size: 13px;
+    color: #333;
+}
+#mo_security_preferences input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d1c9c0;
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 16px;
+}
+#mo_consent .mo_consent {
+    padding-top: 20px;
+    height: 30px;
+}
+#mo_consent p {
+    padding-top: 20px;
+    width: 95%;
+}
+#mo_consent .mo_consent_chkbox_unchecked {
+    width: 25px;
+    height: 25px;
+    background: url(images/uncheck_remember_phone.png) no-repeat 0 0;
+    background-repeat: no-repeat;
+    float: left !important;
+}
+#mo_consent .mo_consent_chkbox_checked {
+    width: 25px;
+    height: 25px;
+    background: url(images/check_remember_phone.png) no-repeat 0 0;
+    background-repeat: no-repeat;
+    float: left !important;
+}
+#mo_consent div.consent_chktxt {
+    padding-left: 0px;
+    margin: 5px 0 0 -5px;
+}
+#mo_consent a {
+    color: #0052c2;
+    text-decoration: underline;
+    font-weight: normal;
+	padding-left: 0
+}
+div #mo_consent div {
+    padding-left: 20px;
+}
+#mo_consent p.mo_pdf {
+    width: 40%;
+	padding-top: 30px;
+}
+#mo_consent .mo_pdf a {
+    text-decoration: none;
+}
+#mobile_authorization .mo_stage h1 {
+	margin: 94px auto 0;
+	color: #000!important;
+    display: block;
+    font-size: 30px;
+    max-width: 300px;
+    outline: unset!important; 
+    overflow: unset;
+    padding: 0 0 25px 0;
+    text-align: center;
+    text-overflow: unset; 
+    text-shadow: unset!important; 
+    white-space: unset; 
+    font-weight: bold;
+	border-bottom: 2px solid #ccc;
+}
+#mobile_authorization .mo_stage h2 {
+	/*font-face: SFUIDisplay-Light;*/
+	margin: 94px auto 0;
+    font-size: 28px;
+    max-width: 250px;
+    text-align: center;
+	font-family:SFUIDisplay-Light, connectionsregular, arial, helvetica, san-serif;
+    color: #fff; 
+    -webkit-font-smoothing: antialiased;
+    text-transform: unset; 
+    text-shadow: none; 
+    overflow: unset; 
+    line-height: inherit; 
+}
+#mobile_authorization .mo_stage h2.almost {
+	margin: 25px auto 0;
+	font-family: SFUIDisplay-Regular, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    max-width: 280px;
+}
+#mobile_authorization .mo_stage h3 {
+	font-family:SFUIDisplay-Semibold, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; 
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 1.1em;
+    margin: 40px auto 0;
+    padding-bottom: 25px;
+    width: 300px;
+    border-bottom: 1px solid #fff;
+}
+#mo_agreements p {
+    padding-top: 20px;
+    width: 95%;
+}
+#mo_agreements  ul {
+	background-color: unset!important;
+    border: none;
+    border-top: unset;
+    border-bottom: unset;
+    list-style: disc outside none;
+    margin: 0 0 0 10px;
+    padding: 0;
+    padding-left: 15px;
+    position: relative;
+    font-weight: normal;
+    color: #000;
+    text-align: left;
+    font-size: 100%;
+}
+#mo_agreements ul li {
+	list-style: disc outside none;
+    padding: 20px 0 0 0!important;
+}
+.mobile_onboard_nav {
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+	background-color:#fff;
+	color:#000a23;
+	-webkit-box-shadow: 0px 20px 25px 21px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 20px 25px 21px rgba(0,0,0,0.1);
+	box-shadow: 0px 20px 25px 21px rgba(0,0,0,0.1);
+	text-align: center;
+	display:none;
+}
+.mobile_onboard_nav.mo_start_nav {
+	display:block;
+	bottom: -600px
+}
+.mobile_onboard_nav div {
+	margin-top: 25px; 
+}
+.mobile_onboard_nav_button {
+	color: #fff!important;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #012169;
+    border: none;
+    border-radius: 19px;
+    box-sizing: border-box;
+    min-height: 27px;
+    /* padding-top: 1px; */
+    padding: 1px 20px 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 37px;
+    text-align: center;
+    width: max-content;
+    text-transform: uppercase;
+    /* display: inline-block; */
+}
+#mo_get_auth_code_nav,
+#mo_enter_auth_code_nav,
+#mo_agreements_nav,
+#mo_consent_nav {
+	height: 120px;
+}
+#mo_touch_id_nav,
+#mo_alerts_nav,
+#mo_paperless_nav {
+	height: 160px;
+}
+#mo_select_email_nav {
+	left: -375px;
+	height: 120px;
+}
+/* Onboarding Stuff */
+.mo_welcome_logo {
+	margin:95px 0 0 0;
+}
+.mo_touchID_logo {
+	margin:40px 0 0 0;
+}
+.mo_alerts_logo {
+	margin:40px 0 0 0;
+}
+.mo_almost_logo {
+	margin: 100px 0 0 0;
+}
+.mo_zelle_logo {
+	margin: 175px 0 0 0;
+}
+.mo_deposit_logo {
+	margin: 125px 0 0 0;
+}
+.mo_bamd_logo {
+	margin: 85px 0 0 0;
+}
+.mo_paperless_logo {
+	margin: 85px 0 0 0;
+}
+#mo_welcome_nav {
+	left: 375px;
+	height: 120px;
+}
+
+#mobile_authorization a.mo_skip  {
+	color: #ffffff;
+    margin: 20px 10px 0 0;
+    width: 100%;
+    text-align: right;
+	text-decoration:none;
+}
+
+#mo_deposit p,
+#mo_bamd p,
+#mo_zelle p,
+#mo_touch_id p,
+#mo_alerts p,
+#mo_paperless p {
+	color: #fff;
+    width: 305px;
+    margin: 20px auto;
+	font-size: 17px;
+}
+#touch_id_on,
+#mo_alerts_on {
+    position: absolute;
+    width: 90%;
+    background-color: #fff;
+    height: 50px;
+    top: 30px;
+    margin-left: 3%;
+    border-radius: 5px;
+	text-align: left;
+    padding: 10px 0 0 10px;
+}
+#mo_paperless_on {
+	position: relative;
+    width: 80%;
+    background-color: #fff;
+    height: auto;
+    margin-left: 10%;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px 0 0 10px;
+    color: #000;
+}
+.mo_success_bubble_close {
+	float: right;
+    margin: -5px 10px 0 0;
+}
+#mo_alerts  ul {
+	background-color: transparent!important;
+    border: none;
+    border-top: unset;
+    border-bottom: unset;
+    list-style: disc outside none;
+    margin: 0 0 0 70px;
+    padding: 0;
+    padding-left: 15px;
+    position: relative;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    font-size: 100%;
+}
+#mo_alerts ul li {
+	list-style: disc outside none;
+	padding: 3px 0 0 0;
+}
+.mo_modal_alerts {
+	left: 15%;
+    top: 200px;
+    /* display: block; */
+    display: none;
+    width: 70%;
+    text-align: center;
+}
+.mo_modal_touch {
+	top: 234px;
+	left: 15%;
+    display: none;
+    width: 70%;
+    text-align: center;
+}
+.mo_modal_complete {
+	top: 234px;
+	left: 15%;
+    display: none;
+    width: 70%;
+    text-align: center;
+}
+.mo_modal_touch img,
+.mo_modal_complete img {
+	padding-top: 15px; 
+ }
+.mo_modal_touch .modal_title {
+	clear:both;
+	font-size:18px;
+	font-weight:bold;
+	padding:0;
+}
+.mo_modal_complete .modal_title {
+	clear:both;
+	font-size:18px;
+	font-weight:bold;
+	padding: 0 0 30px 0;
+}
+.mo_modal_touch .modal_blurb {
+	clear:both;
+	padding: 5px 15px 30px 15px;
+	font-size:14px;
+}
+.mo_modal_touch .modal_cancel,
+.mo_modal_complete .modal_cancel {
+	width: 100%;
+    padding: 10px 0 20px 0;
+	font-size: 18px;
+	text-align: center;
+}
+.mo_modal_complete .modal_cancel {
+	font-weight:bold;
+}
+#mo_paperless_settings,
+#mo_paperless_thanks {
+	position: absolute;
+    display: none;
+    width: 100%;
+    color: #fff;
+    text-align: left!important;
+}
+#mo_paperless_settings p,
+#mo_paperless_thanks p {
+	color: #fff;
+}
+#mo_paperless_settings h3,
+#mo_paperless_thanks h3 {
+	margin: 70px auto 0!important;
+	text-align:center;
+}
+#mo_paperless_settings img {
+	padding: 0 15px 0 0;
+}
+#mo_paperless_settings .footnotes {
+	font-size: 80%;
+    margin-top: 40px;
+}
+.mo_back_chevron {
+    position: fixed;
+    bottom: 20px;
+    display: block;
+    width: 50px;
+    background: url(images/back_chevron.png) 15px 10px no-repeat;
+    height: 50px;
+}
+.mo_forward_chevron {
+    position: fixed;
+    float: right;
+    bottom: 20px;
+    display: block;
+    width: 50px;
+    margin: 25px 0 0 85%;
+    background: url(images/forward_chevron.png) 0px 10px no-repeat;
+    height: 50px;
+}
+#mobile_authorization a.mo_close_onboarding {
+    position: fixed;
+    float: right;
+    bottom: 25px;
+    right: 20px;
+    display: block;
+    width: 50px;
+    color: #ffffff;
+}
+.mo_dots_set {
+    position: fixed;
+    bottom: 30px;
+    left: 45%;
+}
+.mo_nav_dots {
+	height: 7px;
+    width: 7px;
+    background-color: #ffffff;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.4;
+}
+.mo_nav_dots.current {
+    height: 7px;
+    width: 7px;
+    background-color: #ffffff;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+}
+.mo_dots_set.setup {
+    position: fixed;
+    bottom: 25px;
+    left: 45%;
+}
+.mo_dots_set.setup .mo_nav_dots {
+	height: 7px;
+    width: 7px;
+    background-color: #333;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.4;
+}
+.mo_dots_set.setup .mo_nav_dots.current {
+    height: 7px;
+    width: 7px;
+    background-color: #000;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+}

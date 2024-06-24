@@ -1,0 +1,74 @@
+
+/* My Balance Styles */
+#my_balance_containers {
+	position: absolute;
+	width: 100%;
+	height:750px;
+	display: none;
+	margin-top: 0px;
+	background-color: #FFF;
+	z-index: 9999;
+	display: none;
+}
+body.android #my_balance_containers {
+    background-color: #eee;
+}
+#my_balance_enrolled_view, #my_balance_unenrolled_view {
+	width: 100%;
+	display: none;
+}
+
+#my_balance_container_top, 
+.my_balance_container_bottom, 
+.my_balance_close_link_container {
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	line-height: 15px;
+}
+#my_balance_container_top {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.my_balance_open_link {
+	color: #0052C2; /*blue */
+}
+
+.my_balance_open_link.my_balance_demo span {
+	display: inline-block;
+}
+
+.my_balance_open_link span {
+	display: none;
+}
+
+.my_balance_close_link_container {
+	display: none;
+	margin-top: 10px;
+}
+
+.my_balance_tm {
+	font-size: 9px;
+    position: relative;
+    top: -9px;
+}
+
+.my_balance_header {
+	position: relative;
+	top: -12px;
+}
+
+#my_balance_offer {
+	background-color: #fff;
+	padding: 20px 20px;
+	display: block;
+}
+
+#my_balance_offer_text_container {
+	text-align: center;
+}
+
+#my_balance_button_container {
+	padding: 20px 20px;
+}

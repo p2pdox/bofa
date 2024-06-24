@@ -1,0 +1,766 @@
+#new_loading_page {
+	display:block;
+	position: absolute;
+	top:0;
+	left:0;
+	background: url("images/background_max_bofa.png") no-repeat 0 0;
+	background-size: 100%;
+	/*background-color: #CD0038!important;*/
+	background-color: #FFF!important;
+	min-width: 100%;
+	min-height: 100%;
+	text-align: center;
+	z-index:50000;
+}
+
+#new_loading_page.hidden {
+        opacity: 0;
+        animation-name: loading_page_fade_out;
+        animation-duration: 2.5s;
+     transition-timing-function: ease;
+     animation-fill-mode: both;
+	top: -813px;
+    }
+
+    @keyframes loading_page_fade_out {
+      0% {  opacity: 1;  }
+      50% {  opacity: .5;  }
+      100% {  opacity: 0; }
+    }
+#FP {
+	position: relative;
+	z-index: 9;
+}
+#new_loading_page .content_bg, #new_loading_page .panel {
+	background: none repeat scroll 0 0 rgba(255, 251, 152, 1.0);
+	margin: auto;
+	padding: 80px 0 0;
+}
+#modal_mask_loading div {  /*loading page*/
+	display: block;
+	width: 140px;
+	height: 40px;
+	z-index: 50001;
+	position: absolute;
+	margin-top: 50%; /*Changed by Brian */
+	margin-left: 115px; /*Changed by Brian */
+	background: url("images/loading_wheel_40px.gif") no-repeat scroll center 0;
+}
+#banner_front_page {
+	display: block;
+	width: 100%;
+	/*height: 98px !important;*/
+	height: 150px !important;
+}
+
+#banner_front_page_default {
+	display: block;
+	width: 100%;
+	height: 29px;
+	margin-top: 40px;
+	background: url('../../images/banner_bofa_295x29_2x.png') no-repeat top center;
+	background-size: 295px 29px;
+}
+
+.max_style_box {
+	background-color: #fff!important;
+	border: none;
+	margin: 0 4.1%;
+	padding: 15px;
+	position: relative;
+	font-weight: normal;
+	-webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+	box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+	border-radius: 12px;
+}
+
+body .android #banner_front_page {
+	display: block;
+	width: 100%;
+	height: 98px !important;
+}
+
+/*BEGIN iPhone 6s Plus Media Image swaps */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (device-width : 414px) and (device-height : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) and (-webkit-device-pixel-ratio : 2) {
+}
+
+#banner_front_page.morning1 {
+	background: url('images/banner_front_page_morning1.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning2 {
+	background: url('images/banner_front_page_morning2.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning3 {
+	background: url('images/banner_front_page_morning3.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning4 {
+	background: url('images/banner_front_page_morning4.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning5 {
+	background: url('images/banner_front_page_morning5.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning6 {
+	background: url('images/banner_front_page_morning6.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning7 {
+	background: url('images/banner_front_page_morning7.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning8 {
+	background: url('images/banner_front_page_morning8.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning9 {
+	background: url('images/banner_front_page_morning9.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.morning10 {
+	background: url('images/banner_front_page_morning10.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon1 {
+	background: url('images/banner_front_page_afternoon1.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon2 {
+	background: url('images/banner_front_page_afternoon2.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon3 {
+	background: url('images/banner_front_page_afternoon3.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon4 {
+	background: url('images/banner_front_page_afternoon4.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon5 {
+	background: url('images/banner_front_page_afternoon5.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon6 {
+	background: url('images/banner_front_page_afternoon6.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon7 {
+	background: url('images/banner_front_page_afternoon7.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon8 {
+	background: url('images/banner_front_page_afternoon8.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon9 {
+	background: url('images/banner_front_page_afternoon9.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.afternoon10 {
+	background: url('images/banner_front_page_afternoon10.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening1 {
+	background: url('images/banner_front_page_evening1.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening2 {
+	background: url('images/banner_front_page_evening2.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening3 {
+	background: url('images/banner_front_page_evening3.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening4 {
+	background: url('images/banner_front_page_evening4.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening5 {
+	background: url('images/banner_front_page_evening5.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening6 {
+	background: url('images/banner_front_page_evening6.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening7 {
+	background: url('images/banner_front_page_evening7.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening8 {
+	background: url('images/banner_front_page_evening8.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening9 {
+	background: url('images/banner_front_page_evening9.png') no-repeat;
+	background-size: 100%!important;
+}
+#banner_front_page.evening10 {
+	background: url('images/banner_front_page_evening10.png') no-repeat;
+	background-size: 100%!important;
+}
+table#login_table {
+	border-collapse: collapse;
+	width: 100%;
+	border-collapse:separate; 
+    border-spacing:0 12px; 
+}
+table#login_table td {
+	vertical-align: middle;
+	
+}
+td.td_login_text_box {
+	padding: 0;
+	width: 66%;
+	
+	
+}
+td.td_login_check_box {
+	padding-left: 5px;
+	width: 32%;
+}
+input.input_login_checkbox {
+	float: left;
+	height: 20px;
+	margin-right: 5px;
+	margin-left: 6px;
+	width: 20px;
+}
+input.input_login_checkbox[type=checkbox] + label {
+	display: block;
+	height: 13px;
+	margin-left: 2px;
+	padding-left: 15px;
+	font-size: 10px;
+	color: #c6c0b4;
+}
+
+input#username_field,
+input#username_field_sp {
+	color: #0052C2!important;
+}
+
+input.passcodes {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #d5d5d5!important;
+	color: #666;
+	font-size: 16px !important;
+	margin: 0!important;
+	line-height: 3.2em;
+}
+#sign_in_button {
+    width: fit-content;
+    padding: 0 25px;
+}
+.icon_thumbPrint {
+	background: url("images/icon_thumbPrint.png")no-repeat;
+	width: 78px;
+	height: 78px;
+}
+.modal_touch_id {
+	text-align: center!important;
+}
+.modal_touch_id div ul {
+	padding: 20px;
+	text-align: center!important;
+}
+.modal_touch_id div ul li {
+	line-height: 2em;
+	text-align: center!important;
+}
+#yesChMrk, #noChMrk {
+	display: none;
+}
+.agreementsList .agreements-ul {
+	list-style-type: disc;
+	padding: 2px 0px;
+	margin-left: 30px;
+	background-color: transparent !important;
+	border: none;
+	width: 90%;
+}
+.agreementsList .agreements-ul .agreementsListLevel2 {
+	list-style-type: circle;
+	padding: 2px 0px;
+	margin-left: 10px;
+	background-color: transparent !important;
+	border: none;
+	width: 90%;
+	font-weight: normal;
+}
+.agreementsList .agreements-ul ul.agreementsListLevel2 li {
+	font-weight: normal !important;
+	margin-bottom: 15px;
+}
+.agreementsList .agreements-ul .agreementsListLevel3 {
+	list-style-type: square;
+	padding: 2px 0px;
+	margin-left: 22px;
+	background-color: transparent !important;
+	border: none;
+	width: 80%;
+	font-weight: normal;
+}
+.agreements-ul li {
+	border: none !important;
+	background-color: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 12px;
+	margin-top: -6px;
+	padding: 0px !important;
+}
+.agreements-ul li p {
+	font-weight: normal;
+	margin-left: 0px;
+}
+.alpha-list {
+	list-style-type: upper-alpha !important;
+}
+.alpha-list li {
+	font-weight: normal !important;
+}
+.agreementsList .agreements-ul {
+	list-style-type: disc;
+	padding: 2px 0px;
+	margin-left: 30px;
+	background-color: transparent !important;
+	border: none;
+	width: 90%;
+}
+.agreementsList .agreements-ul .agreementsListLevel2 {
+	list-style-type: circle;
+	padding: 2px 0px;
+	margin-left: 10px;
+	background-color: transparent !important;
+	border: none;
+	width: 90%;
+	font-weight: normal;
+}
+.agreementsList .agreements-ul ul.agreementsListLevel2 li {
+	font-weight: normal !important;
+	margin-bottom: 15px;
+}
+.agreementsList .agreements-ul .agreementsListLevel3 {
+	list-style-type: square;
+	padding: 2px 0px;
+	margin-left: 22px;
+	background-color: transparent !important;
+	border: none;
+	width: 80%;
+	font-weight: normal;
+}
+.agreements-ul li {
+	border: none !important;
+	background-color: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 12px;
+	margin-top: -6px;
+	padding: 0px !important;
+}
+.agreements-ul li p {
+	font-weight: normal;
+	margin-left: 0px;
+}
+.alpha-list {
+	list-style-type: upper-alpha !important;
+}
+.alpha-list li {
+	font-weight: normal !important;
+}
+.traderMrk {
+	font-size: 11px;
+	position: relative;
+	top: -3px;
+	left: 2px;
+}
+input[type=checkbox]:not(old).cnsnt {
+	width : 56px;
+	margin : 0;
+	padding : 0;
+	opacity : 0;
+	background-color: transparent !important;
+}
+input[type=checkbox]:not(old).cnsnt + label, input[type=radio ]:not(old) + label {
+	display : inline-block;
+	margin-left : -62px;
+	padding-left : 62px;
+	background : url('../../images/checkbox_sprite.png') no-repeat 0 0;
+	background-color: transparent !important;
+	line-height : 56px;
+}
+input[type=checkbox]:not(old):checked.cnsnt + label {
+	background-position : 0 -56px;
+	background-color: transparent !important;
+}
+.cnsnt-spacer {
+	margin-left: 20px;
+}
+ul.help_list li a {
+	color: #000 !important;
+	font-weight: bold;
+	text-shadow: none;
+	text-decoration: none;
+}
+.receivedAuthCode {
+	margin: auto !important;
+}
+#front_porch_signIn_newsss {
+	padding: 15px 15px 50px;
+}
+
+.quad_frame {
+	margin-left: 5%;
+	margin-right: 5%;
+	overflow-x: visible;
+}
+
+.fp_quad {
+	width: 49%;
+	height: 106px;
+	margin-bottom: 8px;
+	background-color: #ede7dd;
+	text-align: center;
+ }
+.fp_quad:first-child {margin-left: 0;}
+/*.fp_quad_bg {
+	background: #ede7dd url('/onlinebanking_demo/mobileApp_Simulator/images/fp_quad_bg.png') repeat-x 0 0;
+}*/
+.fp_dbl_quad {
+	width: 336px;
+	height: 106px;
+	background-color: #ede7dd;
+}
+.fp_quad p {
+	margin-top: 10px !important;
+ 	font-size: 12px !important;
+}
+.fp_dbl_quad p {
+	position: relative;
+	top: 40px;
+	left: 85px;
+}
+#location_contact_link_frame {
+	text-align: center;
+}
+#FP_chkbx_frame_online_ID, #FP_chkbx_frame_touch_ID {
+	width: 35%;
+}
+.chkcircle {
+	width: 22px;
+	height: 22px;
+	margin: 4px 0 0 0;
+	background: url('images/signin_checkbox%402x.png') no-repeat 0 0;
+	background-size: 22px 22px;
+	float: left !important;
+}
+.chkcircle.checked {
+	width: 22px;
+	height: 22px;
+	margin: 4px 0 0 0;
+	background: url('images/circle_blue_checked.png') no-repeat 0 0;
+	background-size: 22px 22px;
+	float: left !important;
+}
+.chktxt {
+	margin-left: 6px;
+	line-height: 35px;
+	text-align: left;
+	float: left !important;
+	font-size: 13px;
+	color: #124fb1;
+}
+.chkbox_unchecked {
+	width: 50px;
+	height: 40px;
+	margin-left: 10px;
+	background: url('../../images/checkbox_sprite.png') no-repeat 0 -38px;
+	background-size: 85%;
+	background-repeat: no-repeat;
+	float: left !important;
+}
+.chkbox_checked {
+	width: 50px;
+	height: 40px;
+	margin-left: 10px;
+	background: url('../../images/checkbox_sprite.png') no-repeat 0 0;
+	background-size: 85%;
+	float: left !important;
+}
+.consent_chktxt {
+	padding-left: 6px;
+	float: left !important;
+}
+#consent_disclaimer {
+	margin-bottom: 90px;
+}
+.FP_input_border {
+/*border:1px solid #beb4ab;*/ width:65%;
+}
+
+.icon_signin_lock {
+	display: inline-block;
+	height:14px;
+	width:11px;
+	background: url('../../images/icons/icon_lock.png') no-repeat 0 0;
+}
+
+#dynamic_signin_btn {
+	margin: 0;
+	cursor: pointer;
+}
+.mark_x_red {
+	display: inline-block;
+	background: url('../../images/icons/mark_x_red.png') no-repeat 0 0;
+	width: 14px;
+	height: 14px;
+}
+.mark_x_red.checked {
+	background: url('../../images/icons/icon_check_green_16px.png') no-repeat 0 0;
+}
+
+/*#demo_flow_area ul.demo_flows_list li {
+	padding-left:20px;
+	cursor:pointer;
+}
+
+#demo_flow_area div.expand_div ul.demo_flows_list li.selected { 
+	background: url('/onlinebanking_demo/mobileApp_Simulator/images/li_selected.png') no-repeat -10px 10px transparent;
+	background-size: 100%;
+}
+
+#language_preference ul.demo_flows_list li {
+	padding-left:20px;
+	cursor:pointer;
+}
+
+#language_preference div.expand_div ul.demo_flows_list li.selected { 
+	background: url('/onlinebanking_demo/mobileApp_Simulator/images/li_selected.png') no-repeat -10px 10px transparent;
+	background-size: 100%;
+}
+
+#language_preference .control input {
+    position: absolute;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    opacity: 0;
+}*/
+
+#demo_flow_container {
+	box-shadow: inset 1px 9px 9px -8px rgba(0,0,0,0.75); 
+	padding: 10px 0 1px 0;
+}
+
+#demo_flow_area ul.demo_flows_list li, #language_preference div.expand_div ul.lang_flows_list li {
+	padding-left:20px;
+	cursor:pointer;
+}
+
+#demo_flow_area ul.demo_flows_list li.selected, #language_preference ul.lang_flows_list li.selected, #language_preference div.expand_div ul.lang_flows_list li.selected { 
+	background: url('../../images/li_selected.png') no-repeat -10px 10px transparent;
+	background-size: 100%;
+}
+
+#language_preference .control input {
+    position: absolute;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    opacity: 0;
+}
+#language_preference_area {
+	background-color: #ECE6DD; 
+	padding: 0 0 10px 0;
+}
+#language_preference_footer {
+	background-color: #ECE6DD; 
+	box-shadow: inset 1px 9px 9px -8px rgba(0,0,0,0.75);  
+	padding: 10px 0 3px 0;
+}
+#passcode_simpflication{
+	color: #6B5E51;
+}
+.alert_passcode_simplify {
+	position:fixed;
+	height:0px;
+	z-index:100;
+	font-size: 95%;
+	overflow: hidden;
+}
+.alert_passcode_simplify_link {
+	color:#fff;
+	text-decoration:underline;
+}
+.img_passcode_keyboard_alpha {
+	position: absolute;
+	bottom: -265px;
+	z-index: 101;
+	display: none;
+	background: url("../../images/img_number_keyboard_alpha.png") no-repeat 0 0;
+	background-size:  contain; 
+	height: 265px;
+	width: 100%;
+}
+.img_passcode_keyboard_alpha a.img_passcode_keyboard_overlay div{
+	height: 215px;
+	width: 100%;
+}
+#passcode_simplification input.passcode_input {
+	width: 95%!important;
+	height:40px;
+	/* #312718: !important; */
+	border:1px solid #6B5E51;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#forgot_passcode_new_passcode {
+	color: #6B5E51;
+}
+#forgot_passcode_new_passcode .white_bg {
+	background-color:#fff;
+    padding-bottom: 50px;
+}
+#forgot_passcode_new_passcode .green_check {
+    display: inline-block;
+    background: url(../../images/icons/icon_check_green_bright.png) no-repeat 0 0;
+    width: 14px;
+    height: 14px;
+}
+#forgot_passcode_new_passcode input.passcode_input {
+	width: 90%!important;
+	height:40px;
+	/* #312718: !important; */
+	border:1px solid #6B5E51;
+	margin:-10px 0 0 7px;
+}
+#forgot_passcode_new_passcode .content_bg p {
+    margin: 12px 5px 12px 15px;
+}
+#forgot_passcode_new_passcode .continue_area {
+    background-color: #EFEFF4 !important;
+ }
+ #forgot_passcode_new_passcode .content_bg ul {
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    list-style: square outside url("../../images/icons/icon_check_green_15px.png")!important;
+    margin: 0;
+    padding: 0;
+    padding-left: 45px;
+    position: relative;
+    font-weight: normal;
+    font-size: 15px;
+ }
+#forgot_passcode_new_passcode .content_bg ul li {
+    border-bottom: none;
+    padding: 3px 15px 3px 0;
+	list-style: square outside url("../../images/icons/icon_check_green_15px.png")!important;
+}
+
+/* J.D. Power fixes */
+
+body #jd_power ul {
+	background-color: transparent!important;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    list-style: disc inside none;
+    margin: 0;
+    padding: 10px 0 10px 15px;
+    position: relative;
+    font-weight: normal;
+	font-size:14px;
+}
+
+body #jd_power ul li {
+	border-bottom: none;
+	padding: 0 15px 6px 0;
+    list-style: disc inside none;
+	font-size:14px;
+}
+
+
+/* ************** */
+/* Andoid Land */
+/* ************** */
+
+body.android #banner_front_page {
+    height: 150px !important;
+}
+body.android input#username_field, body.android input#passcode_field,
+body.android input#username_field_sp, body.android input#passcode_field_sp {
+    border-radius: 0px;
+    border: none!important;
+    border-bottom: 1px solid #e0e0e0!important;
+}
+body.android input#username_field,
+body.android input#username_field_sp {
+	background: url('images/triangle_down_android.png') no-repeat right 15px transparent;
+    background-size: 5%;
+}
+body.android input#passcode_field,
+body.android input#passcode_field_sp  {
+    width: 80%;
+}
+body.android #FP_chkbx_frame_online_ID , body.android #FP_chkbx_frame_touch_ID {
+    display: none;
+}
+body.android td.td_login_text_box {
+    width: 100%; 
+}
+body.android  #sign_in_button {
+    line-height: 46px!important;
+    text-transform: uppercase;
+    font-size: 14px!important;
+    font-style: bold!important;
+}
+body.android  #sign_in_button .float_right {
+    margin-top: 15px!important;
+}
+#fp_android_setup_fingerprint {
+	background: url('images/fp_android_setup_fingerprint.png') no-repeat right 15px transparent;
+    background-size: 100%;
+    height: 47px;
+    width: 60px;
+    float:right;
+    margin-top: -5px;
+}
+body.android #FP .fp_quad img, body.android #FP .fp_quad p {
+    display: none;
+}
+body.android #FP .quad_frame:first-child {
+    margin-top: 15px;
+}
+body.android #FP .fp_quad.quad1 {
+    background: url('images/fp_android_quad1.png') no-repeat 0 0 transparent;
+     background-size: 100%;   
+}
+body.android #FP .fp_quad.quad2 {
+    background: url('images/fp_android_quad2.png') no-repeat 0 0 transparent;
+     background-size: 100%;   
+}
+body.android #FP .fp_quad.quad3 {
+    background: url('images/fp_android_quad3.png') no-repeat 0 0 transparent;
+     background-size: 100%;   
+}
+body.android #FP .fp_quad.quad4 {
+    background: url('images/fp_android_quad4.png') no-repeat 0 0 transparent;
+     background-size: 100%;   
+}
+
+body.android #FP .fp_quad.quad4 {
+    background: url('images/fp_android_quad4.png') no-repeat 0 0 transparent;
+     background-size: 100%;   
+}

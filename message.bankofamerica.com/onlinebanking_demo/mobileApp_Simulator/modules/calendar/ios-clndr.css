@@ -1,0 +1,145 @@
+.calendar_template {
+    display:none;
+}
+
+.clndr .controls .clndr-previous-button,
+.clndr .controls .clndr-next-button {
+  width: 15%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+
+  -moz-user-select: none;
+  /* Firefox */
+
+  -ms-user-select: none;
+  /* IE10+ */
+
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.clndr .controls .clndr-previous-button:hover,
+.clndr .controls .clndr-next-button:hover {
+}
+.clndr .controls .month {
+  width: 70%;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+  font-family: "SFDisplayReg", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: 1px;
+}
+
+.clndr .controls svg {
+    height: 24px;
+    width: 24px;
+    margin-top: -2px;
+    top: 50%;
+    vertical-align: top;
+}
+.clndr .controls .clndr-previous-button svg {
+    margin-bottom: -5px;
+}
+
+.clndr {
+  max-width: 400px;
+  margin: 10px auto 0 auto;
+  /* background-color: #f4f4f4; */
+  padding-bottom: 12px;
+}
+.clndr .month-bar {
+  text-align: center;
+  padding: 12px;
+}
+.clndr .days-of-the-week {
+  width: 100%;
+}
+.clndr .days-of-the-week .header-day {
+  display: inline-block;
+  float: left;
+  width: 14.2857%;
+  padding: 12px 0;
+  text-align: center;
+    opacity: 0.3;
+}
+.clndr .days .day,
+.clndr .days .empty {
+  float: left;
+  width: 14.2857%;
+  padding: .8em 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.clndr .days .day {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.clndr .days .empty {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.clndr .days .day span::after,
+.clndr .days .day span::after {
+    display: block;
+    font-size: 0.5em;
+    margin: -0.1em 0 -1.2em;
+    text-align: center;
+    opacity: .8;
+}
+.clndr .days .empty.today span::after,
+.clndr .days .day.today span::after {
+      content: "Today";
+}
+.clndr .days .day.event,
+.clndr .days .empty.event {
+  color: #71bbd2;
+}
+.clndr .days .day.adjacent-month .day-number,
+.clndr .days .empty.adjacent-month .day-number {
+  opacity: 0.3;
+}
+
+.clndr .day.selected-day {
+    background-color: #0052c2;
+    color: #fff;
+}
+.deliver2DaysLater .clndr .days .day.selected-day span::after {
+    content: "SEND";
+}
+
+.deliver2DaysLater .clndr .days .day.delivery-day {
+    background: #00a931 none repeat scroll 0 0;
+    color: #ffffff;
+    text-shadow: none;
+}
+.deliver2DaysLater .clndr .days .day.delivery-day span::after {
+    content: "DELIVER";
+}
+.clndr .travel-start, .clndr .travel-end, .clndr .traveling {
+    background: #2182cb none repeat scroll 0 0;
+    color: #ffffff;
+    text-shadow: none;
+}
+.clndr .travel-start span::after {
+    content: "START";
+}
+.clndr .travel-end span::after {
+    content: "END";
+}

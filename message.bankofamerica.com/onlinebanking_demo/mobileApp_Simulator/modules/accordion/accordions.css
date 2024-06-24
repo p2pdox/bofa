@@ -1,0 +1,118 @@
+/* BEGIN CORE Accordion standard class "accordion" version 
+DO NOT EDIT THESE, INSTEAD COPY THESE and ADD THEM AS AN ADDITIVE CLASS WHICH CAN BE PASSED
+See below
+*/
+.accordion {
+	display: block;
+	border: 1px solid #ded7cd;
+	width: 100%;
+	background: #fff;
+}
+.accordion .acc_element {
+	background-color: #fff;
+	margin: 0 0 0 0;
+	border-bottom: 2px solid #ded7cd;
+}
+body.android .accordion .acc_element {
+    background-color: #f9f7f4;
+}
+
+.accordion .acc_element.last_acc { border-bottom: 1px solid #ded7cd; }
+.accordion .acc_element.open { 
+	background-color: #fff;
+/*	background-color: #f2f7fb; Removed for Mobile, can make this a passable class*/
+
+ }
+
+.accordion .acc_element h4{
+	cursor: pointer;
+	padding:9px 0 9px 5px;
+	margin:0;
+}
+body.android .accordion .acc_element h4:hover {
+    background-color: #f9f7f4;
+}
+.accordion .acc_element div.icon {
+	clear: both;
+	display: block;
+	float: left;
+	width: 28px;
+	height: 28px;
+	background: url("../../images/buttons/chevron_hdpi.png") no-repeat 0px 0px;
+	background-size: 28px auto;
+}
+
+.accordion .acc_element.open div.icon{ 
+	-ms-transform: rotateZ( 90deg);
+	-webkit-transform: rotateZ( 90deg);
+	transform: rotateZ( 90deg); 
+}
+
+.accordion .acc_element h4 div.label{
+	display: block;
+	float: left;
+	color: #333333;
+	font-weight: normal;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 3px;
+}
+
+.accordion .acc_element div.acc_group{
+	display: none;
+	margin: 0;
+	background-color: #fff;
+}
+
+.accordion .acc_element div.acc_group ul.no_formatting {
+	border-radius: 0px;
+	border:none;
+	margin: 0;
+	padding-left:10px;
+}
+
+.accordion .acc_element div.acc_group ul.no_formatting li {
+	border:none;
+	font-size: 14px;
+	background: url("../../images/buttons/chevron_hdpi.png") no-repeat 0px 0px;
+	background-size: 28px auto;
+	padding-left: 41px;
+	padding-top: auto;
+	padding-bottom: auto;
+	line-height: 1.5;
+}
+
+.accordion .acc_element div.acc_group ul.icon_checkbox_grey li {
+	border:none;
+	font-size: 14px;
+	background: url("../../images/icons/new/icon_checkbox_grey.png") no-repeat 0px center;
+	background-size: 36px 34px;
+	padding-top: auto;
+	padding-bottom: auto;
+	padding-left: 41px;
+	line-height: 1.5;
+}
+
+.accordion .acc_element div.acc_group ul.icon_checkbox_grey li.checked {
+	background: url("../../images/icons/new/icon_checkbox_grey_checked.png") no-repeat 0px center;
+}
+
+.accordion .acc_element div.acc_group a:hover { text-decoration: underline; }
+.accordion .acc_element div.acc_group { background-color: #fff; }
+.accordion .acc_element.open div.acc_group { display:block; }
+.accordion .acc_element.open h4, .accordion .acc_element h4:hover { background-color: #fff; }
+/* END CORE Accordion standard class "accordion" version */
+
+
+/* BEGIN additive class "default" styles */
+.accordion.default .acc_element h4 span{
+	background: url('https://www.bankofamerica.com/banking-information/error-page-en.html') no-repeat;
+	padding-left:25px;
+	color: #333333;
+	font-weight: normal;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.accordion.default .acc_element.open h4 span{ 
+background: url('../../images/icons/icon_arrow_blue_down.png') no-repeat; }
+/* END additive class "default" styles */

@@ -1,0 +1,331 @@
+/* CSS Document */
+
+/*---------BEGIN Header Items--------- */
+.header_background_zone {
+	display: block;
+    position: fixed;
+    background-color: transparent;
+    background-size: contain !important;
+    z-index: 90;
+    top: -1px;
+    left: -1px;
+    height: 89px;
+    width: 101%;
+    /* -webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75); */
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+}
+.header_background_zone_shadow {
+
+    height: 137px;
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+
+}
+.header_background_zone_shadow_billpay {
+    height: 200px;
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+}
+.header_no_divider {
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.header {
+    background-color: white;  /* changed for Onsen */
+    height: 88px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    box-shadow: 0px 0px 10px 3px #999;
+}
+.header_erica_search {
+    background-color: white;  /* changed for Onsen */
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+
+.header .title,
+.header_erica_search .title {
+	color: #646464;
+    font-family: "SFDisplayReg", Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    height: 34px;
+    margin: 55px auto 0;
+    text-align: center;
+    text-shadow: none!important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+a.shop_cart_icon {
+	/*display: block;*/
+    position: fixed;
+    background: url(../../images/icons/icon_cart.svg) 8px 8px no-repeat transparent;
+    right: 58px;
+    top: 40px;
+    width: 42px;
+    height: 45px;
+    padding: 0;
+    background-size: 24px 24px;
+    z-index: 90;
+    overflow: hidden;
+	/* color: transparent; */
+}
+
+.shop_cart_icon_right {
+    right: 15px!important;
+}
+
+a.menu_more_icon {
+	/*display: block;*/
+    position: fixed;
+	background: url("../../images/icons/menu%402x.svg") no-repeat center center;
+    left: 8px;
+    top: 40px;
+    width: 42px;
+    height: 45px;
+    padding: 0;
+    background-size: 24px 24px;
+    z-index: 90;
+    overflow: hidden;
+	/* color: transparent; */
+}
+
+/*BEGIN HELP Button and all of its wonderful oddness */
+a.button_dynamic_help {
+	/*display: block;*/
+    position: fixed;
+    background: url(../../images/icons/icon_erica_cta.svg) 8px 8px no-repeat transparent;
+    right: 158px;
+    top: 40px;
+    width: 50px;
+    height: 45px;
+    padding: 0;
+    background-size: 35px 35px;
+    z-index: 90;
+    overflow: hidden;
+	/* color: transparent; */
+/*	opacity: 0;
+	pointer-events: none;*/
+}
+
+/* body.spanish a.button_dynamic_help {
+	background: url('/onlinebanking_demo/mobileApp_Simulator/images/buttons/button_dynamic_help_white_spanish@2x.png') no-repeat 0 0;
+	background-size: 39px 39px;
+} */
+
+a.button_dynamic_help.no_icons {
+	top: 40px;
+    right: 8px;
+}
+
+/*END HELP Button and all of its wonderful oddness */
+
+.sign_out_utility {
+	clear: both;
+	display: block;
+	width: 98%;
+	position: fixed;
+	top: 30px;
+	right: 2%;	
+	text-align: right;
+	font-size: 17px;
+	z-index: 4999;
+/*	overflow: hidden;*/
+}
+
+.sign_out_utility.has_arrow { width: 18%; } /*New for 7.1 n o icons when arrow is present and they are on the right */
+.sign_out_utility.icons_only { width: 18%; } 
+
+.sign_out_utility span.alerts {
+	display: block;
+    position: fixed;
+    background: url(../../images/icons/icon_alerts.svg) 10px 8px no-repeat transparent;
+/*    left: 8px;*/
+	right: 108px;
+    top: 40px;
+    width: px;
+    height: 45px;
+    padding: 0;
+    background-size: 22px 24px;
+    z-index: 90;
+    overflow: hidden;
+/*	opacity: 0;
+	pointer-events: none;*/
+}
+.sign_out_utility a.mail {
+	display: block;
+    position: fixed;
+    background: url(../../images/icons/icon_mail.svg) 10px 8px no-repeat transparent;
+/*    left: 8px;*/
+	right: 108px;
+    top: 40px;
+    width: 42px;
+    height: 45px;
+    padding: 0;
+    background-size: 24px 24px;
+    z-index: 90;
+    overflow: hidden;
+/*	opacity: 0;
+	pointer-events: none;*/
+}
+
+.sign_out_utility a.sign_out {
+	display: block;
+    position: fixed;
+    background: url(../../images/icons/icon_signout.svg) 0px 0px no-repeat transparent;
+    right: 8px;
+    top: 40px;
+    width: 42px;
+    height: 45px;
+    padding: 0;
+    z-index: 90;
+    overflow: hidden;
+}
+
+.sign_out_utility a {
+	display: block;
+	font-size: 17px;
+	/* color: transparent!important; */
+	margin-left: 10px;
+}
+
+.sign_out_utility a.alerts { float: left; }
+.sign_out_utility a.sign_out { float: right; }
+
+/* .sign_out_utility.has_arrow span.english, .sign_out_utility.has_arrow span.spanish,
+.sign_out_utility.icons_only span.english, .sign_out_utility.icons_only span.spanish {
+	display: none!important;
+} */
+
+a.top_icon span.label {
+    font-family: "connections", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif !important;
+    font-size: 10px !important;
+	display: inline-block;
+ 	font-style: normal;
+	font-weight: normal !important;
+	text-shadow: none;
+	text-align: center;
+    margin-top: 34px;
+	color: #6d6d72 !important;
+	width: 40px;
+}
+a.top_icon span.icon_barker {
+	position: absolute;
+    background-color: #3267A3;
+    border-radius: 6px;
+    border: 1px solid white;
+    font: 10px arial;
+    color: white;
+    left: 30px;
+    padding: 4px;
+    text-align: center;
+    top: 5px;
+    width: 8px;
+    z-index: 1001;
+    height: 8px;
+    line-height: 8px;
+    display: block;
+	margin: 0;
+}
+a.mail.top_icon span.icon_barker {
+	left: 25px;
+}
+
+.device_items {
+	display: block;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 6px 6px 5px;
+	box-sizing: border-box;
+}
+
+.device_items div {
+	display: inline-block;
+	width: 32.5%;
+	min-height: 10px;
+	float: left;
+}
+
+.device_items > .wifi {
+	background: url("../../images/icons/icons_carrier_wifi_combo%402x.png") no-repeat 0 center / 100% auto rgba(0, 0, 0, 0);
+	background-size: 84px 9px;
+}
+.device_items.reverse > .wifi {
+	background: url("../../images/icons/icons_carrier_wifi_combo_reverse%402x.png") no-repeat 0 center / 100% auto rgba(0, 0, 0, 0);
+}
+.device_items > .battery {
+	background: url("../../images/icons/icons_percentage_battery_combo%402x.png") no-repeat right bottom / 100% auto rgba(0, 0, 0, 0);
+	background-size: 51px 10px;
+	float: right;
+}
+
+.device_items.reverse > .battery {
+	background: url("../../images/icons/icons_percentage_battery_combo_reverse%402x.png") no-repeat right bottom / 100% auto rgba(0, 0, 0, 0);
+	background-size: 51px 10px;
+	float: right;
+}
+
+.device_time {
+	text-align: center;
+	color: #fff;
+	font-size: 12px!important;
+	font-style: normal;
+	line-height: 1;
+	margin-left:1%;
+}
+
+.device_time.android_only {
+	float: right;
+	width: 9%!important;
+	padding-top:2px;
+	font-size: 14px!important;
+}
+
+.device_items.reverse #device_time { color:black;}
+
+.shopping_cart_area {
+	clear: both;
+	display: block;
+	position: fixed;
+	top: 30px;
+	right: 0;	
+	padding-right: 10px;
+	z-index: 4999;
+	overflow: hidden;
+}
+.shopping_cart_area span.shopping_cart_icon {
+	display: block;
+	margin-top: 2px;
+	padding-right: 6px;
+	box-sizing: border-box;
+	background: url("../../images/icons/icon_shopping_cart%402x.png") no-repeat;
+	background-size: 20px 36px;
+	width: 20px;
+	height: 18px;
+}
+body.cart_full .shopping_cart_area span.shopping_cart_icon {
+	background-position: 0 -18px;
+}
+
+/*---------END Header Items--------- */

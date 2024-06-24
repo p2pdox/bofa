@@ -1,0 +1,1327 @@
+/* CSS Document */
+ 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, figure, figcaption, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: "SFProTextRegular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*BEGIN Mobile 7.0 fonts */
+@font-face {
+	font-family: SFDisplayReg;
+	src: url('../fonts/SF-UI-Display-Regular.otf');
+}
+@font-face {
+	font-family: SFDisplayBold;
+	src: url('../fonts/SF-UI-Display-Bold.otf');
+}
+@font-face {
+	font-family: SFTextRegular;
+	src: url('../fonts/SF-UI-Text-Regular.otf');
+}
+@font-face {
+	font-family: SFTextBold;
+	src: url('../fonts/SF-UI-Text-Bold.otf');
+}
+@font-face {
+	font-family: SFDisplayThin;
+	src: url('../fonts/SF-UI-Display-Thin.otf'),
+	url('../fonts/SF-UI-Display-Thin.eot');
+}
+
+@font-face {
+	font-family: SFProDisplaySemibold;
+	src: url('../fonts/SFPro/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+	font-family: SFProTextRegular;
+	src: url('../fonts/SFPro/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+	font-family: "SF Pro Display";
+	src: url('../fonts/SFPro/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+	font-family: "SF Pro Text";
+	src: url('../fonts/SFPro/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+	font-family: SFProTextSemibold;
+	src: url('../fonts/SFPro/SF-Pro-Text-Semibold.otf');
+}
+@font-face {
+	font-family: SFProTextBold;
+	src: url('../fonts/SFPro/SF-Pro-Text-Bold.otf');
+}
+/*New for Life Plan */
+@font-face{
+	font-family: ConnectionsMedium;
+	src: url('../fonts/Connections/Connections_Medium.otf'),
+	url('https://www.bankofamerica.com/banking-information/error-page-en.html'),
+	url('https://www.bankofamerica.com/banking-information/error-page-en.html'),
+	url('https://www.bankofamerica.com/banking-information/error-page-en.html#iefix'),
+	url('https://www.bankofamerica.com/banking-information/error-page-en.html');
+}
+
+@font-face{
+	font-family:ConnectionsLight;
+	src:url('../fonts/Connections/connections_light-webd41d.eot?#iefix') 		format('embedded-opentype'),
+		     url('../fonts/Connections/connections_light-web.woff') format('woff'),
+			url('../fonts/Connections/connections_light-web.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:ConnectionsRegular;
+	src:url('../fonts/Connections/connections_regular-webd41d.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Connections/connections_regular-web.woff') format('woff'),
+	url('../fonts/Connections/connections_regular-web.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:ConnectionsBold;
+	src:url('../fonts/Connections/connections_bold-webd41d.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Connections/connections_bold-web.woff') format('woff'),
+	url('../fonts/Connections/connections_bold-web.ttf') format('truetype');
+}
+
+
+
+/*END Mobile 7.0 fonts */
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgb(209 209 209 / 80%);
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 50%);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+body {
+	background: #FFF;
+	color: #000;
+	font-family: "SFDisplayReg", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1),
+       only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-width: 1024px) and (max-device-width: 1366px)and (-webkit-min-device-pixel-ratio: 2){
+ body {
+                background: #FFF;
+                color: #000;
+                font-family: "SFDisplayReg", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+                margin: 0;
+                overflow-x: visible;
+              overflow-y: visible;
+             overflow: auto;
+                -webkit-overflow-scrolling: touch;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;
+                -webkit-text-size-adjust: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+   }
+  }
+
+/*BEGIN Language toggle*/
+body.english .spanish, body.english span.spanish {
+	display: none!important;
+}
+body.spanish .english, body.spanish span.english {
+	display: none!important;
+}
+body.english .english, body.english span.english {
+	visibility: visible;
+}
+body.spanish .spanish, body.spanish span.spanish{
+	visibility: visible;
+}
+/*END Language toggle*/
+
+/*BEGIN Animations*/
+.fadeIn {
+    animation-name: FadeIn;
+    animation-timing-function: ease-out;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+@keyframes FadeIn {
+    0% {  opacity: 0;  }
+    100% { opacity: 1; }
+}
+@keyframes FadeOut {
+    0% {  opacity: 1; }
+    100% { opacity: 0; }
+}
+/*END Animations*/
+ 
+/*---- jQuery fixes ---- */
+body.ui-mobile-viewport, div.ui-mobile-viewport {
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.ui-mobile .ui-page {
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+}
+.ui-panel-wrapper {
+	overflow-y: scroll;
+}
+.ui-content {
+	padding: 0 !important;
+}
+.ui-body-c, .ui-body-c .ui-link {
+	font-weight: normal;
+	text-shadow: none !important;
+}
+/* */
+
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: ""
+}
+blockquote, q {
+	quotes: "" ""
+}
+/* LINKS
+-------------------------------------------------------------- */
+a {
+	/*color: #4072AA;*/
+	color: #0052C2;
+	font-weight: inherit;
+	text-shadow: none;
+	text-decoration: none;
+}
+a img {
+	border: 0;
+}
+:focus {
+	outline: 0;
+}
+/* */
+
+ol {
+	list-style-type: decimal!important;
+	list-style: inside;
+	padding: 1% 5%;
+}
+ol li {
+	list-style-type: decimal;
+	margin-bottom: 10px;
+}
+ul {
+	list-style: none;
+}
+h1 {
+	color: #FFF;
+	display: block;
+	font-size: 20px;
+	margin: .4em auto;
+	max-width: 160px;
+	outline: 0 none!important;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-shadow: 0 -1px 0 #444!important;
+	white-space: nowrap;
+}
+/* Changes made to font-size, color, 
+text-transform and antialising added */
+
+.header > h1 {
+    color: #e31837;
+}
+
+h2, .content_bg h2, .panel h2 {
+	font-family: "SFDisplayReg", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	color: #6D6D72;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+	text-shadow: none;
+	margin: 0 0 0 15px;
+	overflow: hidden;
+	line-height: 35px;
+	width: 100%;
+}
+.content_bg ul.max_style h2 {
+	line-height: normal;
+	margin:0;
+}
+body.android h2, body.android .content_bg h2, body.android .panel h2 {
+	font-family: SFDisplayReg;
+	font-size: 13px;
+	color: #6D6D72;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+	text-shadow: none;
+	margin: 0 0 0 15px;
+	overflow: hidden;
+	line-height: 35px;
+}
+h2 img {
+	vertical-align: middle;
+	padding-right: 9px;
+	padding-bottom: 3px;
+	float: left;
+	padding-top:10px;
+}
+h2 span {
+	display: inline-block;
+	margin-top: 6px;
+}
+
+/* End Change */
+/* h2:first-child {
+	margin: 0 0 8px 10px;
+} not sure what pages this styling affects but commenting it out because it's getting in the way of new styles for web app simulator 7.0 */
+
+h3 {
+	color: #969696;
+	font-size: 14px;
+	line-height: 1.1em;
+	margin: 15px 0 8px 10px;
+	text-shadow: 0 1px 0 #fff;
+}
+table { /* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+sup {
+	vertical-align: super;
+	font-size: 9px;
+}
+
+/*BEGIN page titles */
+.title.wordy {
+	font-size: 17px!important;
+	margin-top: -5px;
+}
+.title.progress_meter_on { margin-top:25px!important; }
+/*END page titles */
+
+/* Begin Truncation  */
+
+.truncate {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title.truncate {
+  width: 190px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+/* End Truncation  */
+
+/* BEGIN Progress Bar */
+.progress_bar {
+	display: block;
+	height: 8px;
+	width: 114px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 20px;
+}
+.progress_bar[length="2"] {
+	width: 76px;
+}
+.progress_bar[length="3"] {
+	width: 114px;
+}
+.progress_bar[length="4"] {
+	width: 152px;
+}
+.progress_bar[length="5"] {
+	width: 190px;
+}
+.progress_bar[length="6"] {
+	width: 228px;
+}
+.progress_bar div.step {
+	display: block;
+	float: left;
+	height: 8px;
+	width: 36px;
+	border-bottom: none;
+}
+.progress_bar div.step svg {
+	background: url(../../images/icons/max/icon_step_inactive.svg) no-repeat 0 0;
+    height: 16px;
+    width: 36px;
+}
+.progress_bar div.step.on svg {
+	background: url(../../images/icons/max/icon_step_active.svg) no-repeat 0 0;
+}
+/* END Progress Bar */
+
+/* BEGIN Alerts*/
+.alert_box_black {
+	background-color: #000;
+	padding: 10px 4px 10px 4px;
+	width: 100%;
+	color: #fff;
+}
+.alert_box_black svg {
+	height: 24px;
+	margin-top: -12px;
+	top: 50%;
+	vertical-align: bottom;
+	width: 24px;
+	margin-right: 10px;
+}
+.alert_box_black .svg_white svg.icon_mark_check_narrow_black {
+	width: 18px;
+	height: 18px;
+	margin-right: 0px;
+}
+.alert_box_black .svg_white {
+	background-color: #ffffff;
+	padding: 2px 4px;
+	margin: -4px 10px 0 0;
+}
+
+.success_info_msg {
+	background: #0e0e0e;
+	opacity: .9!important;
+	display: block;
+	padding: 10px 0 15px;
+	position: static;
+}
+.alert_box_blue {
+	background-color: #ecf6fd;
+	padding: 10px 4px 10px 4px;
+	width: 100%;
+	color: #fff;
+}
+
+/* END Alerts*/
+
+
+/*-------- BEGIN SEGMENT CONTROLS for header and footer-------- */
+.has_segment_controls {  /*This is reserved for pages with their own segment controls*/
+}
+
+.segment_controls_placeholder {
+	display: none;
+}
+
+#dashboard .segment_controls_placeholder {
+	background-color:#fff;
+}
+
+.has_segment_controls .segment_controls_placeholder {  /*This is reserved for pages with their own segment controls*/
+	clear:both;
+	display: block;
+	height:48px;
+}
+
+.segment_controls_fixed {
+	display: block;
+	position: fixed;
+	background-color:transparent;
+	top: 60px;
+	width: 100%;
+	padding: 14px 14px;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: 100;
+}
+
+.segment_controls_fixed.hidden {
+	display: none!important;
+}
+.segment_controls {
+	text-align: center;
+/*	margin-left: 3%;*/
+}
+.segment_controls.two_controls {
+	margin-left: 25%;
+}
+
+.segment_controls.two_controls.wide {
+	margin-left: 0;
+}
+
+.segment_controls.wide {
+	margin-left: 1%;
+}
+
+.segment_controls.two_controls.wide a {
+	width: 50%;
+}
+
+.segment_controls.wide a {
+	width: 49%;
+}
+
+.segment_controls a {
+	display: inline-block;
+	float: left;
+	background-color: #ffffff;
+	color: #646464;
+	margin-left: 0;
+	font-size: 17px;
+	line-height: 25px;
+	height: 30px;
+	min-width: 33.3%;
+	padding-top:2px;
+}
+.segment_controls a.left_control {
+	border-bottom: 2px solid #646464;
+/*	border-radius: 4px 0 0 4px;
+	border: 1px solid #0052c2;*/
+}
+a.left_control.fico {
+    width: 40%;
+}
+.segment_controls a.center_control {
+	margin-left: 0;
+	border-bottom: 2px solid #e31837;
+/*	border-top: 1px solid #0052c2;
+	border-bottom: 1px solid #0052c2;*/
+}
+.segment_controls a.right_control {
+	margin-left: 0;
+	border-bottom: 2px solid #646464;
+/*	border-radius: 0 4px 4px 0;
+	border: 1px solid #0052c2;*/
+}
+.segment_controls a.right_control.fico {
+    width: 59%;
+}
+.segment_controls a.current_page {
+/*	background-color: #0052C2;*/
+	color: #e31837 !important
+}
+/*-------- BEGIN SEGMENT CONTROLS for header and footer-------- */
+
+
+.continue_area {
+	background-color: #fff !important;
+	bottom: 0px;
+	height: 80px;
+	clear: both;
+	padding: 10px 3px;
+	box-sizing: border-box;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 100;
+}
+.continue_area.fico {
+    padding: 10px 5px;
+}
+.no_footer[data-role="footer"] {
+	display: none!important;
+	height: 0!important;
+}
+.page_bg {
+	background: transparent !important;
+	min-height: 490px;
+}
+/*Dislaimer*/
+.disclaimer {
+	position: absolute;
+	bottom: 5px;
+	font-size: 8px;
+	padding: 0 5px;
+	width: 100%;
+	box-sizing: border-box;
+    margin-bottom: 40px;
+	/*margin-left: 2%;
+	margin-right: 2%;*/
+}
+.bottom_40 div.disclaimer {
+	bottom: 40px;
+}
+.bottom_60 div.disclaimer {
+	bottom: 60px;
+}
+.bottom_70 div.disclaimer {
+	bottom: 70px;
+}
+.bottom_80 div.disclaimer {
+	bottom: 80px;
+}
+.content_flow div.disclaimer {
+	position: relative;
+	margin-top: 30px;
+    margin-bottom: 40px;
+}
+.disclaimer svg {
+	width: 12px;
+	height: 12px;
+}
+/*END Footer */
+
+
+
+/* PANEL DESIGN
+-------------------------------------------------------------- */
+.panel, .content_bg {
+	background: #FAFAFA; /* bkg color changed */
+	bottom: 0;
+	position: absolute;
+	top: 88px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-ms-touch-action: pan-y;
+}
+
+.content_bg.content_erica_search_header {
+	top: 150px;
+}
+
+body.android .panel, body.android .content_bg {
+	background: #EEE; /* bkg color changed */
+}
+
+body.android .panel.background_white, body.android .content_bg.background_white {
+	background: #FFF; /* bkg color changed */
+}
+
+div.panel {
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Max Style Boxes */
+.max_box {
+    background-color: #fff;
+    color: #000;
+    margin: 0 8px;
+    padding: 20px 10px;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+.max_box.no_padding {
+    padding: 0;
+}
+
+/* 2 column Cards */
+
+.max_card_left {
+	float: left;
+	display: block;
+    width: 87px;
+    height: 87px;
+    margin: 5px;
+    overflow: hidden;
+}
+.max_card_right {
+    float: left;
+    width: 195px;
+    color: #646464!important;
+    font-size: 14px;
+	line-height: 19px;
+	margin: 5px 0 0 15px;
+}
+.max_card_right strong {
+    font-size: 17px;
+}
+
+
+/* LISTS
+-------------------------------------------------------------- */
+ul, fieldset {
+	background-color: #FFF;
+	border: 2px solid #C8C7CC;
+	font-size: 12px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+ 
+.content_bg ul, .panel ul {
+	background-color: #fff!important;
+	border: none;
+	border-top: 1px solid #C8C7CC;
+	border-bottom: 1px solid #C8C7CC;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	padding-left: 15px;
+	position: relative;
+	font-weight: normal;
+}
+ 
+/* .max_style */ 
+.content_bg ul.max_style, .panel ul.max_style {
+	background-color: #fff!important;
+	/*border: 1px solid #C8C7CC;*/
+	border: none;
+	list-style: none outside none;
+	margin: 0 8px;
+	padding: 0;
+	padding-left: 15px;
+	position: relative;
+	font-weight: normal;
+	-webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+	box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+	border-radius: 12px;
+}
+.content_bg ul.max_style {
+    margin: 15px 4.1% 0;
+}
+.content_bg ul.max_header {
+    background-color: #fff!important;
+    border: none;
+    list-style: none outside none;
+    margin: 25px 4.1% 0;
+    padding: 0;
+    position: relative;
+    font-weight: normal;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.12);
+    border-radius: 12px;
+}
+ul.max_header li:first-child {
+    border: unset;
+    padding: 0;
+    border-radius: 12px 12px 0 0;
+}
+h2.max_header, .content_bg h2.max_header {
+    font-size: 13px;
+    line-height: unset;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+    padding: 15px 0 0 15px;
+    overflow: hidden;
+    width: unset;
+    margin: 0;
+}
+ul.max_header li:not(:first-child) {
+    padding-left: 15px;
+}
+li.max_box_footer a div {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+	color: #0052C2;
+}
+.content_bg ul li.max_box_footer, .panel ul li.max_box_footer {
+    padding: 13px 0;
+}
+/*#accounts ul.greetings {
+	margin-top:75px;
+}*/
+
+body.android #accounts ul.greetings {
+	margin-top:10px;
+}
+
+.content_bg.ui-content h2:first-child + ul.li_tall {
+	padding: 18px;
+}
+.content_bg.ui-content h2:first-child + ul.menu_promo {padding: 2.6% 4%;}
+body.android .content_bg.ui-content h2:first-child + ul.menu_promo { 
+	padding: 2.6% 1%; 
+	border: none!important;
+}
+
+.content_bg.ui-content h2:first-child + ul.li_tall li:first-child, .content_bg.ui-content h2:first-child + ul.menu_promo li:first-child {
+	padding: 0;
+}
+
+body.android .content_bg.ui-content h2:first-child + ul.menu_promo li:first-child {
+	padding: 0;
+	border-bottom: none!important;
+}
+
+
+body.android ul.menu_promo.apple {
+	display: none;
+}
+
+ul.menu_promo_android {
+	display: none;
+}
+
+body.android ul.menu_promo_android {
+	display: block;
+	min-height: 100px;
+}
+
+body.android ul.menu_promo_android ul {
+	text-align:center;
+}
+
+body.android ul.menu_promo_android li {
+	padding: 10px 15px 20px 15px!important;
+}
+
+body.android div.feature_left_side {
+	display: inline-block;
+	min-width: 49%;
+	min-height: 91px;
+	background: url('../../images/feature_left_side.png') no-repeat 0 0;
+	background-size: 100% 100%;
+}
+
+body.android div.feature_right_side {
+	display: inline-block;
+	min-width: 49%;
+	min-height: 91px;
+	margin-left: 1%;
+	background: url('../../images/feature_right_side.png') no-repeat 0 0;
+	background-size: 100% 100%;
+}
+
+/*BEGIN Android Media Image swaps */
+@media only screen and (min-device-width : 412px) and (max-device-width : 736px) and (orientation : portrait) {
+
+body.android div.feature_left_side {
+	min-height: 105px;
+}
+
+body.android div.feature_right_side {
+	min-height: 105px;
+}
+
+}
+
+.content_bg.ui-content h2:first-child + ul.menu_promo li a {padding: 0!important;}
+
+.content_bg ul.features {
+	overflow: hidden;
+	padding: 0;
+}
+
+body.android .content_bg ul.features {
+	border: none!important;
+    -webkit-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+	border-radius: none!important;
+	-moz-border-radius: none!important;
+	-webkit-border-radius: none!important;
+}
+
+.content_bg ul.features, .content_bg ul.features li {
+	border: none;
+}
+.content_bg ul.features li {
+	padding: 0;
+	margin-left: 15px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+body.android .content_bg ul.features li {
+	border: none!important;
+	padding: 0!important;
+	border-radius: none!important;
+}
+
+.content_bg ul.features li:first-child {
+	margin-left: 0;
+}
+.content_bg ul.features figure {
+	background: /*#efeff4*/ #EDE7DD;
+	text-align: center;
+	width: 165px;
+	padding-top: 21px;
+	border-radius: 5.35px;
+	box-sizing: border-box;
+	min-height: 100px;
+}
+body.android .content_bg ul.features figure {
+	border-radius: 0!important;
+	width: 158px;
+}
+
+.content_bg ul.features li + li figure {padding-top: 10px;}
+
+/*.content_bg ul.features figure img {
+	border-radius: 5.35px 5.35px 0 0;
+}*/
+.content_bg ul.features figcaption {
+	min-height: 56px;
+	color: /*#857363*/ #000;
+	font-weight: bold;
+	font-size: 13px;
+	box-sizing: border-box;
+  /*border: 1px solid #cacfd5;*/
+	border-radius: 5.35px;
+	border-top: none;
+	width: 165px;
+	padding: 8px 12px;
+}
+
+body.android .content_bg ul.features figcaption {
+	border-radius: 0!important;
+}
+
+.content_bg ul li, .content_bg .row, .content_bg .row_no_underline, .panel ul li, .panel .row, .panel .row_no_underline {
+	border-bottom: 1px solid #C8C7CC;
+	padding: 13px 15px 6px 0;
+	position: relative;
+}
+.content_bg ul.li_tall li {
+	padding: 11px 20px 11px 0;
+	overflow: hidden;
+}
+
+/* REMOVED FOR 7.4
+.content_bg ul.li_tall li a {
+	padding: 10px 0px 10px 0;
+	margin: -10px 0px -10px 0px;
+}
+*/
+.content_bg .row_no_underline, .panel .row_no_underline {
+	border-bottom: none!important;
+}
+.row_no_underline {
+	border-bottom: none;
+}
+.row_short {
+	padding: 6px 0!important;
+}
+.row.short, .row_no_underline.short {
+	padding: 4px 6px !important;
+}
+.row_thin_underline {
+	border-bottom: 1px solid #C8C7CC !important;
+	border-bottom: 1px solid #C8C7CC;
+	padding: 10px 6px;
+	position: relative;
+	-webkit-border-radius: 0!important;
+	-moz-border-radius: 0!important;
+}
+ul li, .row {
+	border-bottom: 1px solid #C8C7CC;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+ul li a, .row a {
+	background-clip: border-box;
+	color: #0073CF /*!important*/;
+	display: block;
+	line-height: auto;
+	padding: 12px 10px;
+	text-align: left;
+	text-decoration: none;
+	text-overflow: ellipsis;
+}
+
+ul.no_bottom_underline {
+	border-bottom: none;
+}
+
+.content_bg ul li:last-child, .panel ul li:last-child {
+	border-bottom: none;
+}
+div .row:last {
+border-bottom:none
+}
+.active {
+	background: url('../../images/icons/icon_check_green_16px.png') right center no-repeat;
+}
+.content_bg ul li a, .panel ul li a, .panel .row a, .panel .row_no_underline a, div [data-role="popup"] .row a, .content_bg .row a, .content_bg .row_no_underline a {
+	background: url('../../images/buttons/chevron_hdpi_new%402x.png') no-repeat scroll right center transparent;
+	background-size: 8px 13px;
+	background-clip: border-box;
+	/*color: #0073CF;*/
+	/* color: #0052C2; */
+	color: #0053C2; /*  Royal One - The royal-one token is the primary interactive color in the Helix visual language. It is used in interactive links, buttons and navigational elements */
+	display: block;
+	font-size: 17px;
+	overflow: hidden;
+	padding: 3px 5px 3px 0;
+	text-align: left;
+	text-decoration: none;
+	text-overflow: ellipsis;
+}
+.content_bg ul li span.bill_type {
+	width: 50%;
+	float: left;
+	font-size: 17px;
+	color: #857363;
+}
+.content_bg ul li a span.pay_mark {
+	font-size: 13px;
+}
+.content_bg ul li a span.amount, .content_bg ul li a span.pay_mark {
+	text-align: right;
+}
+.content_bg ul li a span {
+	color: #000;
+}
+.content_bg .max_style li {
+    font-size: 17px;
+}
+.content_bg ul.max_style li a {
+    color: #000;
+}
+.content_bg ul.max_style li a span {
+    color: #000;
+}
+.content_bg ul li span.credit_card, .content_bg ul li span.date_due {
+	font-size: 12px;
+}
+.content_bg ul li span.date_due {
+	font-family: SFDisplayBold;
+}
+body.android .content_bg ul li span.date_due {
+	font-family: RobotoBold; /*Android */
+}
+.content_bg ul li a .button, .content_bg ul li a .button:first-child {
+	text-align: center;
+	color: #FFF;
+	font-size: 13px;
+	background: #0052C2;
+	border-radius: 5.35px;
+	min-height: 29px;
+	box-sizing: border-box;
+	padding: 6px;
+	width: 100%;
+	display: block;
+}
+.content_bg .row a, .content_bg .row_no_underline a {
+	padding: 5px 5px 5px 0;
+}
+.content_bg .row a span {
+	display: block;
+}
+.row.destination:active {
+	background-clip: border-box;
+	background-color: #017CC2;
+	color: #fff!important;
+}
+.no_arrow, li.no_arrow a {
+	background: none!important;
+}
+.content_bg ul.no_carat li a, .panel ul.no_carat li a {
+	background-image: none!important;
+}
+.content_bg .row a.no_bullet:active {
+	margin: -8px -6px;
+	padding: 8px 6px;
+}
+.content_bg ul li a.no_bullet, .content_bg .row a.no_bullet, .panel ul li a.no_bullet {
+	background-image: none;
+}
+.content_bg p, .panel p {
+	margin: 15px;  /*changed from margin: 15px 0 20px 14px by BM */
+	text-shadow: none;
+}
+
+/* LEGAL COPY
+-------------------------------------------------------------- */
+.legal_copy {
+}
+.legal_copy p, .legal_copy ul.bullet-list {
+	background: transparent!important;
+	border: none;
+	color: #666;
+	font: normal 11px Arial;
+	margin: 15px 0;
+}
+.legal_copy p + ul {
+	margin-top: 0 !important;
+}
+.legal_copy ul.bullet-list li {
+	border: none;
+	font-weight: bold;
+	margin-left: 30px;
+	padding-top: 0;
+}
+/* WIDGETS
+-------------------------------------------------------------- */
+fieldset {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	border: 1px solid #C8C7CC;
+	border-radius: 10px;
+	padding: 12px 6px;
+}
+fieldset > label {
+	position: absolute;
+	margin: 16px 0 0 6px;
+	font-size: 15px;
+	color: #C8C7CC;
+	width: 5em;
+	text-align: left;
+}
+fieldset.blank {
+	background-color: #E8E8E9!important;
+	width: 302px;
+	left: 8px;
+}
+fieldset.blank input {
+	background-color: #fff;
+	height: 44px;
+}
+input:not([type|="submit"]):not([type|="radio"]):not([type|="checkbox"]), input.passcodes {
+	box-shadow: none !important;
+	box-sizing: border-box!important;
+	border: none;
+	color: #ccc;
+	font-size: 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+input.location_field {
+	background: #fff url('https://www.bankofamerica.com/banking-information/error-page-en.html') no-repeat 4px 3px;
+	padding-left: 52px!important;
+	background-size: 50px auto;
+}
+input.value, input.text, input.passcodes {
+	background: transparent;
+	padding-left: 9px!important;
+}
+input.strategy {
+	background-image: none;
+	background-color: #fff!important;
+	border: 1px solid #C6BFB6;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	box-shadow: none!important;
+	color: #938671!important;
+	font: normal 14px arial;
+	height: 32px;
+	margin: 0;
+	padding: 8px!important;
+}
+.input_field input {
+	border: none !important;
+	background: transparent;
+	color: #333 !important;
+	font: 14px arial;
+	height: 28px;
+	padding: 5px 0 0 5px;
+}
+div.search2 {
+	padding: 15px;
+}
+input.search2 {
+	height: 40px;
+	line-height: 1;
+	position: relative;
+	width: 100%;
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #e5e1d9;
+	border-radius: 8px;
+	box-sizing: border-box;
+	font-size: 1.125em;
+	font-size: 16px;
+	margin: 0;
+	padding-left: 35px !important;
+	color: #675b47 !important;
+}
+div.search2 svg {
+	display: block;
+	height: 25px;
+	left: 25px;
+	top: 22px;
+	opacity: 0.6;
+	position: absolute;
+	width: 22px;
+}
+.cursor_default {
+	cursor: default;
+}
+.content_bg ul li, .content_bg .row, .panel .row, .panel ul li.as_button {
+	border-bottom: 1px solid #D8D8D8;
+}
+.content_bg .row_no_underline, .panel .row_no_underline {
+	border-bottom: none;
+}
+.content_bg ul.alert_setting li a, .content_bg ul.no_carat li a, .content_bg ul li.no_carat, .panel ul.alert_setting li a, .panel ul.no_carat li a, .panel ul li.no_carat {
+	background-image: none!important;
+}
+.panel ul li.as_button a {
+	background-image: none!important;
+	text-align: center;
+	color: #017CC2!important;
+}
+/*USE THIS ONLY FOR iPHONE HOme Screen Mockups */
+#iPhone_home .panel, #iPhone_home_2-3 .panel, #iPhone_home_step2 .panel, #iPhone_home_4-3 .panel, #iPhone_home_4-4 .panel, #set_touch_login_pre .panel, #set_touch_login_post .panel {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+}
+/*USE THIS ONLY FOR iPHONE HOme Screen Mockups */
+
+
+.content_bg .row, .content_bg .row_no_underline {
+	/*padding: 8px 6px 8px 6px;*/
+	padding: 6px 15px 6px 0;
+	clear: both;
+}
+.content_bg .row {
+	border-bottom: 1px solid #C8C7CC;
+}
+.question_block {
+	background-color: #EF9D3B;
+}
+.info_block {
+	background-color: #0B7DC1;
+}
+.panel ul li a, .panel .row a, .panel .row_no_underline a {
+	background: url('../../images/buttons/chevron_hdpi_new%402x.png') no-repeat scroll right center;
+	background-size: 8px 13px;
+}
+.panel ul li a.background_none {
+	background: none !important;
+}
+
+.panel ul li.button_plus_sign a {
+	background: url('../../images/buttons/button_plus_sign.png') no-repeat scroll right center;
+	background-size: 8px 13px;
+}
+
+/* Bullet List-------------------------------------------------------------- */
+.content_bg  ul.bullet-list {
+	list-style-type: square;
+	border: none;
+	float: left;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
+}
+ul.bullet-list li {
+	list-style-type: square;
+	border: none;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	background-color: transparent !important;
+}
+/* CHECK LIST
+-------------------------------------------------------------- */
+.check-list {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0 10px 0 10px;
+}
+.check-list div {
+	padding-left: 40px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.check-list .check {
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	display: inline-block;
+	height: 22px;
+	left: 0;
+	padding: 2px;
+	position: absolute;
+}
+.check-list .check svg {
+	background: #2182cb none repeat scroll 0 0;
+	border-radius: 4px;
+	height: 16px;
+	padding: 3px;
+	width: 20px;
+}
+.check-list .check svg path {
+	fill: #fff;
+}
+
+/* ON/OFF Text Toggle
+-------------------------------------------------------------- */
+.text_toggle_left_side {
+    width: 60%;
+}
+.text_toggle_on {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #00ad51;
+}
+.english.text_toggle_on::after {
+    content: "ON";
+}
+.text_toggle_off {
+    float: right;
+    margin-right: 10px;
+    margin-top: 13px;
+    color: #666;
+}
+.english.text_toggle_off::after {
+    content: "OFF";
+    position: relative;
+    top: -3px;
+}
+
+/* GLOBAL FOOTER MENU-------------------------------------------------------------- */
+*[data-role="page"][footer-menu="true"] div[data-role="content"] {
+	bottom: 50px !important;
+}
+*[data-role="page"][footer-menu="true"] .continue_area {
+	bottom: 18px !important;
+}
+
+/*BEGIN iPhone 6 Media Image swaps 
+@-ms-viewport {
+  width: 375px;
+  height: 667px;
+}
+*/
+/*BEGIN iPhone 6s Plus Media Image swaps */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (device-width : 414px) and (device-height : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 3) and (-webkit-device-pixel-ratio : 3) {
+}

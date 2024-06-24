@@ -1,0 +1,330 @@
+/* CSS Document */
+svg.icon_circle_x_white {
+	background: url("../../images/icons/new/circle_x_white.svg") no-repeat 0 0;
+	fill: #ffffff; }
+svg.icon_circle_x {
+	background: url("../../images/icons/new/circle_x.svg") no-repeat 0 0; }
+svg.icon_exclamation {
+	background: url("../../images/icons/new/icon_exclamation.svg") no-repeat 0 0; }
+svg.icon_mark_check_narrow_black {
+	background: url("../../images/icons/new/mark_check_narrow_black.svg") no-repeat 0 0; }
+svg.icon_mark_check_narrow {
+	background: url("../../images/icons/new/mark_check_narrow.svg") no-repeat 0 0; }
+svg.icon_arrow_right_black {
+	background: url("../../images/icons/new/icon_arrow_right_black.svg") no-repeat 0 0; }
+svg.icon_arrow_right_blue {
+	background: url("../../images/icons/new/icon_arrow_right_blue.svg") no-repeat 0 0; 
+}	
+.icon_check_white_bg {
+	background: url('../../images/icons/icon_check_white_bg.png') no-repeat 0 0; }
+.icon_exclamation_black_bg {
+	background: url('../../images/icons/icon_exclamation_black_bg.png') no-repeat 0 0; }
+svg.icon_plus_blue {
+	background: url("../../images/icons/new/icon_plus_blue.svg") no-repeat 0 0; }
+svg.icon_check_green {
+	background: url("../../images/icons/new/icon_check_green.svg") no-repeat 0 0; }
+svg.icon_mark_check_narrow_blue {
+	background: url("../../images/icons/new/mark_check_narrow_blue.svg") no-repeat 0 0; }
+.icon_call_center {
+	background: url("../../images/icons/new/icon_call_center.png") no-repeat 0 0; }
+
+svg.svg_icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: -12px;
+    top: 50%;
+    vertical-align: bottom;
+}
+
+.icon_find_location {
+	display: block;
+	height:35px;
+	width:20px;
+	background: url("../../images/icons/new/icon_find_location.png") no-repeat 0 0; }
+	
+.icon_mobile_app {
+	display: block;
+	height:35px;
+	width:20px;
+	background: url("../../images/icons/new/icon_mobile_app.png") no-repeat 0 0; }
+
+.icon_question_mark_16px {
+	width: 16px;
+	height: 16px;
+}
+.icons_20px {
+	display: block;
+	height:20px;
+	width:20px;
+}
+
+.icons_28px {
+	display: block;
+	height: 28px;
+	width: 28px;
+}
+.icons_36px {
+	display: block;
+	height: 36px;
+	width: 36px;
+}
+
+.icons_50px {
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+.icon_close_white_20px {
+	background: url('../../images/icons/icon_close_white_20px.png') no-repeat 0 0;
+}
+
+.icon_close_white {
+	background: url('../../images/icons/icon_close_white.png') no-repeat 0 0;
+}
+
+.icon_travel_notice {
+	background: url("../../images/icons/new/icon_travel_notice.png") no-repeat 0 0; }
+
+/*Begin icons */
+svg.icon_lock {
+	background: url("../../images/icons/new/icon_lock.svg") no-repeat 0 0; } /*also used in dislaimer */
+/*END Menu icons */
+
+/*BEGIN Disclaimer icons */
+svg.icon_housing {
+	background: url("../../images/icons/new/icon_housing.svg") no-repeat 0 0; }
+/*END Disclaimer icons */
+
+svg.icon_add_account {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_aim {
+	background: url("../../images/icons/new/icon_aim.svg") no-repeat 0 0; }
+svg.icon_alert_i {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_bell {
+	background: url("../../images/icons/new/icon_bell.svg") no-repeat 0 0; }
+svg.icon_bell_strike {
+	background: url("../../images/icons/new/icon_bell_strike.svg") no-repeat 0 0; }
+svg.icon_calendar {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_call_center {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_find_location {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_fingerprint {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_lock_key {
+	background: url("../../images/icons/new/icon_lock_key.svg") no-repeat 0 0; }
+svg.icon_marker {
+	background: url("../../images/icons/new/icon_marker.svg") no-repeat 0 0; }
+svg.icon_mobile_app {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_payment {
+	background: url("../../images/icons/new/icon_payment.svg") no-repeat 0 0; }
+svg.icon_phone_fingerprint {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_schedule_appointment {
+	background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0; }
+svg.icon_unpaid {
+	background: url("../../images/icons/new/icon_unpaid.svg") no-repeat 0 0; }
+svg.mark_check_narrow {
+	background: url("../../images/icons/new/mark_check_narrow.svg") no-repeat 0 0; }
+
+/*BEGIN OLD Menu */
+a.alerts svg { background: url("../../images/icons/new/icon_alerts.svg") no-repeat; }
+a.help svg { background: url("../../images/icons/new/icon_help.svg") no-repeat; }
+a.contact_us svg{ background: url("../../images/icons/new/icon_contact.svg") no-repeat; }
+a.locations svg { background: url("../../images/icons/new/icon_location.svg") no-repeat; }
+a.profile svg { background: url("../../images/icons/new/icon_settings.svg") no-repeat; }
+a.feedback svg { background: url("../../images/icons/new/icon_feedback.svg") no-repeat; }
+a.legal svg { background: url("../../images/icons/new/icon_legal.svg") no-repeat; }
+a.bankamerideals svg { background: url("../../images/icons/new/icon_deals.svg") no-repeat; }
+/*END OLD Menu */
+
+.icon_arrow_red, .icon_arrow_grey {
+	display: inline-block;
+	width: 12px;
+	height: 6px;
+}
+.icon_arrow_red.direction_down { background: url("../../images/icons/icon_arrow_red_down.png") no-repeat; }
+.icon_arrow_red.direction_up { background: url("../../images/icons/icon_arrow_red_up.png") no-repeat; }
+.icon_arrow_grey.direction_up { background: url("../../images/icons/icon_arrow_grey_up.png") no-repeat; }
+.icon_arrow_grey.direction_down { background: url("../../images/icons/icon_arrow_grey_down.png") no-repeat; }
+
+.icon_check_black {
+	background: url('https://www.bankofamerica.com/banking-information/error-page-en.html') no-repeat scroll 0 0 transparent;
+	background-size: 24px 24px;
+	height: 24px;
+	position: relative;
+	top: -2px;
+	width: 32px
+}
+
+.icon_atm {
+	background: url('../../images/icons/icon_atm.png') no-repeat 0 0;
+	background-size: 51px 51px;
+}
+
+.icon_carat {
+	background: url('../../images/buttons/chevron_hdpi.png') no-repeat scroll 6px 4px #fff;
+	background-size: 28px auto
+}
+
+.icon_check_green_bright {
+	position: relative;
+	background: url('../../images/icons/icon_check_green_bright.png') 0 0 no-repeat;
+	background-size: 25px 25px;
+	height: 30px;
+	width: 30px;
+	top: -2px;
+}
+
+.icon_check_green_bright.large {
+	position: relative;
+	background: url('../../images/icons/icon_check_green_40.png') 0 0 no-repeat;
+	background-size: 40px 40px;
+	height: 40px;
+	width: 40px;
+	top: -2px;
+}
+
+.icon_check_green_bright.really_large {
+	position: relative;
+	background: url('../../images/icons/icon_check_green_40.png') 0 0 no-repeat;
+	background-size: 60px 60px;
+	height: 60px;
+	width: 60px;
+	top: -2px;
+}
+
+.icon_check_black { 
+ background: url("../../images/icons/icon_check_black.png") no-repeat scroll 0 0 transparent;
+ background-size: 24px 24px;
+ height: 24px;
+ position: relative;
+ top: -2px;
+ width: 32px;
+}
+
+.icon_check_blue { 
+ background: url("../../images/icons/icon_check_blue.png") no-repeat scroll 0 0 transparent;
+ /*background-size: 25px 25px;*/
+ height: 25px;
+ position: relative;
+ top: -2px;
+ width: 32px;
+ margin-bottom: -5px;
+}
+
+.icon_question_mark_16px {
+	width: 16px;
+	height: 16px;
+}
+
+/*END icons */
+/*
+.icon_banking_50px { background: url("/onlinebanking_demo/mobileApp_Simulator/images/icons/icon_banking_50px.png") no-repeat 0 0; }
+.icon_investing_50px { background: url("/onlinebanking_demo/mobileApp_Simulator/images/icons/icon_investing_50px.png") no-repeat 0 0; }
+.icon_home_loans_50px { background: url("/onlinebanking_demo/mobileApp_Simulator/images/icons/icon_home_loans_50px.png") no-repeat 0 0; }
+.icon_small_business_50px { background: url("/onlinebanking_demo/mobileApp_Simulator/images/icons/icon_small_business_50px.png") no-repeat 0 0; }
+*/
+
+.icon_banking_50px { background: url("../../images/icons/icon_everyday_banking_50px.jpg") no-repeat 0 0; }
+.icon_investing_50px { background: url("../../images/icons/icon_invest_retirement_50px.jpg") no-repeat 0 0; }
+.icon_home_loans_50px { background: url("../../images/icons/icon_home_loans_50px.jpg") no-repeat 0 0; }
+.icon_small_business_50px { background: url("../../images/icons/icon_small_biz_banking_50px.jpg") no-repeat 0 0; }
+
+.icon_location_pin_50px { background: url("../../images/icons/icon_location_pin_50px.png") no-repeat 0 0; }
+.icon_location_pin_2_50px { background: url("../../images/icons/icon_location_pin_2_50px.png") no-repeat 0 0; }
+.icon_phone_50px { background: url("../../images/icons/new/icon_phone_wireless.png") no-repeat 0 0;
+} /*New for 7.1*/
+.icon_calendar_50px { background: url("../../images/icons/icon_calendar_50px.png") no-repeat 0 0; }
+.icon_calendar_2_50px { background: url("../../images/icons/new/icon_calendar_2.png") no-repeat 0 0; }
+.icon_reminders_50px { background: url("../../images/icons/icon_reminders_50px.png") no-repeat 0 0; }
+
+.icon_clock { background: url("../../images/icons/icon_clock%402x.png") no-repeat 0 0; }
+
+
+.icon_info {
+	background: url("../../images/icons/icon_info%402x.png") no-repeat 0 0 ;
+	background-size: contain;
+	height:15px;
+	width:14px;
+}
+
+.icon_spending_wheel { /* updated for mobile surge */
+ background: url("../../images/icons/icon_spending_wheel.png") no-repeat 0 0;
+ background-size: 24px; 
+ border:none;
+ cursor: pointer;
+ float: left;
+ height: 26px;
+ margin: 0;
+ width: 26px;
+ z-index: 99;
+}
+.icon_spending_list { /* updated for mobile surge */
+ background: url("https://www.bankofamerica.com/banking-information/error-page-en.html") no-repeat 0 0;
+ background-size: 100%; 
+ border:none;
+ cursor: pointer;
+ float: left;
+ height: 24px;
+ margin: 10px 0 0 10px;
+ width: 24px;
+ z-index: 99;
+}
+
+
+  
+.change_phone.current,  li.month_changer_remote.current > div.check, li.atm_account.current {
+	 background: url("../../images/icons/icon_check_blue.png") no-repeat right center transparent!important;
+}
+
+.check {
+	background: url("../../images/icons/icon_check_blue.png") no-repeat 0 0 transparent;
+}
+.check_security_preference {
+	background: url("../../images/icons/icon_check_blue.png") no-repeat 95% 35% transparent;
+}
+
+
+li.banking_default.current > div.pointer_arrow_large, li.investing_default.current > div.pointer_arrow_large, li.home_loans_default.current > div.pointer_arrow_large {
+	display:block;
+	width:25px;
+	height:25px;
+	float:right;
+	margin-right: 15px;	
+	margin-top:-3px;
+   background: none;
+	 background: url("../../images/icons/icon_check_blue.png") no-repeat 0 0 transparent;
+}
+
+a.button_arrow_left_calendar {
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+	background: url('../../images/buttons/button_arrow_left_calendar.png') 0 0 no-repeat;
+}
+
+a.button_arrow_left_calendar.inactive {
+	background: url('../../images/buttons/button_arrow_left_calendar_grey.png') 0 0 no-repeat;
+}
+
+a.button_arrow_right_calendar {
+	float:right;
+	margin-top:5px;
+	margin-right:5px;
+	background: url('../../images/buttons/button_arrow_right_calendar.png') 0 0 no-repeat;
+}
+
+.popup_container .icon_arrow {
+	position: absolute;
+	display: block;
+	width:24px;
+	height:24px;
+	margin-top: 5px;
+	margin-left: 188px;
+   background: url("../../images/icons/icon_white_arrow_circle.png") no-repeat 0 0;
+}

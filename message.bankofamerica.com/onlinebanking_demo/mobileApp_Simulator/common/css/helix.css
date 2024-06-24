@@ -1,0 +1,75 @@
+/* colors */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --black-alt: #333333;
+    --gray: #646464;
+    --gray-s05: #F5F5F5; /* Often used as an alternative background color to Tertiary. */
+    --secondary: #012169;
+    --royal-1: #0053C2; 
+    --royal-three-s05: #F2FAFD;
+    --secondary-three-dark: #207804;
+  }
+
+/* text tokens */
+
+.header-2 {
+    font-family: "SFProDisplaySemibold", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 29px;
+}
+.subtitle-1b {
+    font-family: "SFTextRegular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+}
+.caption-2 {
+    font-family: "SFTextRegular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    line-height: unset;
+    margin: 10px 0;
+    text-transform: unset;
+}
+.body-1 {
+    font-family: "SFTextRegular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: -0.15px;
+    line-height: 19px;
+    text-transform: unset;
+}
+.body-1b {
+    font-family: "SFTextRegular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: -0.15px;
+    line-height: 19px;
+    text-transform: unset;
+    font-weight: bold;
+}
+ /* new rounded blue-check checkbox */
+.helix_checkbox input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff; /* For iOS < 15 to remove gradient background */
+    margin: 0;
+}
+.helix_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    /* background-color: #336699; */
+    background: url(../../images/icons/helix/checkbox_off.svg) 0 0 no-repeat;
+  }
+  .helix_checkbox input:checked ~ .helix_checkmark {
+    background: url(../../images/icons/helix/checkbox_on.svg) 0 0 no-repeat;
+  }
+  label.helix_checkbox {
+    position: relative;
+    clear: both;
+    padding: 0 35px;
+}

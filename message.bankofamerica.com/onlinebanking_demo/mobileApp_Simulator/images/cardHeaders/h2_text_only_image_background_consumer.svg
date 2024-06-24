@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="343px" height="50px" viewBox="0 0 343 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>cardHeaders/h2_text_only_image_background_consumer@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,0 L331,0 C337.627417,-1.21743675e-15 343,5.372583 343,12 L343,50 L0,50 L0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-1"></path>
+        <linearGradient x1="45.5933029%" y1="46.5906732%" x2="75.9605197%" y2="70.0887658%" id="linearGradient-3">
+            <stop stop-color="#DE193E" offset="0%"></stop>
+            <stop stop-color="#D4183A" stop-opacity="0.79" offset="4%"></stop>
+            <stop stop-color="#CB1736" stop-opacity="0.61" offset="7%"></stop>
+            <stop stop-color="#C31633" stop-opacity="0.44" offset="11%"></stop>
+            <stop stop-color="#BD1530" stop-opacity="0.31" offset="16%"></stop>
+            <stop stop-color="#B7142E" stop-opacity="0.19" offset="21%"></stop>
+            <stop stop-color="#B3142C" stop-opacity="0.11" offset="26%"></stop>
+            <stop stop-color="#B0132B" stop-opacity="0.05" offset="32%"></stop>
+            <stop stop-color="#AF132A" stop-opacity="0.01" offset="40%"></stop>
+            <stop stop-color="#AE132A" stop-opacity="0" offset="55%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="export-set-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons---IOS-Header-+-L1" transform="translate(-258.000000, -767.000000)">
+            <g id="cardHeaders/h2_text_only_image_background_consumer" transform="translate(258.000000, 767.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-5" fill="#F5F5F5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect id="Rectangle" fill="#AE132A" fill-rule="evenodd" mask="url(#mask-2)" x="-157" y="-79" width="500" height="272"></rect>
+                <path d="M-142,193 C-21.7742958,96.3399283 145.298183,-3.18327489 299.199492,-47 L343,-47 L343,193 L-142,193" id="Path" fill="url(#linearGradient-3)" fill-rule="evenodd" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

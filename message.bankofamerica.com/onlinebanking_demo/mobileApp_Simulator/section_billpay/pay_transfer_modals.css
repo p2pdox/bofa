@@ -1,0 +1,190 @@
+.modal_paybill_select {
+    bottom: -250px;
+    width: 100%;
+}
+.paytrans_modal_done {
+    width: 100%;
+}
+.paytrans_modal_done  a {
+    float:right;
+    margin: 15px;
+}
+.paytrans_modal_done  a:hover,
+.paytrans_modal_done  a:link,
+.paytrans_modal_done  a:visited {
+    color: rgb(0, 83, 194);
+}
+.paytrans_modal_done  a:active {
+    color: rgb(128, 168, 224);
+}
+.paytrans_modal_options {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    clear: both;
+    z-index: 100;
+    padding-bottom: 15px;    
+}
+.paytrans_modal_options h3 {
+    clear: both;
+    margin: 0 0 0 15px;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.37px;
+    font-family: SFProDisplaySemibold;
+    font-style: normal;
+    font-weight: 600;
+}
+.paytrans_modal_list a {
+    display:block;
+    margin: 10px 0 10px 5px;
+    padding: 15px 0 15px 50px;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    letter-spacing: -0.41px;
+    font-family: "SFProTextRegular";
+    font-style: normal;
+}
+.paytrans_modal_list a span {
+    font-size: 13px;
+    line-height: normal;
+    text-align: start;
+    color: rgb(100, 100, 100);
+    letter-spacing: -0.08px;
+    font-weight: 400;
+}
+/* .paytrans_modal_bofa {
+    background: url(/onlinebanking_demo/mobileApp_Simulator/images/icons/icon_bofa_paybill.svg) 0 center no-repeat;
+} */
+.paytrans_modal_billpay {
+    background: url(../images/icons/icon_billpay_paybill.svg) 0 center no-repeat;
+}
+
+/***********************************/
+/* modal_bofa_transfer_from styles */
+/***********************************/
+.modal_bofa_transfer_from, .modal_bofa_transfer_to {
+    bottom: -475px;
+    width: 100%;
+}
+.paytrans_modal_options h3 {
+    padding-bottom: 10px;
+}
+.paytrans_modal_bulletlist h5 {
+    font-size: 17px;
+    padding-left: 54px;
+}
+.paytrans_modal_bulletlist h5.bofa { background: url(../images/icons/flagscape.svg) 8px  0px no-repeat; }
+.paytrans_modal_bulletlist h5.merrill {  background: url(../images/icons/merrill_bull.svg) 14px 0px no-repeat; }
+.paytrans_modal_bulletlist a {
+    display:block;
+    margin: 10px 0 10px 15px;
+    padding: 6px 0 15px 40px;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    letter-spacing: -0.41px;
+    font-family: "SFProTextRegular";
+    font-style: normal;
+    border-bottom: 1px solid #D5D5D5;
+    background: url(../images/icons/radio-button-off.svg) 0 8px no-repeat; 
+}
+.paytrans_modal_bulletlist a.on {
+    background: url(../images/icons/radio-button-on.svg) 0 8px no-repeat; 
+}
+.paytrans_modal_bulletlist a span {
+    font-size: 13px;
+    line-height: normal;
+    text-align: start;
+    color: rgb(100, 100, 100);
+    letter-spacing: -0.08px;
+    font-weight: 400;
+}
+
+/*****************************/
+/* modal_bofa_transfer_details styles */
+/*****************************/
+.modal_bofa_transfer_details {
+    bottom: -475px;
+    width: 100%;
+}
+.modal_bofa_transfer_details .details_row{
+    margin: 0px 0 6px 0px;
+    padding: 10px 15px 9px 15px;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    font-family: "SFProTextRegular";
+    font-style: normal;
+}
+.modal_bofa_transfer_details .details_row {
+    clear: both;
+    border-bottom: 1px solid #D5D5D5;
+}
+.modal_bofa_transfer_details .details_row .float_right {
+    color: #999;
+}
+.modal_bofa_transfer_details .details_row .float_left {
+
+}
+
+
+/* Bill Pay Splitter Modal */
+ul.nbaa_list_style {
+    border: none;
+    list-style: none outside none;
+    padding: 0;
+    padding-left: 15px;
+    position: relative;
+    font-weight: normal;
+    clear: both;
+}
+ul.nbaa_list_style li {
+		/* margin: 10px 0 10px 15px;
+		 letter-spacing: -0.41px; */
+}
+ul.nbaa_list_style li.bofa {
+	background: url(../images/icons/icon_bofa_paybill.svg) 0 center no-repeat;
+}
+ul.nbaa_list_style li.merrill {
+	background: url(../images/icons/icon_merrill_paybill.svg) 0 center no-repeat;
+}
+.icon_other_payee {
+	background: url(../images/icons/icon_other_paybill.svg) 0 center no-repeat;
+}
+ul.nbaa_list_style  li a {
+	color: #000;
+    background: url(../images/buttons/chevron_hdpi_new%402x.png) no-repeat scroll right center transparent;
+    background-size: 8px 13px;
+    background-clip: border-box;
+    width: 80%;
+}
+ul.nbaa_list_style  li a span {
+    display: inline-block;
+    width: 95%;
+}
+.modal_paybill_select h4 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px 0 10px 15px;
+    float: left;
+}
+.billpay_splitter_modal_header a {
+    float: right;
+    margin: 20px 15px 0 0;
+    font-size: 14px;
+}
+ul.nbaa_list_style li.billpay_splitter_payee_links a {
+    font-size: 14px;
+    color: var(--royal-1);
+    background: none;
+    background-size: unset;
+    background-clip: unset;
+    width: 80%;
+}

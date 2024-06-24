@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 20:20:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<!-- Bank of America Mobile Simulator (iOS) v.24.02 -  3/2024 -->
+<!-- Experience Design Technologists: Derek Barton, Myquan Duong, Brian Murphy & Shams Shirley -->
+<title>Bank of America - Mobile</title>
+
+
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="stylesheet" href="common/css/jquery.mobile.custom.structure.min.css" />
+<script src="common/js/jquery-3.7.0.min.js"></script>
+<script src="common/js/jquery-ui.min.js"></script>
+<script src="common/js/jquery.scrollTo.min.js"></script>
+<script src="common/js/jquery.jcarousel.min.js"></script>
+<script src="common/js/onsenui.min.js"></script>
+<script src="common/js/knockout-3.5.0.js"></script>
+<script src="common/js/knockout-secure-binding.min.js"></script>
+<script src="common/js/knockout_viewmodel.js"></script>
+<script src="modules/menu/menu.js"></script>
+<script src="common/js/functions.js"></script>
+<script src="common/js/device_toggle.js"></script>
+<script src="modules/modals/modals.js"></script>
+<script src="modules/accordion/accordions.js"></script>
+<script src="modules/signin/signin.js"></script>
+<script src="common/js/jquery.maskedinput.js"></script>
+<script src="common/js/jquery.maskMoney.min.js"></script>
+<script src="common/js/touch_punch.js"></script>
+<script src="common/js/tealium_loader.js"></script>
+<script src="common/js/howler.core.js"></script>
+<script src="common/js/audio.js"></script>
+<script src="common/js/moment.min.js"></script>
+<script src="common/js/slick.min.js"></script>
+<script src="common/js/onsen_animations.js"></script>
+<script src="common/js/lottie.min.js"></script>
+<script src="common/js/ajax_each_section.js"></script>
+<script src="common/js/hammer_min.js"></script>
+<script src="common/js/html5shiv.min.js"></script>
+
+
+<link rel="stylesheet" href="common/css/styles.css" type="text/css" />
+<link rel="stylesheet" href="common/css/helix.css" type="text/css" />
+<link rel="stylesheet" href="common/css/styles_android.css" type="text/css" />
+<link rel="stylesheet" href="modules/header/header.css" type="text/css" />
+<link rel="stylesheet" href="common/css/buttons.css" type="text/css" />
+<link rel="stylesheet" href="common/css/icons.css" type="text/css" />
+<link rel="stylesheet" href="modules/menu/menu.css" type="text/css">
+<link rel="stylesheet" href="common/css/toolkit.css" type="text/css" />
+<link rel="stylesheet" href="modules/modals/modals.css" type="text/css" />
+<link rel="stylesheet" href="modules/accordion/accordions.css" type="text/css" />
+<link rel="stylesheet" href="common/css/onsenui-core.min.css">
+<link rel="stylesheet" href="common/css/onsen-css-components-modified.css">
+<link rel="stylesheet" href="section_erica/erica.css" />
+ 
+
+
+</head>
+<body data-role="none" class="english apple">
+
+<ons-navigator id="navigator" animation="fade">
+</ons-navigator>
+
+
+<!--BEGIN modal mask-->
+<div class="modalMask mask1"></div>
+<div class="modalMask mask2"></div>
+<div class="dark_overlay"></div>
+<!-- Confirm Cancel Modal for section_mobile_orders -->
+<div class="fc_confirm_cancel_group">
+	<div class="fc_confirm_cancel english">¿Estás seguro de que quieres cancelar?</div>
+	<div class="fc_confirm_cancel spanish">Are you sure you want to cancel?</div>
+	<div class="fc_yes_cancel english">Yes, Cancel</div>
+	<div class="fc_yes_cancel spanish">Sí, Cancelar</div>
+	<div class="fc_no_cancel">No</div>
+</div>
+
+<!-- Mobile Alerts Modal - accecpt yes/no -->
+<!--BEGIN Content for Modal Alerts remotely turning on-->
+<div class="modal_wrapper modal_alerts"> 
+  <!--BEGIN Modal Content-->
+  <div class="modal_content">
+      <div class="clear font_15px bold padding_15">"Bank of America" Would Like to<br />Send You Notifications</div>
+      <div class="clear font_14px padding_15">
+            <span class="english">Notifications may include alerts, sounds, and icons badges. These can be configured in Settings.</span>
+      <span class="spanish">Las notificaciones pueden incluir alertas, sonidos y globos. Pueden configurarse en la configuración de su dispositivo.</span></div>
+      <div class="clear border_top_1px_999"> 
+        <a class="blue font_14px modal_quick_alerts_on csp_closeModal csp_booYahTurnOn" href="#alerts_settings" toggleTarget="alerts_default">
+          <div class="float_right center font_14px padding_15 border_left_1px_999 variable_38">       
+            <span class="english"> OK </span>
+            <span class="spanish"> Aceptar </span> 
+          </div>
+        </a> <a class="blue font_14px csp_closeModal" href="#">
+        <div class="float_left center font_14px padding_15 variable_33">
+              <span class="english"> Don't Allow </span>
+      <span class="spanish"> No permitir </span></div>
+        </a> </div>
+  </div>
+  <!--END Modal Content--> 
+  
+</div>
+<!--END Content for Modal Alerts remotely turning on--> 
+
+<!--BEGIN Content for Modal Alerts turning on from Alerts General area-->
+<div class="modal_wrapper modal_alerts_general_toggle"> 
+  <!--BEGIN Modal Content-->
+  <div class="modal_content">
+      <div class="clear font_15px bold padding_15">"Bank of America" Would Like to Send You Push Notifications</div>
+      <div class="clear font_14px padding_15">Notifications may include alerts, sounds, and icons badges. These can be configured in Settings.</div>
+      <div class="clear border_top_1px_999"> 
+        <a class="blue font_14px modal_quick_alerts_on csp_closeModal" href="#alerts_settings_general" toggleTarget="alerts_settings_general">
+        <div class="float_right center font_14px padding_15 border_left_1px_999 variable_38"> OK </div>
+        </a> <a class="blue font_14px csp_closeModal" href="#">
+        <div class="float_left center font_14px padding_15 variable_33" > Don't Allow </div>
+        </a> </div>
+  </div>
+  <!--END Modal Content--> 
+  
+</div>
+<!--END Content for Modal Alerts turning on from Alerts General area--> 
+
+<!--BEGIN Content for Modal Alerts Off-->
+<div class="modal_wrapper modal_alerts_off center">
+  <ul class="padding_20">
+    <li class="color_191919 border_bottom_1px_999">
+      <div class="clear font_14px bold padding_10">Settings Will Be Lost</div>
+      <div class="clear font_14px padding_10">If you turn off notifications, you'll lose your current Mobile App Alert settings. You'll need to set them up again if you turn notifications back on.</div>
+    </li>
+    <li> <a class="red font_21px csp_resetAlerts" href="#alerts_settings">
+      <div class="center">Turn Off Notifications</div>
+      </a> </li>
+  </ul>
+  <ul class="padding_20 line_height_1-5em">
+    <li> <a class="blue font_21px csp_closeModal modal_toggle">
+      <div class="center">Cancel</div>
+      </a> </li>
+  </ul>
+</div>
+<!--END Content for Modal Alerts Off--> 
+
+<!--BEGIN Content for Modal Alerts Settings Checking Balance-->
+<div class="modal_wrapper alerts_settings_checking_balance center">
+  <ul class="padding_20">
+    <li  class="color_191919 border_bottom_1px_999">
+      <div class="clear font_14px bold padding_10">Are you sure?</div>
+      <div class="clear font_14px padding_10">If you have this alert activated in any other mobile device or Online Banking, this update will be made there too.</div>
+    </li>
+    <li> <a class="red font_21px csp_closeModal">
+      <div class="center">Yes</div>
+      </a> </li>
+  </ul>
+  <ul class="padding_20 line_height_1-5em">
+    <li> <a class="blue font_21px csp_closeModal" href="#alerts_settings" data-transition="reverseSlide">
+      <div class="center">No</div>
+      </a> </li>
+  </ul>
+</div>
+<!--END Content for Modal Alerts Settings Checking Balance-->
+<!-- Set up Touch ID Modal - accecpt yes/no -->
+<!-- BEGIN modal wrapper-->
+<div class="modal_wrapper modal_touch_id">
+   <div class="z_index_5002">
+     
+         <a href="#accounts" class="z_index_5003 color_4A4C50 csp_closeModal">
+        
+            <div class="margin_top_-200" ><img src="modules/signin/images/faceid.svg" height="140px" width="120px" /> </div>
+         </a>
+        
+        <!-- Close the modal -->
+      
+		 
+   </div>
+</div>
+<!-- END modal wrapper-->
+	
+<!-- Card Settings More Options Menu Modal -->
+<!--BEGIN Modal Menu - Card Settings More Options Menu-->
+<div class="modal_wrapper modal_card_settings_menu">
+	<div class="card_settings_options_list">
+		 <ul class="li_tall option_card_holder">
+
+			<li class="options_card_header">
+				<div class="float_left">Card Options</div>
+				<div class="float_right options_card_header_done">Done</div>
+			</li>
+
+			<li class="option_cards first_card ">
+			<a href="#help_replace_card" data-transition="slide" class="csp_slideModalDown_js">
+			<span class="english">Take action on a lost or stolen card</span>
+			<span class="spanish">Toma acción en una tarjeta perdida o robada</span>
+			</a></li>
+
+			<li class="option_cards second_card  deactivated">
+			<a href="#help_replace_card" data-transition="slide">
+			<span class="english">Take action on a lost or stolen card</span>
+			<span class="spanish">Toma acción en una tarjeta perdida o robada</span>
+			</a></li>
+
+			<li class="option_cards third_card  deactivated">
+			<a href="#help_replace_card" data-transition="slide">
+			<span class="english">Take action on a lost or stolen card</span>
+			<span class="spanish">Toma acción en una tarjeta perdida o robada</span>
+			</a></li>
+
+			<li class="option_cards first_card ">
+			<a href="#withdrawal_limit" data-transition="slideup" class="return_link" targetreturnlink="#card_settings">
+			<span class="english">Set Daily Debit Card Limits</span>
+			<span class="spanish">Establecer límites diarios de tarjetas de débito</span>
+			</a>
+			</li>
+
+			<li class="option_cards first_card ">
+			<a href="#travel_plans" data-transition="slide" class="return_link" targetreturnlink="#card_settings">
+			<span class="english">Add or Change Travel Notice</span>
+			<span class="spanish">Agregar o cambiar un aviso de viaje</span>
+			</a></li>
+
+			<li class="option_cards second_card  deactivated">
+			<a href="#travel_plans" data-transition="slide" class="return_link" targetreturnlink="#card_settings">
+				<span class="english">Add or Change Travel Notice</span>
+				<span class="spanish">Agregar o cambiar un aviso de viaje</span>
+			</a></li>
+
+			<li class="option_cards third_card  deactivated">
+			<a href="#travel_plans" data-transition="slide" class="return_link" targetreturnlink="#card_settings">
+				<span class="english">Add or Change Travel Notice</span>
+				<span class="spanish">Agregar o cambiar un aviso de viaje</span>
+			</a></li>
+
+			<li class="option_cards second_card  deactivated">
+			<a href="#change_pin_start" data-transition="slide" class="return_link change_pin_cancel" targetreturnlink="#card_settings">
+				<span class="english">Change PIN</span>
+				<span class="spanish">Cambiarhange PIN</span>
+			</a></li>
+
+			<li class="option_cards second_card  deactivated inactive">
+			<a href="#" class="return_link" targetreturnlink="#card_settings">
+				<span class="english">Send PIN by US Mail</span>
+				<span class="spanish">Enviar PIN por correo postal</span>
+			</a></li>
+
+			<li class="option_cards third_card  deactivated">
+			<a href="#change_pin_start" data-transition="slide" class="return_link change_pin_cancel" targetreturnlink="#card_settings">
+				<span class="english">Change PIN</span>
+				<span class="spanish">Cambiar PIN</span>
+			</a></li>
+
+			<li class="option_cards third_card  deactivated inactive">
+			<a href="#" class="return_link" targetreturnlink="#card_settings">
+				<span class="english">Send PIN by US Mail</span>
+				<span class="spanish">Enviar PIN por correo postal</span>
+				</a></li>
+
+		 </ul>
+		 <div class="clear">&nbsp;</div>
+	</div>
+</div>
+<!--END Modal Menu - Card Settings More Options Menu--><!--END modal mask-->
+
+<!-- Consolidated Inbox Modal -->
+<!--BEGIN  Secure Inbox Modal -->
+<div class="modal_wrapper modal_consolidated_inbox">
+	<div class="consolidated_inbox_options english">
+        <div class="inbox_modal_done">
+            <a href="javascript:void(0)" class="csp_slideModalDown_js csp_slideModalDown_key">Done</a>
+        </div>
+        <h3>Inboxes</h3>
+        <div class="consolidated_inbox_list">
+            <a href="#alerts_settings"  class="consolidated_bofa return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" targetReturnLink="#accounts" role="button" tabindex="0">Bank of America<br><span>Alerts &amp; History</span></a>
+            <a href="#secure_inbox" class="consolidated_merrill return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" targetReturnLink="#accounts" role="button" tabindex="1">Merrill Lynch<br><span>Secure Inbox</span></a>
+        </div>  
+	</div>
+    <div class="consolidated_inbox_options spanish">
+        <div class="inbox_modal_done">
+            <a href="javascript:void(0)" class="csp_slideModalDown_js csp_slideModalDown_key">Hecho</a>
+        </div>
+        <h3>Bandejas de entrada</h3>
+        <div class="consolidated_inbox_list">
+            <a href="#alerts_settings" class="consolidated_bofa return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" targetReturnLink="#accounts" role="button" tabindex="0">Bank of America<br><span>Alertas &amp; Historia</span></a>
+            <a href="#secure_inbox" class="consolidated_merrill return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" targetReturnLink="#accounts" role="button" tabindex="1">Merrill Lynch<br><span>Secure Inbox</span></a>
+        </div>  
+	</div>
+</div>
+<!--END Secure Inbox Modal --><!--END Consolidated Inbox Modal -->
+
+<!-- Consolidated Inbox Modal -->
+<link rel="stylesheet" href="section_billpay/pay_transfer_modals.css" /> 
+<script src="section_billpay/pay_transfer_modals.js"></script>
+
+<!--BEGIN  modal_paytrans_modal -->
+<div class="modal_wrapper modal_paybill_select">
+	<div class="paytrans_modal_options english">
+        <div class="paytrans_modal_done">
+            <a href="javascript:void(0)" class=" csp_slideModalDown_js csp_slideModalDown_key">Close</a>
+        </div>
+        <h3>Recipients</h3>
+        <h4>Pay Bills with Merrill</h4>
+        <ul class="nbaa_list_style">
+            <li class="merrill paytrans_modal_list inactive">   
+                <a href="#" onclick=" viewModel.pay_or_transfer('Pay')" class="paytrans_modal_bofa return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" role="button" tabindex="0">Use your eligible investment accounts</a>
+            </li>
+        </ul>
+        <div class="billpay_splitter_modal_header" >
+            <h4>Bank of America</h4>
+            <a href="#bill_pay" class="return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" role="button" tabindex="1">Go to Bill Pay</a>
+        </div>
+        <ul class="nbaa_list_style">
+            <li class="bofa paytrans_modal_list">   
+                <a href="#" onclick="makeCreditCardPayment();" class="paytrans_modal_bofa return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" role="button" tabindex="0">Cash Rewards Credit Card - 5830<br><span>$91.14 paid on Jun 14 14</span></a>
+            </li>
+            <li class="bofa paytrans_modal_list">   
+                <a href="#" onclick="makeAutoLoanPayment()" class="paytrans_modal_bofa return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" role="button" tabindex="0">Auto Loan - 5645<br><span>$325.45 paid on Jun 11</span></a>
+            </li>
+        </ul>
+        <div class="billpay_splitter_modal_header" >
+            <h4>Other payees</h4>
+        </div>
+        <ul class="nbaa_list_style">
+            <li class="icon_other_payee paytrans_modal_list">   
+                <a href="#" onclick="payOtherElectric('abc')" class="paytrans_modal_bofa return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" role="button" tabindex="0">ABC Energy - 9999<br><span>$100.00 scheduled on Jun 14 29</span></a>
+            </li>
+            <li class="icon_other_payee paytrans_modal_list">   
+                <a href="#" onclick="payOtherElectric('xyz')" class="paytrans_modal_bofa return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" role="button" tabindex="0">XYZ Gardens - 6789<br><span>$100.00 scheduled on Jun 01</span></a>
+            </li>
+            <li class="billpay_splitter_payee_links inactive">
+                <a href="#">Add a new payee</a>
+            </li>
+            <li class="billpay_splitter_payee_links inactive">
+                <a href="#">View payees</a>
+            </li>
+        </ul>
+        
+	</div>
+
+
+    <div class="paytrans_modal_options spanish">
+        <div class="paytrans_modal_done">
+            <a href="javascript:void(0)" class="csp_slideModalDown_js csp_slideModalDown_key">Hecho</a>
+        </div>
+        <h3>Bandejas de entrada</h3>
+        <div class="paytrans_modal_list">
+            <a href="#pay_transfer_details" class="paytrans_modal_bofa return_link  csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" targetReturnLink="#accounts" role="button" tabindex="0">Bank of America bills<br><span>includes credit card, HELOC, home &amp; auto loans</span></a>
+            <a href="#bill_pay" class="paytrans_modal_billpay return_link csp_slideModalDown_js csp_slideModalDown_key" data-transition="slide" targetReturnLink="#accounts" role="button" tabindex="1">Go to Bill Pay<br><span>includes eBills, reminders & payees</span></a>
+        </div>  
+	</div>
+</div>
+<!--END modal_paytrans_modal -->
+
+<!--BEGIN  modal_bofa_transfer_from -->
+<div class="modal_wrapper modal_bofa_transfer_from">
+    <div class="paytrans_modal_options english">
+        <div class="paytrans_modal_done">
+            <a href="javascript:void(0)"  class="csp_slideModalDown_js csp_slideModalDown_key">Close</a>
+        </div>
+        <h3>From</h3>
+        <div class="clear height_10"></div>
+        <div class="paytrans_modal_bulletlist">
+            <h5 class="bofa">BofA Accounts</h5>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_from('My Checking - 1234');viewModel.transfer_money_from_balance('$2,146.13');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="0">
+                My Checking - 1234<br><span>Available Balance - $2,146.13</span></a>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_from('Savings - 9876');viewModel.transfer_money_from_balance('$2,463.67');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="1">
+                Savings - 9876<br><span>Available Balance - $2,463.67</span></a>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_from('Visa Signature - 5830');viewModel.transfer_money_from_balance('$3,402.33');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="1">
+                Visa Signature - 5830<br><span>Available Balance - $3,402.33</span></a>
+        </div> 
+        <div class="clear height_10"></div>
+        <div class="paytrans_modal_bulletlist">
+            <h5 class="merrill">Merrill Accounts</h5>
+           <a href="javascript:void(0)" onclick="viewModel.transfer_money_from('CMA - 3456');viewModel.transfer_money_from_balance('$51,375.00');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="2">
+                CMA - 3456<br><span>Available Balance - $51,375.00</span></a>
+        </div>  
+	</div>
+</div>
+<!--END modal_bofa_transfer_from -->
+
+<!--BEGIN  modal_bofa_transfer_to-->
+<div class="modal_wrapper modal_bofa_transfer_to">
+    <div class="paytrans_modal_options english">
+        <div class="paytrans_modal_done">
+            <a href="javascript:void(0)" class="csp_slideModalDown_js csp_slideModalDown_key">Close</a>
+        </div>
+        <h3>To</h3>
+        <div class="clear height_10"></div>
+        <div class="paytrans_modal_bulletlist">
+            <h5 class="bofa">BofA Acounts</h5>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_to('My Checking - 1234');viewModel.transfer_money_to_balance('$2,146.13');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="0">
+                My Checking - 1234<br><span>Available Balance - $2,146.13</span></a>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_to('Savings - 9876');viewModel.transfer_money_to_balance('$2,463.67');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="1">
+                Savings - 9876<br><span>Available Balance - $2,463.67</span></a>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_to('Visa Signature - 5830');viewModel.transfer_money_to_balance('$3,402.33');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="1">
+                Visa Signature - 5830<br><span>Current Balance - $3,402.33</span></a>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_to('Mortgage - 8888');viewModel.transfer_money_to_balance('$170,480.50');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="1">
+                Mortgage - 8888<br><span>Current Balance - $170,480.50</span></a>
+            <a href="javascript:void(0)" onclick="viewModel.transfer_money_to('Auto Loan - 5645');viewModel.transfer_money_to_balance('$7,234.56');" class="paytrans_modal_bullet csp_slideModalDown_js csp_slideModalDown_key" role="button" tabindex="1">
+                Auto Loan - 5645<br><span>Current Balance - $7,234.56</span></a>
+        </div> 
+        <!-- <div class="clear height_10"></div>
+        <div class="paytrans_modal_bulletlist">
+            <h5 class="merrill">Merrill Acounts</h5>
+           <a href="javascript:void(0)" onclick="slideModalDown();viewModel.transfer_money_to('CMA - 3456');viewModel.transfer_money_to_balance('$51,375.00');" class="paytrans_modal_bullet" role="button" tabindex="2">
+                CMA - 3456<br><span>Available Balance - $51,375.00</span></a>
+        </div>   -->
+	</div>
+</div>
+<!--END modal_bofa_transfer_to -->
+
+<!--BEGIN  modal_bofa_transfer_details-->
+<div class="modal_wrapper modal_bofa_transfer_details">
+    <div class="paytrans_modal_options">
+        <div class="paytrans_modal_done">
+            <a href="javascript:void(0)" class="csp_slideModalDown_js csp_slideModalDown_key">Close</a>
+        </div>
+        <h3>Details</h3>
+        <div class="clear height_10"></div>
+        <div class="details_row">
+            <div class="float_right" data-bind="text: pt_details_status()">Processing</div>
+            <div class="float_left">Status</div>
+            <div class="clear height_1"></div>
+        </div> 
+        <div class="details_row">
+            <div class="float_right" data-bind="text: pt_details_to()">Account</div>
+            <div class="float_left">To</div>
+            <div class="clear height_1"></div>
+        </div> 
+        <div class="details_row">
+            <div class="float_right" data-bind="text: pt_details_from()">Account</div>
+            <div class="float_left">From</div>
+            <div class="clear height_1"></div>
+        </div> 
+        <div class="details_row">
+            <div class="float_right" data-bind="text: pt_details_amount()">$100.00</div>
+            <div class="float_left">Amount</div>
+            <div class="clear height_1"></div>
+        </div> 
+        <div class="details_row">
+            <div class="float_right" data-bind="text: pt_details_date()">Date</div>
+            <div class="float_left">Date</div>
+            <div class="clear height_1"></div>
+        </div> 
+        <div class="clear height_10"></div>
+	</div>
+</div>
+<!--END modal_bofa_transfer_details -->
+<!--END Consolidated Inbox Modal -->
+
+<!-- wires Modal -->
+<!--BEGIN  modal_wire_beware_scams -->
+<div class="modal_wrapper modal_wire_beware_scams">
+    <div class="wire_scams_modal_info english">
+        <div class="wire_beware_scam_modal_done">
+            <a href="javascript:void(0)"  class="csp_slideModalDown_js csp_slideModalDown_key">Close</a>
+        </div>
+        <h3>Beware of possible scams</h3>
+        
+        <div class="clear height_10"></div>
+        <div>
+            <p class="wire_beware_scam_para">Money you send may not be recoverable</p>
+            <p class="wire_beware_scam_para">Do not proceed if you are:</p>
+            <div class="margin_left_15">
+                <ul class="bullet-list ">
+                    <li>Pressured to act quickly</li>
+                    <li>Asked to open an account or deposit funds, then wire money back out</li>
+                    <li>Asked to make last minute changes to you wiring instructions</li>
+                </ul>
+            </div>
+            <p class="wire_beware_scam_para ">Verify your recipient by calling a number on an official website or other sources like your card, recent bill or statement</p>
+        </div>
+        <div class="clear height_10 margin_bottom_80"></div>
+
+        <!-- BEGIN continue_area --> 
+        <div class="continue_area" data-role="footer">
+            <div>
+            <div class="float_left margin_right_13 variable_48"> 
+                <a  class="reset_wires bac_button_cancel" href="#wires" data-transition="reverseSlide">
+                <span class="english">Cancel</span>
+                <span class="spanish">Cancelar</span>
+            </a> 
+            </div>
+            <div class="float_left variable_48"> 
+                <a class="wire_recipient_added_begin bac_button blue csp_closeModal" data-transition="slide" href="#review_add_wire_recipient">
+                <span class="english">OK</span>
+                <span class="spanish">Siguiente</span>
+                </a> 
+            </div>
+            </div>
+        </div>
+        <!-- END continue_area --> 
+	</div>
+</div>
+<!--END modal_wire_beware_scams --><!--END wires Modal -->
+
+<!-- Security Center - Suspicious Activity Modal -->
+<!--BEGIN  Suspicious Activity Modal -->
+<div class="modal_wrapper modal_suspicious_activity">
+	<div class="report_suspicious_activity english">
+        <div class="inbox_modal_done">
+            <a href="javascript:void(0)" class="csp_slideModalDown_js csp_slideModalDown_key">Close</a>
+        </div>
+        <div class="report_suspicious_activity_options">
+            <h2>Report suspicious activity</h2>
+            <p>Forward suspicious email or text messages to us at <span class="ui-link-color">abuse@bankofamerica.com</span>.</p>
+            <p>If you receive a suspicious phone message, call us at <span class="ui-link-color">800-432-1000.</span></p>
+            <p><span class="ui-link-color">Go to Manage Debit/Credit Card to lock your card or take action on a lost/stolen card.</span></p>
+        
+        </div>  
+	</div>
+    <div class="report_suspicious_activity spanish">
+        <div class="inbox_modal_done">
+            <a href="javascript:void(0)" class="csp_slideModalDown_js csp_slideModalDown_key">cerrar</a>
+        </div>
+        <div class="report_suspicious_activity_options">
+            <h2>Informar actividad sospechosa</h2>
+            <p>Reenvíe correos electrónicos o mensajes de texto sospechosos a <span class="ui-link-color">abuse@bankofamerica.com</span>.</p>
+            <p>Si recibe un mensaje telefónico sospechoso, llámenos al <span class="ui-link-color">800-432-1000.</span></p>
+            <p><span class="ui-link-color">Vaya a Administrar tarjeta de débito / crédito para bloquear su tarjeta o tomar medidas en caso de pérdida o robo de la tarjeta.</span></p>
+        
+        </div>  
+	</div>
+</div>
+<!--END Suspicious Activity Modal --><!--END Security Center - Suspicious Activity Modal -->
+
+<!-- Balance Connect - Backup Account Modal -->
+<!--BEGIN  Suspicious Activity Modal -->
+<div class="modal_wrapper modal_backup_account">
+	<div class="modal_backup_account_options">
+        <div class="inbox_modal_done">
+            <a href="javascript:void(0)" onclick="slideModalDown();" onkeypress="slideModalDown();">Close</a>
+        </div>
+        <div class="modal_backup_account_list">
+            <h2>Select an account</h2>
+            <div class="modal_backup_account_list">
+            <a id="bc_select_checking" href="javascript:void(0)" onclick="balance_connect_account_select()" onkeypress="balance_connect_account_select()" class="balance_connect_account_select" role="button" tabindex="0">My Checking - 1234<br><span>Available balance: $2146.13</span></a>
+            <a id="bc_select_visa_sig" href="javascript:void(0)" onclick="balance_connect_account_select()" onkeypress="balance_connect_account_select()" class="balance_connect_account_select"  role="button" tabindex="1">Customized Cash Rewards Visa Signature - 5830</a>
+        </div>
+        
+        </div>  
+	</div>
+</div>
+<!--END Suspicious Activity Modal --><!--END Balance Connect - Backup Account Modal -->
+
+<!--BEGIN header background zone -->
+<!--BEGIN header background zone-->
+<div class="header_background_zone"></div>
+<!--END header background zone-->
+<a href="#" class="button_back_arrow hidden" data-transition="reverseSlide" alt="Go back to the previous page"  aria-label="Go back to the previous page"></a><!--END header background zone -->
+
+<!--BEGIN global menu-->
+<!--<div id="global_footer_menu" class="hidden" style="z-index: 1000">-->
+<!--BEGIN Menu-->
+<div id="global_footer_menu">
+    <div class="menu">
+        <a class="accounts first_menu_item on" href="#accounts" data-transition="fade">
+            <span class="menu_icon"></span>
+            <span class="english">Accounts</span>
+            <span class="spanish">Cuentas</span>
+        </a>
+
+        <a class="pay_and_transfer" href="#pay_transfer_landing" data-transition="fade">
+            <span class="menu_icon"></span>
+            <span class="english">Pay & Transfer</span>
+            <span class="spanish">Pago & Transferencias</span>
+        </a>
+
+        <a class="deposit_checks" href="#deposit_checks" data-transition="fade">
+            <span class="menu_icon"></span>
+            <span class="english">Deposit Checks</span>
+            <span class="spanish">Deposite cheques</span>
+        </a>
+            
+        <a class="menu_trade" href="#me_trade" data-transition="fade">
+            <span class="menu_icon"></span>
+            <span class="english">Trade</span>
+            <span class="spanish">Comercio</span>
+        </a>
+            
+        <div class="menu_indicator"></div> <!--For Android red line-->
+    </div>
+</div>
+<!--END Menu-->
+<!--</div>-->
+<!--END global menu--> 
+
+<!--BEGIN Apple Utility Bar and Signout Icons -->
+<!--include $_SERVER['DOCUMENT_ROOT'] . '/onlinebanking_demo/mobileApp_Simulator/modules/header/apple_device.html'; -->
+	<!--BEGIN Sign out utility with words area-->
+<div class="sign_out_utility hidden">
+	<a class="mail top_icon" href="Javascript:void(0);" onclick="slideModalUp('.modal_consolidated_inbox','.mask1')" onkeypress="slideModalUp('.modal_consolidated_inbox','.mask1')" data-transition="slideup" aria-label="view consolidated inbox icon">
+		<span class="label english hide_icons">Mail</span>
+		<span class="label spanish hide_icons">Correo</span>
+		<span class="icon_barker block">1</span>
+	</a>
+	<a class="sign_out top_icon" href="index.html" rel="external" data-transition="fade" aria-label="Sign-out Icon">	
+		<span class="label english hide_icons">Log Out</span>
+		<span class="label spanish hide_icons">Salir</span>
+	</a>
+</div>
+<!--END Sign out utility with words area-->
+
+<!--BEGIN Dynamic Help button-->
+	<a class="button_dynamic_help top_icon hidden" href="#" aria-label="Erica Help Icon">
+		<span class="icon_barker block">1</span>
+		<!-- <span class="label english hide_icons">Help</span>
+		<span class="label spanish hide_icons">Ayudar</span> -->
+	</a>
+<!--END Dynamic Help button-->
+
+<!--BEGIN SHopping Cart icon -->
+	<a class="shop_cart_icon top_icon hidden" href="#our_products_get_started" aria-label="Shopping Cart Icon">
+		<span class="label english hide_icons">Products</span>
+		<span class="label spanish hide_icons">Productos</span>
+	</a>
+<!--END Dynamic Help button-->
+
+<!--BEGIN Menu More icon -->
+<a class="menu_more_icon top_icon hidden" href="#menu_more" data-transition="slide" aria-label="Menu More icon">
+	<span class="label english hide_icons">Menu</span>
+	<span class="label spanish hide_icons">Menú</span>
+</a>
+<!--END Menu More icon --><!--END Apple Utility Bar and Signout Icons -->
+
+<!-- BEGIN shopping cart -->
+	<!--BEGIN shopping_cart_icon area-->
+<div class="shopping_cart_area hidden">
+	<a href="#shopping_cart" data-transition="slideup"><span class="shopping_cart_icon"></span></a>
+</div>
+<!--END shopping_cart_icon area--><!-- END shopping cart -->
+
+<!--BEGIN Section App Sign On -->
+
+<!--END first time user flow pages -->
+
+<!-- Mobile Home Page -->
+<link rel="stylesheet" href="modules/signin/signin.css" />
+
+<!-- BEGIN Sign in Front Page -->
+<template id="FP.html">
+<ons-page id="FP" class="page_bg no_icons no_header_fade height_100percent" data-role="page">
+
+<!-- BEGIN loading page -->
+<div id="new_loading_page">
+	<div class="message_power_to_do center variable_100 margin_top_-610">
+		<p class="english font_16px normal margin_top_15">WHAT WOULD YOU LIKE<br />THE POWER TO DO?</p>
+		<p class="spanish font_16px normal margin_top_15">¿QUÉ LE GUSTARÍA<br />EL PODER DE HACER?</p>
+	</div>
+	<div class="message_action_buttons variable_100 hidden margin_top_-620">
+		<a id="first_screen_button" href="#" class="bac_button blue width_150">LOG IN/Enroll</a>
+		<p class="font_12px normal margin_top_15">New to Bank of America?</p>
+		<a class="font_12px normal margin_top_10" href="#">Get started here</a> 
+	</div>
+	
+</div>
+<!-- END loading page -->
+
+<div class="modal_background hide"></div>
+
+	
+<div id="banner_front_page_default" alt="Bank of America- Sign In"></div>
+
+
+<!-- BEGIN Content -->
+<div data-role="content" class="panel content_bg"> 
+	<!--BEGIN Alert Box PIN-->
+	<div class="alert_box_black alert_passcode_simplify hidden">
+		<div class="float_right margin_right_5">
+			<svg class="icon_circle_x_white"><title>close icon</title></svg>
+		</div>
+		<div class="english float_left icon_exclamation_black_bg padding_left_30"> The Online ID or Passcode you entered does
+			<br />
+			not match our records. You have 2 more tries <br />
+			remaining. Please try again or tap <a class="alert_passcode_simplify_link" data-transition="slide" href="#passcode_simplification">Forgot ID/<br />
+			Passcode</a>
+		</div>
+		<div class="spanish float_left icon_exclamation_black_bg padding_left_30"> La identificación en línea o el código de acceso que ingresó no<br />
+		no coincide con nuestros registros. Tienes 2 intentos más <br />
+		restante. Vuelva a intentarlo o toque O? <a class="alert_passcode_simplify_link" data-transition="slide" href="#passcode_simplification">Olvidé mi ID /<br />
+		contraseña</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--END Alert Box PIN-->
+	
+
+<!--BEGIN REWORKED LOGIN-->
+	
+    <div class="max_style_box">
+	    <div class="clear center english">
+			<label class="hide-jaws-element" for="username_field">User ID</label>
+			<input id="username_field" data-role="none" value="User ID" type="text" class="passcodes username_field font_grey_666 height_44">
+		</div>
+		<div class="clear center spanish">
+			<label class="hide-jaws-element" for="username_field">Identificación de usuario</label>
+			<input id="username_field_sp" data-role="none" value="Identificación de usuario" type="text" class="passcodes username_field font_grey_666 height_44">
+		</div>
+
+	    <div class="clear center english">
+			<label class="hide-jaws-element" for="passcode_field">Password</label>
+			<input id="passcode_field" data-role="none" value="Password" type="text" class="passcodes font_grey_666 height_44">
+	    </div>
+		<div class="clear center spanish">
+			<label class="hide-jaws-element" for="passcode_field_sp">Contraseña</label>
+			<input id="passcode_field_sp" data-role="none" value="Contraseña" type="text" class="passcodes font_grey_666 height_44">
+	    </div>
+
+
+	<div class="clear margin_top_15 flex">
+		<div class="float_left variable_45">
+    		<div id="chkbox_online_ID" class="chkcircle">&nbsp;</div>
+			<div class="chktxt english">Save User ID</div>
+			<div class="chktxt spanish">Guardar ID de usuario</div>
+        </div>
+    
+    	<div class="float_right variable_55">
+
+			<div id="chkbox_touch_ID" class="chkcircle circletouchid font_13px">&nbsp;</div>
+    		<div class="chktxt english">Set Up Face ID</div>
+			<div class="chktxt spanish">Configure Face ID</div>
+    	</div>
+	</div>
+
+
+
+
+			<div class="clear block height_10"> 
+			</div>
+		<div class="clear block center margin_top_10">
+			<div id="dynamic_signin_btn" class="margin_top_20">
+				<a id="sign_in_button" class="bac_button blue inactive" >
+					<span class="english">LOG IN</span>	
+					<span class="spanish">INCIAR SESIÓN</span>
+				</a>
+			</div>
+		</div>
+			<div class="clear block height_10"> 
+			</div>
+		<div class="clear center margin_top_10 margin_bottom_5">
+			<a class="goToPasscodeSimplify font_13px normal english" data-transition="slide" href="#" >Forgot ID/Password</a>
+			<a class="goToPasscodeSimplify font_13px normal spanish" data-transition="slide" href="#" >Olvidé la identificatión/Contraseña</a>
+	    </div>
+
+    </div>	
+
+<!--END REWORKED LOGIN-->
+
+
+	<!-- BEGIN Login -->
+	<div id="mhpMain"> 
+		<!--BEGIN hide_this-->
+		<div id="hide_this">
+
+	<!--BEGIN My Balance top link-->
+	<div id="my_balance_container_top"> <a href="javascript:void(0);" class="my_balance_open_link"> My Balance &trade;<span>&nbsp;&nbsp;|&nbsp;&nbsp;Enroll</span></a> </div>
+	<!--END My Balance top link-->
+
+			<div class="clear block height_10"> 
+			</div>
+
+			<!--BEGIN 4 panel marketing Ads-->
+			<div> <img class="center" src="images/fp_quad_ads.png" width="100%" alt="four blocker placement for marketing ads"> </div>
+			<!--END 4 panel marketing Ads-->
+			
+			<div id="location_contact_link_frame" class="small margin_bottom_15">
+				<p class="english"> 
+					<a class="return_link" href="#locations" data-transition="slide" returnLink="#FP">Locations</a>  |  <a class="return_link" href="#contact_us" data-transition="slide" returnLink="#FP">Contact Us</a>
+				</p>
+				<p class="spanish"> 
+					<a class="return_link" href="#locations" data-transition="slide" returnLink="#FP">Localizador</a>  |  <a class="return_link" href="#contact_us" data-transition="slide" returnLink="#FP">Contacto</a>
+				</p>
+			</div>
+			<div class="clear block height_150"> 
+			</div>			
+			<div class="content_flow margin_bottom_5"> 
+				<!--BEGIN Disclaimer-->
+				<div class="dynamic_disclaimer"></div>
+				<!--END Disclaimer--> 
+			</div>
+		</div>
+		<!--END hide_this--> 
+	</div>
+	<!--END Login--> 
+	
+	<!--BEGIN My Balance area-->
+	<script src="modules/signin/my_balance.js"></script>
+<link rel="stylesheet" href="modules/signin/my_balance.css" />
+
+<!--BEGIN My Balance Containers--> 
+<div id="my_balance_containers">
+
+<!-- BEGIN enrolled flow-->
+<div id="my_balance_enrolled_view">
+  <h2 class="my_balance_header"><img src="images/icons/icon_accounts_bofa%402x.png" alt="accounts icon" width="26" height="26" /><span class="english">Bank of America Accounts</span><span class="spanish">CUENTAS DE BANK OF AMERICA</span></h2>
+  <ul>
+    <li class="no_arrow"><a href="#checking_summary" data-transition="slide">
+      <div class="float_left color_857363">My Checking - 1234</div>
+      <div class="float_right padding_right_15">$2,146.13</div>
+      </a> </li>
+    <li class="no_arrow"><a href="#savings_summary" data-transition="slide">
+      <div class="float_left color_857363">Savings - 9876</div>
+      <div class="float_right padding_right_15">$2,463.67</div>
+      </a> </li>
+    <li class="no_arrow"><a href="#credit_card_summary" data-transition="slide">
+      <div class="float_left color_857363">Customized Cash Rewards Visa Signature - 5830</div>
+      <div class="float_right padding_right_15">$3,402.33</div>
+      </a> </li>
+    <li class="no_arrow"><a href="#mortgage_summary" data-transition="slide">
+      <div class="float_left color_857363">Mortgage - 8888</div>
+      <div class="float_right padding_right_15">$170,480.50</div>
+      </a> </li>
+  </ul>
+  <h2><img src="images/icons/icon_accounts_merrill%402x.png" width="26" height="26" /><span>Investment Accounts</span></h2>
+  <ul>
+    <li><a href="#merrill_summary" data-transition="slide">
+      <div class="float_left color_857363">Investment - 3456</div>
+      <div class="float_right padding_right_15">$51,375.00</div>
+      </a> </li>
+  </ul>
+  <div class="margin_top_20 margin_left_20"><a id="my_balance_off_link">Turn Off My Balance</a></div>
+  
+  <!--BEGIN My Balance bottom link-->
+  <div class="my_balance_container_bottom"> <a href="javascript:void(0);" class="my_balance_close_link red"> Close<br />
+    <div class="clear icon_arrow_red direction_down"></div> 
+    </a> </div>
+  <!--END My Balance bottom link--> 
+</div>
+<!--END enrolled flow--> 
+
+<!-- BEGIN unenrolled flow-->
+<div id="my_balance_unenrolled_view">
+  <div id="my_balance_offer">
+    <div id="my_balance_offer_text_container"> <span id="my_balance_offer_text" class="color_857363"> You can view account balances right from<br />
+      your home page without signing in to the<br />
+      app.<br />
+      <br />
+      Setting up My Balance is easy. </span> </div>
+  </div>
+  <div id="my_balance_button_container" class="background_grey_ddd padding_top_15 margin_bottom_60"> <a id="setup_now_button" class="bac_button blue margin_auto" href="#my_balance_terms" data-transition="slide" returnLink="#FP">Set Up Now</a>
+    <div class="center margin_top_8"><a class="font_12px">Do not show the My Balance Feature</a></div>
+    <div id="my_balance_TC" class="font_12px margin_top_25 color_857363 padding_bottom_15 margin_bottom_30">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis maximus fermentum. Nulla a nisl ac 
+        ex viverra mattis id in mi.</p>
+    </div>
+  </div>
+  <!--BEGIN My Balance bottom link-->
+  <div class="my_balance_container_bottom"> <a href="javascript:void(0);" class="my_balance_close_link">Close<br />
+    <div class="clear icon_arrow_red direction_down"></div>
+    </a> </div>
+  <!--END My Balance bottom link--> 
+</div>
+<!--END unenrolled flow--> 
+</div>
+<!--END My Balance Containers--> 
+	<!--END My Balance area--> 
+	
+	<!--BEGIN Rep Flow Actions-->
+	
+	<div id="demo_flow_container">
+		<div id="demo_flow_area" class="block margin_top_10"> <span class="block fill bg_white padding_top_20"><a class="block margin_left_20 padding_bottom_10"><strong>DEMO USER FLOWS</strong></a></span>
+			<ul class="demo_flows_list padding_left_20">
+				<li class="android_ignore selected" flow="standard_demo"> <a class="no_arrow android_ignore" id="standard" href="#" onClick="viewModel.sscc_flow('');">Standard User</a> </li>
+				<li class="android_ignore" flow="first_time_user_demo"> <a class="no_arrow android_ignore" id="first-time-flow-link" href="#">Mobile Onboarding</a> </li>
+				<li class="android_ignore" flow="life_plan_demo"> <a class="no_arrow android_ignore" id="life-plan-flow-link" href="#">Life Plan: Returning User</a> </li>
+				<li class="android_ignore" flow="erica_enroll_demo"> <a class="no_arrow android_ignore" id="erica-enroll-flow-link" href="#" onClick="viewModel.erica_enrollment('enroll');">Erica Onboarding</a> </li>
+				<li class="android_ignore" flow="mortgage_demo_flow"> <a class="no_arrow android_ignore mortgage_demo_flow" id="digital_mortgage_link" href="#">Digital Mortgage Experience</a> </li>
+				<li class="android_ignore" flow="p2p_enroll_demo"> <a class="no_arrow android_ignore p2p_demo_flow" id="p2p_enrollment_link" href="#">Zelle&reg; Enrollment</a> </li>
+				<li class="android_ignore" flow="bill_pay_enroll_demo"> <a class="no_arrow android_ignore" id="billpay_enrollment_link" href="#">Bill Pay Enrollment</a> </li>
+				<li class="android_ignore" flow="sscc_demo"> <a class="no_arrow android_ignore" id="sscc_link" href="#">Single Service Credit Card</a> </li>
+				<li class="android_ignore" flow="my_balance_demo"> <a class="no_arrow android_ignore" id="my_balance_unenrolled-flow-link" href="#">Enroll in My Balance</a> </li>
+				<li class="android_ignore" flow="cas_demo"> <a class="no_arrow android_ignore" id="accounts_past_due_link" href="#">Accounts Past Due</a> </li>
+				<li class="android_ignore" flow="passcode_simplify_demo"> <a class="no_arrow android_ignore" id="password_simplification_link" href="#">Incorrect ID/Passcode</a> </li>
+			</ul>
+			<div class="clear background_default"></div>
+		</div>
+	</div>
+	
+	<!--END Rep Flow Actions--> 
+	
+	<!-- Test Radio Language Buttons -->
+	
+	<div id="language_preference"> <a class="block margin_left_20 padding_bottom_10  block margin_top_20"><strong>LANGUAGE PREFERENCE SELECT</strong></a>
+		<div class="expand_div">
+			<ul class="lang_flows_list padding_left_20">
+				<li class="english_demo selected">
+					<label for="english-flow-radio" class="hide-jaws-element padding_left_20 float_left control control_radio">Choose English Language Preference
+					<input type="radio" checked="checked" name="lang_radio" id="english-flow-radio" onclick="$('body').addClass('english').removeClass('spanish')"; />
+					<div class="control_indicator" id="lang_radio_1"></div>
+					</label>
+					<a class="no_bullet" id="english-flow-link" href="#" onclick="$('body').addClass('english').removeClass('spanish').find('#english-flow-radio').prop('checked', true);">English</a> </li>
+				<li class="margin_bottom_10 spanish_demo">
+					<label for="spanish-flow-radio" class="hide-jaws-element padding_left_20 float_left control control_radio">Choose Spanish Language Preference
+					<input type="radio" name="lang_radio" id="spanish-flow-radio" onclick="$('body').removeClass('english').addClass('spanish')"; />
+					<div class="control_indicator" id="lang_radio_2"></div>
+					</label>
+					<a class="no_bullet" id="spanish-flow-link" href="#" onclick="$('body').removeClass('english').addClass('spanish').find('#spanish-flow-radio').prop('checked', true);">Spanish</a> </li>
+			</ul>
+			<div id="language_preference_footer" class="clear"></div>
+		</div>
+	</div>
+	
+	<!--END Test Radio Language Buttons --> 
+	
+</div>
+<!-- END Content -->
+
+</ons-page>
+</template>
+<!-- END Sign in Front Page --><!--END Section App Sign On -->
+
+<!--BEGIN Section Mobile Onboarding -->
+<script src="modules/signin/section_mobile_onboard/mobile_onboard.js"></script>
+<link rel="stylesheet" href="modules/signin/section_mobile_onboard/mobile_onboard.css" />
+
+
+<!-- MODALS ----------------------------- -->
+
+<!-- BEGIN Onboard Touch ID modal wrapper-->
+<div class="modal_wrapper mo_modal_touch"> 
+    <!--BEGIN Touch ID Onboarded Modal Content-->
+    <div class="modal_content">
+    	<img class="mo_touchID_finger_print" src="modules/signin/section_mobile_onboard/images/ios_touch_ID_logo.png" height="35px" width="35px"/>
+    	<div class="modal_title">Touch ID for BofA<br></div>
+    	<div class="modal_blurb">
+    		<span class="english">Touch your finger to the home button to match a fingerprint to Online ID robi**** </span>
+    		<span class="spanish">NEED SPAN</span>
+        </div>
+    	<div class="clear border_top_1px_999"> 
+             
+            <a class="blue csp_closeModal csp_mobileOnboardTrans_touch_alerts" href="#">
+    			<div class="modal_cancel">
+      				<span class="english">Cancel</span>
+    				<span class="spanish">Cancellar</span>
+                </div>
+    		</a> 
+        </div>
+    </div>
+    <!--END Touch ID Onboarded Modal Content--> 
+</div>
+<!-- END Onboard Touch ID modal wrapper-->
+
+<!-- BEGIN Alerts modal wrapper-->
+<div class="modal_wrapper mo_modal_alerts position_left_47 position_top_233-5" > 
+    <!--BEGIN Alerts Onboarded Modal Content-->
+    <div class="modal_content">
+    	<div class="clear font_15px bold padding_15">"Bank of America" Would Like to<br>Send You Notifications</div>
+    	<div class="clear font_14px padding_15">
+    		<span class="english">Notifications may include alerts, sounds, and icons badges. These can be configured in Settings.</span>
+    		<span class="spanish">Las notificaciones pueden incluir alertas, sonidos y globos. Pueden configurarse en la configuración de su dispositivo.</span>
+        </div>
+    	<div class="clear border_top_1px_999" > 
+            <a class="blue font_14px modal_quick_alerts_on csp_closeModal csp_mobileOnboardTrans_alert_paperless"  href="javascript:void(0);" >
+                <div class="float_right center font_14px padding_15 border_left_1px_999 variable_38">       
+                    <span class="english"> OK </span>
+                    <span class="spanish"> Aceptar </span> 
+                </div>
+    		</a> 
+            <a class="blue font_14px csp_closeModal" href="#">
+    			<div class="float_left center font_14px padding_15 variable_38">
+      				<span class="english"> Don't Allow </span>
+    				<span class="spanish"> No permitir </span>
+                </div>
+    		</a> 
+        </div>
+    </div>
+    <!--END Alerts Onboarded Modal Content--> 
+</div>
+<!-- END Onboard ALERTS modal wrapper-->
+
+<!-- BEGIN Onboarding Complete modal wrapper-->
+<div class="modal_wrapper mo_modal_complete"> 
+    <!--BEGIN Onboarding Complete Modal Content-->
+    <div class="modal_content">
+    	<img class="mo_complete_check" src="modules/signin/section_mobile_onboard/images/checkmark_complete.png" height="30px" width="29px"/>
+    	<div class="modal_title">You're all set, Robin.<br></div>
+    	<div class="clear border_top_1px_999"> 
+             
+            <a class="blue csp_closeModal" href="#">
+    			<div class="modal_cancel">
+      				<span class="english">Start Mobile Banking</span>
+    				<span class="spanish">Cancellar</span>
+                </div>
+    		</a> 
+        </div>
+    </div>
+    <!--END Onboarding Complete Modal Content--> 
+</div>
+<!-- END Onboarding Complete modal wrapper-->
+
+
+<!-- END MODALS -------------------- -->
+<!-- -------------------------------  -->           
+
+
+
+<!-- -------------------------------  -->
+<!-- BEGIN Mobile Onboarding  -->
+
+
+<div id="mobile_authorization" class="content_bg hidden">
+    <!-- BEGIN Mobile Onboarding Container -->
+    <div class="mobile_onboard_container">   
+         
+<!--        <div class="mobile_onboard_header"></div>-->
+        
+        <!-- ------------- -->
+        <!-- BEGIN scroll_me --> 
+        <div class="scroll_me">
+        
+			            
+            <!-- BEGIN Get Auth Code -->
+            <div id="mo_get_auth_code" class="mo_stage mo_stage_left mo_start">
+                <h1>Authorization Code</h1>
+                <div class="padding_20">
+                	<span class="english">To verify your identity, we need to send you an authorization code.</span>
+                    <span class="spanish">Para ayudar a verificar su identidad, necesitamos enviarle un código de autorización.</span><br>
+                	&nbsp;<br>
+                	<strong><span class="english">How would you like to receive it?</span><span class="spanish">¿Cómo le gustaría recibirlo?</span></strong> 
+                </div>
+                <ul>
+                    <li>
+                    	<a href="javascript:void(0);" class="csp_mobileOnboardAuthTrans_getAuth_selectEmail">
+                        	<span class="english">Email</span>
+                            <span class="spanish">Correo electrónico</span>
+                        </a> 
+                        <span class="mo_auth_code_email hidden">r*****@gmail.com</span>
+                    </li>
+                    <li class="hide" data-bind="visible: forgot_passcode()=='yes'"> 
+                    	<a href="#">
+                        	<span class="english">Text Message</span>
+                            <span class="spanish">Mensaje de texto</span>
+                            <span class="margin_left_60 color_857363" data-bind="html: auth_text_number"></span>
+                        </a> 
+                        
+                   </li>
+                </ul>
+                <p class="margin_top_20"><a href="#authorization_code_sent">
+                	<span class="english">Already have an authorization code?</span>
+                    <span class="spanish">¿Ya tiene un código de autorización?</span></a>
+                </p>
+                <p>
+                	<span class="english">The code expires 10 minutes after you request it.</span>
+                    <span class="spanish">El código vence 10 minutos después de que lo solicite.</span>
+               </p>
+            </div>
+            <!-- END Get Auth Code -->
+            
+            <!-- BEGIN Select Email -->
+            <div id="mo_select_email" class="mo_stage mo_stage_left">     
+                <h1>Select an email address</h1>
+                <div class="padding_20">
+                	<span class="english">We will send an authorization code to your email address we have on file.</span>
+                    <span class="spanish">Se le enviará un código de autorización a la dirección de correo electrónico que figura en nuestros registros</span>
+                </div>
+                <!--BEGIN Phone area-->
+                <div>
+                    <ul class="phone_list">
+                        <li>
+                        	<a href="javascript:void(0);" class="csp_mobileOnboardAuthTransBack_selectEmail_getAuth">
+                            	<span class="labelText">r*****@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                <p class="margin_top_20">
+                	<a href="#authorization_code_sent">
+                    	<span class="english">Already have an authorization code?</span>
+                        <span class="spanish">¿Ya tiene un código de autorización?</span>
+                    </a>
+                </p>
+                </div>
+                <!--END Phone area--> 
+        	
+            </div>
+            <!-- END Select Email -->
+            
+            <!-- BEGIN Enter Auth Code -->
+            <div id="mo_enter_auth_code" class="mo_stage mo_stage_left">
+            
+                <h1>Authorization Code</h1>
+                <div class="user_msg">
+                	<p>
+                    	<span class="english">An authorization code was sent to your email address: r*****@gmail.com</span>
+                        <span class="spanish">Se le ha enviado un código de autorización a su dirección de correo electrónico: r*****@gmail.com</span>
+                    </p>
+                	<p class="width_300"><strong>
+                    	<span class="english">Check your email and enter the code:</span>
+                        <span class="spanish">Consulte su correo electrónico e indique el código de autorización:</span></strong>
+                    </p>
+                    <div class="input_contain">
+                    	<input class="receivedAuthCode variable_100 padding_left_15 padding_right_15 height_40" aria-label="Check your email and enter the code:" value="" data-role="none">
+                    </div>
+                	<div class="clear center"> </div>
+                </div>
+                <div>
+                	<p>
+                    	<span class="english">The code expires 10 minutes after you request it.</span>
+                        <span class="spanish">El código vence 10 minutos después de que lo solicite.</span>
+                    </p>
+                	<p>
+                        <a href="#authorization_code_start">
+                            <span class="english">Request another authorization code.</span>
+                            <span class="spanish">Solicitar otro código de autorización.</span>
+                       </a>
+                   </p>
+                </div>
+            </div>
+            <!-- END Get Auth Code -->
+            
+            <!-- BEGIN Security Preferences -->
+            <div id="mo_security_preferences" class="mo_stage mo_stage_left">
+            
+                <h1>Security Preferences</h1>
+                <p>Would you like to remember this device?</p>
+				<ul>
+					<li> 
+						<label class="container">
+							<div><input type="radio" checked="checked" name="radio"></div>
+							<div><span class="checkmark"><strong>Yes, remember this device</strong><br>Trust this device when I sign in.</span></div>
+						</label> 		
+					</li> 
+					<li>
+						<label class="container">
+						  <div><input type="radio" name="radio"></div>
+						  <div><span class="checkmark"><strong>No, don't remember this device</strong><br>Ask me to verify my identity each time i sign in.</span></div>
+						</label>
+					</li>
+				</ul>
+        	
+            </div>
+            <!-- END Security Preferences -->
+            
+            <!-- BEGIN Agreements -->
+            <div id="mo_agreements" class="mo_stage mo_stage_left">
+            
+                <h1>Agreements</h1>
+                <div class="width_325">
+                	<p>As part of enrollment, we need to provide you with legally required disclosures. To view these disclosures electronically, please consent to the following:</p>
+                </div>
+                
+                <div class="agreementsList">
+               		<ul class="agreements-ul">
+                <li>
+                    eCommunications Disclosure 
+                    <p>- Gives us permission to provide you with the enrollment disclosures electronically.</p>
+                </li>
+                <li>
+                    Online Banking Service Agreement
+                    <p>- Contains the terms and conditions of Online Banking.</p>
+                </li>
+                </ul>	
+                </div>
+                
+                <div class="width_325 hcenter center">
+                	<span>****************************</span>
+                </div>
+                
+                <div class="width_325 padding_left_20 small padding_bottom_60">
+                <p><strong>Please read this Electronic Communications Disclosure ("eCommunications Disclosure") thoroughly - It contains important information about your legal rights.</strong> This eCommunications Disclosure covers all of your accounts, products, and services with Bank of America, Merrill Lynch, Pierce, Fenner &amp; Smith Incorporated ("Merrill Lynch") and their affiliates (collectively, "we", "us", and "our") accessible, either currently or in the future, through Online Banking (whether accessed through a personal computer or mobile device, sometimes referred to as "Mobile Banking"), our websites, or other electronic means. This includes, but is not limited to, the following account, product, and service types: deposit accounts, credit card, charge card, line of credit, loan, mortgage, brokerage accounts, investment advisory, insurance policies and other services. The words "I", "you" and "your" mean each account holder, product owner and/or service user identified on an account, product or service.</p> <p>Certain laws and regulations require us to provide specific information to you in writing, which means you have a right to receive that information on paper. We may provide such information to you electronically if we first present this eCommunications Disclosure and obtain your consent to receive the information electronically. Your consent will also apply to any other person named on your account, product or service, subject to applicable law. Since certain of our accounts, products or services are provided online and use electronic means to deliver some of this information, you must consent to this eCommunications Disclosure in order to use these services. At times, we may still send you paper communications, but as a basic proposition we need to know that you are willing to receive communications electronically that we may otherwise be required to provide on paper and that you have the hardware and software needed to access to this information (and note that in Section No. 3 below, we explain ways to obtain selected disclosures or other information on paper even after you have consented to this eCommunications Disclosure).</p> <p>You understand and agree that we may provide to you in electronic format only, by posting the information on the website where you access your accounts, products or services, through e-mail (if applicable and if you have provided a valid e-mail address), or other electronic means, agreements, disclosures, notices, and other information and communications regarding your accounts, services and products, the use of our websites or our other electronic services, your relationship with us, and/or other programs, products or services that are or may be in the future made available to you (collectively, "Communications"). Such Communications may include, but are not limited to:</p> <ul class="list_style_disc"> <li>This eCommunications Disclosure and any updates; </li> <li>The Online Banking Service Agreement, other service or user agreements for access to our websites or other electronic services, all updates to these agreements and all disclosures, notices and other communications regarding transactions you make through websites or our other electronic services; </li> <li>Disclosures, agreements, notices and other information related to the opening or initiation of an account, product or service including, but not limited to, account agreements, fee schedules or other disclosures or notices that may be required by the Truth in Savings Act, Electronic Fund Transfer Act, Truth in Lending Act, the Equal Credit Opportunity Act, the Fair Credit Reporting Act, the Gramm Leach Bliley Act, the Real Estate Settlement Procedures Act or other applicable federal or state laws and regulations; </li> <li>Periodic, annual, monthly or other statements, disclosures and notices relating to the maintenance or operation of an account, product or service including, but not limited to account information, account activity, account inactivity, payments made or due, or other statements, disclosures or notices that may be required by the Truth in Savings Act, Electronic Fund Transfer Act, Truth in Lending Act, the Equal Credit Opportunity Act, the Fair Credit Reporting Act, the Gramm Leach Bliley Act, the Real Estate Settlement Procedures Act or other applicable federal or state laws and regulations; </li> <li>Investment account disclosures, agreements, statements, trade confirmations, tax reporting statements, shareholder notices, prospectuses, service notices and performance reports regarding accounts, products and services; </li> <li>Any notice or disclosure regarding an account, product or service fee, such as a late fee, an overdraft fee, an overlimit fee, a fee for a draft, check or electronic debit returned for any reason, such as insufficient funds fee or a fee as a result of a stop payment order; </li> <li>Any notice of the addition of new terms and conditions or the deletion or amendment of existing terms and conditions applicable to accounts, products or services you obtain from us;</li> <li>Our Privacy Policy and other privacy statements or notices (by posting such notices on our website); </li> <li>Certain tax statements or notices that we are legally required to provide to you, such as the annual IRS interest statements; and </li> <li>Certain information or forms that we request from you and ask you to submit electronically, such as signature cards, W-9s, or other agreements.</li> </ul> <p>After you consent to this eCommunications Disclosure, you will still be able to set your preferences to receive certain categories of Communications in (1) both electronic and paper format; (2) electronic format only; or (3) paper format only. Setting your Communications preferences may not be available for all products, accounts or services. For more information on the availability of your electronic communications preference management options, please refer to the appropriate electronic communications preference page on the website where you access your Communications. If you decide to receive some Communications in paper and some electronically, the Communications that you receive electronically will be governed by this eCommunications Disclosure.</p> <p>This eCommunications Disclosure does not apply to any communications that we determine, in our sole discretion, that we are required to deliver in paper form under applicable law or that you should receive in paper rather than electronic form.</p> <p>Such communications shall be mailed to the primary address we show for you in our records or otherwise delivered as required by law or the governing agreement.</p> <p>While you may be able to access and retain the Communications using other hardware and software, we currently support the following minimum requirements:</p> <p><strong>For Online Banking through a personal computer:</strong></p> <ul class="list_style_disc"> <li>An operating system, such as: <ul> <li>Windows NT, 2000, ME, XP, Vista, or Win 7; or</li> <li>Macintosh OS 10.x</li> </ul> </li> <li>Access to the Internet and a compatible Internet browser which supports HTML 4.0 and 128bit SSL encryption and Javascript, such as: <ul> <li>For PC using Windows NT, 2000, ME, XP, Vista, or Win 7 <ul class="list_style_disc"> <li>Microsoft Internet Explorer 7.0 and higher </li> <li>Firefox 3 and higher </li> <li>Chrome 3.0 and higher </li> </ul> </li> <li>For Macintosh using OS 10.x <ul class="list_style_disc"> <li>Safari 3.0 and higher </li> <li>Firefox 3 and higher </li> <li>Chrome 4.0 and higher </li> </ul> </li> </ul> </li> </ul> <p><br><strong>For Online Banking through a mobile device ("Mobile Banking"): </strong></p> <ul class="list_style_disc"> <li>A mobile device with a compatible operating system, such as: <ul class="list_style_disc"> <li>iOS 6 and higher </li> <li>Android OS 4.0 and higher for mobile handsets</li> </ul> </li> <li>and either: <ul class="list_style_disc"> <li>Access to the Internet using the default browsers included by your mobile device manufacturer; or </li> <li>The latest Bank of America Mobile Banking App compatible with your device platform </li> </ul> </li> </ul> <p><br>Note: "Mobile Banking" refers to tablets, smartphones and cell phones that access Online Banking through Bank of America's Mobile Banking Apps or through www.bofa.mobi</p> <p><strong>For Merrill Lynch websites: </strong></p> <ul class="list_style_disc"> <li>You must have access to a personal computer with compatible browser software such as Microsoft Internet Explorer; Adobe Acrobat Reader; and Internet access (at your cost). </li> <li>Browser and reader versions necessary to view the Merrill Lynch websites are as follows: <ul> <li>Microsoft Internet Explorer version 6.0 and later </li> <li>Firefox version 3.5 and later </li> <li>Safari version 3.2 and later </li> </ul> </li> </ul> <p><br>Most Communications provided within our websites are provided either in HTML and/or PDF format. For Communications provided in PDF format, Adobe Reader 6.0 or later versions is required - A free copy of Adobe Reader may be obtained from the Adobe website at www.adobe.com.</p> <p>In certain circumstances, some Communications may be provided by e-mail. You are responsible for providing us with a valid e-mail address to accept delivery of Communications. At our option, we may also post the emailed Communications within our websites. In this situation, you agree that once we email the Communications to you and post them within our websites, that we have delivered the Communications to you in a form that you can retain.</p> <p>To print or download Communications you must have a printer connected to your device or sufficient hard-drive or other storage space to store the Communications.</p> <p>Subject to applicable law, you may withdraw your consent to this eCommunications Disclosure by calling the appropriate toll-free customer service phone numbers. For Online Banking the customer service phone numbers are available through the Help &amp; Support Page. For other Bank of America websites, please access the "Contact Us" link to find the appropriate phone numbers. You will not be charged a fee for withdrawal of your consent.</p> <p>For Online Banking, if you withdraw your consent to this eCommunications Disclosure, we may stop providing you with Communications electronically and we may terminate your Online Banking access. Your withdrawal of consent is effective only after you have communicated your withdrawal to Bank of America by calling the appropriate customer service phone numbers and Bank of America has had a reasonable period of time to act upon your withdrawal. Your consent shall remain in force until withdrawn in the manner provided in this section.</p> <p>Merrill Lynch currently maintains separate consent withdrawal processes. For online Merrill Lynch clients who wish to withdraw their consent to the eCommunications Disclosure for their Merrill Lynch products and services, please contact 1800 MERRILL for assistance.</p> <p>Remember that you can always set your Communications preferences as described in Section 3 above without withdrawing your consent to this eCommunications Disclosure.</p> <p><strong>Consent Coverage; Certain Notices From You Are Not Covered</strong>. Applicable law or contracts sometimes require you to give us "written" notices. You must still provide these notices to us on paper. Your consent here does not relate to those notices.</p> <p>You may print or make a copy of Communications by using the "Print" button (or otherwise using your printing functionality) or saving a copy - do this when you first review the Communications because after submission we do not necessarily keep them all in a place that you can access. Upon request, we will provide you with a paper copy of any Communications provided electronically by us to you pursuant to this eCommunications Disclosure, provided we receive your request within 12 months after the date the Communication was first made available to you electronically. You may request a paper copy of these Communications by calling us at the appropriate toll-free customer service phone number for your account, product or service. Please refer to the Help &amp; Support Page within the Online Banking or the Merrill Lynch websites or the "Contact Us" link on the Bank of America website to find the appropriate customer service phone number.</p> <p>Be sure to specify your account, service or product identification number, as applicable, the specific Communication for which you are requesting a paper copy, and the address to which it should be mailed. We may charge fees for paper copies of the Communications.</p> <p>In the event that your e-mail address or other contact information is changed, you must notify us of such changes immediately through one of the following methods:</p> <ul class="list_style_disc"> <li>For Online Banking, access the Help &amp; Support page within Online Banking and click the appropriate links on "Your Profile Information" to update your contact information. Note: The Help &amp; Support page is not yet available if you are accessing Online Banking through a mobile-optimized experience (e.g., Mobile Banking App or www.bofa.mobi). You will need to log in to Online Banking using a desktop browser to access this page. </li> <li>For Merrill Lynch websites, access the Profile page and click on the appropriate links on the "Personal Information" page to update your contact information; or </li> <li>Call the appropriate toll-free customer service phone number and communicate the contact information changes. </li> </ul> <p>If you fail to update or change an incorrect or invalid e-mail address or other contact information, you understand and agree that any Communications shall nevertheless be deemed to have been provided to you if they were made available to you in electronic form on our websites, e-mailed to the e-mail address we have for you in our records, or delivered through other electronic means.</p> <p>We recommend that you print or download a copy of this eCommunications Disclosure, the applicable service agreement and all other Communications to retain for your permanent records; if you have not already placed a copy of our Privacy Policy in your records, you can obtain <a href="javascript:void(0);">another copy<span class="ada-hidden"> of our privacy policy</span> </a>.</p>  <p><strong>Online Banking and Transfers Outside Bank of America Service Agreement and Electronic Disclosure</strong></p> <p>Note: If you access Online Banking or Transfers Outside Bank of America through Bank of America's Downloadable Mobile Banking Applications ("Mobile Banking Apps"), the mobile-optimized version of the Bank of America website ("Mobile Web"), Personal Financial Management (PFM) software, or through an indirect service, all of the features of Online Banking or Transfers Outside Bank of America may not be available, including, but not limited to, bill presentment. To access all of the features and services offered by Online Banking and Transfers Outside Bank of America, sign in directly through our web site at <a href="javascript:void(0);">www.bankofamerica.com</a> from a personal computer. Within Online Banking, you can also access optional services such as Bill Payment. Please refer to this Agreement, your applicable account agreement or fee schedule for information on fees for optional services.</p> <p>The additional services described in this Section 7 are available only if you also enroll in the Online Business Suite or if you are a payroll customer. Some customers have been provided continued access to these services without enrolling in the Online Business Suite. We have notified you separately if you qualified for this limited exception.</p> <p>Transfers sent outside of the United States that are initiated by consumers primarily for personal, family or household purposes ("Remittance Transfers"), are governed by a new federal law (see section 8.H below). This Agreement governs not only Remittance Transfers, but also certain other transfers that are sent outside of Bank of America as described in section 8.A below. Beginning on the date set forth in the final rule implementing Section 919 of the Electronic Funds Transfer Act ("EFTA"), 15 U.S.C. Section 1693o-1 (the "Effective Date"), your rights and obligations with respect to Remittance Transfers, as set forth in EFTA, may vary in certain ways from the terms and conditions applicable to other types of transfers. Your rights with respect to Remittance Transfers, including error resolution and cancellation rights, will be explained to you at the time you initiate each Remittance Transfer and are also contained in Section 8.H below.</p> <p>For transfers <em>other than</em> Remittance Transfers, including general questions, requests for cancellation of payments and transfers, or to report unauthorized transactions, please call us at 1.800.933.6262, available Monday through Friday from 7:00 a.m. to 10:00 p.m., and Saturday and Sunday from 8:00 a.m. to 5:00 p.m., local time. From outside of the continental U.S., call us collect at 1.925.681.7600.</p> <p>You may also write us at:<br><strong>Bank of America<br>FL1-300-02-07<br>P.O. Box 25118<br>Tampa, FL 33622-5118<br></strong></p> <p>For <em>Remittance Transfers</em>, please see the contact information in Section 8.H. below.</p> <p>BankAmeriDeals ("deals" or "cash back deals or "offers") are provided pursuant to these terms and conditions and any operating rules or policies that may be published by Bank of America (including its Privacy Notice), as may be amended from time to time. BankAmeriDeals provide you with the opportunity to earn cash back with deals based on your use of your eligible Bank of America accounts. If you are a customer residing in the United States, have an eligible debit or credit card and meet the BankAmeriDeals eligibility requirements, the deals recommended for you will appear in your Account Detail transaction list in Online Banking and on the Cash Back Deals tab in Online Banking or on the Deals tab in the Bank of America Mobile Banking App. We try to match deals to the places you've shopped or to similar places that might interest you. We do not share individually identifiable information with merchants as part of BankAmeriDeals, and we offer you the opportunity to hide or opt out of receiving these cash back deals. As always, we will only use personally identifiable information in accordance with our <a href="javascript:void(0);">Online Privacy Notice</a> and <a href="javascript:void(0);">U.S. Consumer Privacy Notice.</a></p> <p>We reserve the right to amend, cancel, change, discontinue, or suspend BankAmeriDeals, in whole or in part, at any time in our discretion with or without notice to you, and any such action shall be effective as of the time we determine. However, in all instances, we will provide cash back in accordance with the terms of this Section (BankAmeriDeals) for all deals redeemed prior to the action.</p> <p>The following addendum will apply if you register for any of these additional services.</p> <p><span class="font_10px ine_height_115_percent"><span class="verdana;"><a href="javascript:void(0);">Online Business Suite Addendum </a></span></span></p> <p>The FICO Score Service is provided pursuant to these terms and conditions and the other applicable terms and conditions of this Online Banking Service Agreement, as each may be amended from time to time. The FICO Score Service gives you the opportunity to view your FICO Bankcard Score 8 ("FICO Score") credit score in Online Banking at no charge, along with two key factors affecting that particular FICO Score. FICO is a registered trademark of the Fair Isaac Corporation ("Fair Isaac") in the United States and other countries. This FICO Score is solely determined by the information in your file at TransUnion (one of the three major consumer reporting agencies) and is created using Fair Isaac's proprietary model. Your FICO Score may vary from consumer reporting agency to consumer reporting agency and other lenders may use scores from one of the other two major consumer reporting agencies. TransUnion and Fair Isaac are third parties not affiliated with Bank of America and Bank of America makes no representation or warranty related to the FICO Score.</p> <p>Bank of America is providing you access to your FICO Score and related content only for educational purposes and your personal, non-commercial use. Only Bank of America customers with an eligible consumer credit card account (e.g., an open account with active charging privileges) may enroll in the FICO Score Service. At this time, the FICO Score Service is not available in Mobile Banking. We reserve the right to amend, cancel, change, discontinue, or suspend the FICO Score Service and/or your access to it, in whole or in part, at any time in our discretion with or without notice to you, and any such action shall be effective as of the time we determine.</p>  
+                            
+                </div>
+                        	
+            </div>
+            <!-- END Agreements -->
+            
+            <!-- BEGIN Consent -->
+            <div id="mo_consent" class="mo_stage mo_stage_left">
+            
+                <h1>Consent</h1>
+                <p>I have read and agree to the following</p>
+                <div class="mo_consent">
+                    <div id="mo_chkbox_ecd" class="float_left margin_top_3 mo_consent_chkbox_unchecked csp_mo_ecd_checked">&nbsp;</div>
+                    <div class="margin_left_10 font_16px bold bac_black consent_chktxt">
+                        <a href="#"><span class="english">eCommunications Disclosure</span></a>
+                        <a href="#"><span class="spanish">la Divulgación<br> de Comunicaciones Electrónicas</span></a>
+                    </div>
+                </div>
+                <div class="mo_consent">
+                    <div id="mo_chkbox_service_agree" class="float_left margin_top_3 mo_consent_chkbox_unchecked csp_mo_service_agree_checked">&nbsp;</div>
+                    <div class="margin_left_10 font_16px bold bac_black consent_chktxt">
+                        <a href="#"><span class="english">Online Banking Service Agreement</span></a>
+                        <a href="#"><span class="spanish">NEED SPAN</span></a>
+                    </div>
+                </div>
+                <p class="mo_pdf"><a href="#">How do I save/Print PDF documents?</a></p>
+            </div>
+            <!-- END Consent -->
+            
+            <!---------------------->
+            
+            <!-- BEGIN Welcome -->
+            <div id="mo_welcome" class="mo_stage">
+            	<img class="mo_welcome_logo" src="modules/signin/section_mobile_onboard/images/BofA_symbol_white.png" height="84px" width="120px"/>
+                <h2 class="android_ignore">Welcome to a Better Way To Bank</h2>
+                
+            </div>
+             <!-- END Welcome-->
+             
+            <!-- BEGIN Touch ID -->
+            <div id="mo_touch_id" class="mo_stage">
+            	<a class="mo_skip" href="javascript:void(0);"><p>Skip</p></a>
+            	<img class="mo_touchID_logo" src="modules/signin/section_mobile_onboard/images/touchid_icon.png" height="47px" width="46px"/>
+                <h3>Sign In Faster With Touch ID</h3>
+                <p>To enable Touch ID, you are required to save your online ID on this device. Once enabled, you understand and agree that any store fingerprint can be used across your accounts.</p>
+            </div>
+             <!-- END Touch ID-->
+             
+            <!-- BEGIN Alerts -->
+            <div id="mo_alerts" class="mo_stage">
+            	<div id="touch_id_on">
+                	<div class="mo_success_bubble_close">x</div>
+                	<strong>Success</strong><br>
+                	<span>Try the Touch ID the next time you log on.</span>
+                </div>
+            	<a class="mo_skip" href="javascript:void(0);"><p>Skip</p></a>
+            	<img class="mo_alerts_logo" src="modules/signin/section_mobile_onboard/images/Alerts_icon.png" height="45px" width="43px"/>
+                <h3>Turn On Essential Alerts</h3>
+                <p>Stayed informed with notifications about:
+                	<ul>	
+                    	<li>Changes to your login</li>
+                        <li>Changes to your contact info</li>
+                        <li>Unusual card activity</li>
+                        <li>Low or overdrawn balances</li>
+                	</ul>
+                </p>
+            </div>
+            
+             <!-- END Alerts -->
+             
+             <!-- BEGIN Paperless -->
+            <div id="mo_paperless" class="mo_stage">
+            	<div id="mo_alerts_on">
+                	<div class="mo_success_bubble_close">x</div>
+                	<strong>Success</strong><br>
+                	<span>You will now receive essential alerts.</span>
+                </div>
+            	<a class="mo_skip" href="javascript:void(0);"><p>Skip</p></a>
+            	<img class="mo_paperless_logo" src="modules/signin/section_mobile_onboard/images/paperless_white_icon.png" height="45px" width="32px"/>
+                <h3>Go Paperless</h3>
+                <p>Securely access your statements and documents anytime through our app.</p>
+            </div>
+             <!-- END Paperless -->
+             
+             <!-- BEGIN Paperless Settings -->
+            <div id="mo_paperless_settings" class="mo_stage">
+                <h3>Paperless Settings</h3>
+                <p>We've pre-checked your eligible accounts to go paperless.</p>
+                <p><img src="modules/signin/section_mobile_onboard/images/checkbox_on.png" height="22px" width="22px" /> My Checking - 1234</p>
+                <p><img src="modules/signin/section_mobile_onboard/images/checkbox_on.png" height="22px" width="22px" /> Savings - 3234</p>
+                <p>To keep paper statements and documents (including legal notices), uncheck your account(s) and select <strong>Save My Choices</strong></p>
+                <p class="footnotes">As additional document types become available for paperless delivery, we will provide them to you online for the accounts that you have chosen.</p>
+                <p class="footnotes">Your consent to receive paperless communications is governed by the <u>eCommunications Disclosure.</u></p>
+            </div>
+             <!-- END Paperless Settings -->
+             
+             <!-- BEGIN Paperless Thanks -->
+            <div id="mo_paperless_thanks" class="mo_stage">
+                <h3>Thanks for Going paperless</h3>
+                <p>Here's how you'll receive your statements and documents (including legal notices):</p>
+                <div id="mo_paperless_on">
+                	<img class="float_left margin_left_10" src="modules/signin/section_mobile_onboard/images/paperless_icon_small.png" height="29px" width="20px" />
+                	<div class="float_left padding_left_20 padding_bottom_10">
+                        <strong>Paperless</strong><br>
+                        <span>My Checking - 1234<br>Savings - 3234</span>
+        			</div>
+                    <div class="clear"></div>
+                </div>
+                <p><strong>r*****@gmail.com</strong><br />Edit</p>
+                <p>Go to <strong>Manage Paperless Settings</strong> to update your paperless settings. To update your alerts online, visit Online Banking from a laptop or desktop computer</p>
+               
+            </div>
+             <!-- END Paperless Thanks -->
+             
+            <!-- BEGIN Almost Ready -->
+            <div id="mo_almost" class="mo_stage">
+            	<img class="mo_almost_logo" src="modules/signin/section_mobile_onboard/images/checkmark_welcome.png" height="45px" width="45px"/>
+                <h2 class="almost android_ignore">You're almost ready to go.</h2>
+                <h2 class="almost android_ignore">But let's explore a few key features.</h2> 
+            </div>
+            <!-- END Almost Ready -->
+            
+            <!-- BEGIN Deposit Checks -->
+            <div id="mo_deposit" class="mo_stage">
+            	<a class="mo_skip" href="javascript:void(0);"><p>Skip</p></a>
+            	<img class="mo_deposit_logo" src="modules/signin/section_mobile_onboard/images/deposit_icon.png" height="45px" width="42px"/>
+                <h3>Deposit Checks</h3>
+                <p>Save a trip to the bank: Snap a couple photos and deposit your checks whenever you like.</p>
+                <a class="mo_forward_chevron csp_mobileOnboardTrans_deposit_bamd" href="javascript:void(0);"></a>
+                <div class="mo_dots_set">
+                    <span class="mo_nav_dots current"></span>
+                    <span class="mo_nav_dots"></span>
+                    <span class="mo_nav_dots"></span>
+                </div>
+                
+            </div>
+            <!-- END Deposit Checks -->
+            
+            <!-- BEGIN BankAmeriDeals -->
+            <div id="mo_bamd" class="mo_stage">
+            	<a class="mo_skip" href="javascript:void(0);">
+                	<p>Skip</p>
+                </a>
+            	<img class="mo_bamd_logo" src="modules/signin/section_mobile_onboard/images/BankAmeriDeals_icon.png" height="45px" width="45px"/>
+                <h3>Find BankAmeriDeals<sup>&reg;</sup></h3>
+                <p>Save a trip to the bank: Snap a couple photos and deposit your checks whenever you like.</p>
+                <a class="mo_back_chevron csp_mobileOnboardTrans_bamd_deposit" href="javascript:void(0);"></a>
+                <a class="mo_forward_chevron csp_mobileOnboardTrans_bamd_zelle" href="javascript:void(0);"></a>
+                <div class="mo_dots_set">
+                    <span class="mo_nav_dots"></span>
+                    <span class="mo_nav_dots current"></span>
+                    <span class="mo_nav_dots"></span>
+                </div>
+                
+            </div>
+            <!-- END BankAmeriDeals -->
+            
+            <!-- BEGIN Zelle -->
+            <div id="mo_zelle" class="mo_stage">
+            	<img class="mo_zelle_logo" src="modules/signin/section_mobile_onboard/images/Zelle_icon.png" height="37px" width="97px"/>
+                <h3>Send Money to Friends</h3>
+                <p>Send, request or receive money right in our app&mdash;all you need is a U.S. mobile number or email address.</p>
+                <a class="mo_back_chevron csp_mobileOnboardTrans_zelle_bamd" href="javascript:void(0);"></a>
+                <a class="mo_close_onboarding csp_hideMobileOnboard" href="javascript:void(0);">Close</a>
+                <div class="mo_dots_set">
+                    <span class="mo_nav_dots"></span>
+                    <span class="mo_nav_dots"></span>
+                    <span class="mo_nav_dots current"></span>
+                </div>
+                
+            </div>
+            <!-- END BankAmeriDeals -->
+        
+
+        </div>
+            
+        <!-- END scroll_me --> 
+        <!-- ------------- -->
+        
+        
+        <!-- -------------------------- -->
+        <!-- BEGIN Mobile Onboarding Navs -->
+        
+        <!-- BEGIN Get Auth Code Nav -->
+        <div id="mo_get_auth_code_nav" class="mobile_onboard_nav mo_start_nav">
+        	
+            <div>
+   	 			<a href="javascript:void(0);" class="bac_button_cancel float_left variable_48">Cancel</a>
+    			<a id="mo_get_auth_code_send1" href="javascript:void(0);" class="mobile_onboard_nav_button disabled float_left variable_48 margin_right_13">Send</a>
+                <a id="mo_get_auth_code_send2" href="javascript:void(0);" class="mobile_onboard_nav_button float_left variable_48 margin_right_13 hide csp_mobileOnboardAuthTrans_getAuth_enterAuth">Send</a>             
+                
+			
+    			</div>
+            
+        </div>
+        <!-- END Get Auth Code Nav -->
+        
+        <!-- BEGIN Select Email Nav -->
+        <div id="mo_select_email_nav" class="mobile_onboard_nav">
+        	
+            <div>
+				<a href="javascript:void(0);" class="bac_button_cancel float_left variable_48">Cancel</a>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button float_left variable_48 margin_right_13 csp_mobileOnboardAuthTransBack_selectEmail_getAuth">Continue</a>
+                
+			</div>
+            
+        </div>
+        <!-- END Select Email Nav -->
+        
+        <!-- BEGIN Enter Auth Code Nav -->
+        <div id="mo_enter_auth_code_nav" class="mobile_onboard_nav">
+        	
+            <div>
+				<a href="javascript:void(0);" class="bac_button_cancel float_left variable_48">Cancel</a>
+    			<a id="btn_mo_enter_auth_code" href="javascript:void(0);" class="mobile_onboard_nav_button float_left variable_48 margin_right_13 disabled csp_mobileOnboardAuthTrans_enterAuth_securityPrefs">Continue</a>
+
+                
+                
+			</div>
+            
+        </div>
+        <!-- END Enter Auth Code Nav -->
+        
+        <!-- BEGIN Security Preferences Nav -->
+        <div id="mo_security_preferences_nav" class="mobile_onboard_nav">
+        	
+            <div class="margin_auto variable_40">
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button inline_block csp_mobileOnboardAuthTrans_securityPrefs_agreement">Continue</a>
+                
+			</div>
+            
+        </div>
+        <!-- END Security Preferences Nav -->
+        
+        <!-- BEGIN Agreements Nav -->
+        <div id="mo_agreements_nav" class="mobile_onboard_nav">
+        	
+            <div>
+				<a href="javascript:void(0);" class="bac_button_cancel float_left variable_48">Cancel</a>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button float_left variable_48 margin_right_13 csp_mobileOnboardAuthTrans_agreement_consent">Continue</a>
+                
+			</div>
+            
+        </div>
+        <!-- END Agreements Nav -->
+        
+        <!-- BEGIN Consent Nav -->
+        <div id="mo_consent_nav" class="mobile_onboard_nav">
+        	
+            <div>
+				<a href="javascript:void(0);" class="bac_button_cancel float_left variable_48">I Disagree</a>
+    			<a id="mo_consent_nav_agree" href="javascript:void(0);" class="mobile_onboard_nav_button float_left variable_48 margin_right_13 disabled csp_showMobileOnboard">I Agree</a><br />
+                
+			</div>
+            
+        </div>
+        <!-- END Consent Nav -->
+        
+        <!-- ------------------ -->
+        
+        <!-- BEGIN Welcome Nav -->
+        <div id="mo_welcome_nav" class="mobile_onboard_nav">
+        	
+            <div>
+    			<a class="mobile_onboard_nav_button csp_mobileOnboardTrans_welcome_touch inline_block"  href="javascript:void(0);" >Let's Get Started</a><br />
+                <a class="csp_hideMobileOnboard" href="javascript:void(0);">Not Now</a>
+			</div>
+            
+        </div>
+        <!-- END Welcome Nav -->
+        
+        <!-- BEGIN Touch ID Nav -->
+        <div id="mo_touch_id_nav" class="mobile_onboard_nav">
+        	<div class="mo_dots_set setup">
+                <span class="mo_nav_dots current"></span>
+                <span class="mo_nav_dots"></span>
+                <span class="mo_nav_dots"></span>
+            </div>
+            <div>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button csp_showModal_mo_touch inline_block">Set Up</a><br />
+                <a href="javascript:void(0);" class="cancel csp_mobileOnboardTrans_touch_alerts csp_hideTouchID">Not Now</a>
+			</div>
+            
+        </div>
+        <!-- END Touch ID Nav -->
+        
+        <!-- BEGIN Alerts Nav -->
+        <div id="mo_alerts_nav" class="mobile_onboard_nav">
+        	<div class="mo_dots_set setup">
+            	<span class="mo_nav_dots"></span>
+                <span class="mo_nav_dots current"></span>
+                <span class="mo_nav_dots"></span>
+            </div>
+            <div>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button csp_showModal_mo_alerts inline_block">Set Up</a><br />
+                <a href="javascript:void(0);" class="cancel csp_mobileOnboardTrans_alert_paperless csp_hidealerts_on">Not Now</a>
+			</div>
+            
+            
+            
+        </div>
+        <!-- END Alerts Nav -->
+        
+        <!-- BEGIN Paperless Nav -->
+        <div id="mo_paperless_nav" class="mobile_onboard_nav">
+        	<div class="mo_dots_set setup">
+            	<span class="mo_nav_dots"></span>
+                <span class="mo_nav_dots"></span>
+                <span class="mo_nav_dots current"></span>
+            </div>
+            <div>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button inline_block">Set Up</a><br />
+                <a href="javascript:void(0);" class="cancel csp_mobileOnboardTrans_paperless_almost">Not Now</a>
+			</div>
+            
+        </div>
+        <!-- END Paperless Nav -->
+        
+        <!-- BEGIN Paperless Settings Nav -->
+        <div id="mo_paperless_settings_nav" class="mobile_onboard_nav">
+            <div>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button inline_block">Save My Choices</a><br />
+			</div>
+            
+        </div>
+        <!-- END Paperless Settings Nav -->
+        
+        <!-- BEGIN Paperless Thanks Nav -->
+        <div id="mo_paperless_thanks_nav" class="mobile_onboard_nav">
+            <div>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button csp_mobileOnboardTrans_paperless_thanks_almost inline_block">Save My Choices</a><br />
+			</div>
+            
+        </div>
+        <!-- END Paperless Thanks Nav -->
+        
+        <!-- BEGIN Almost Ready Nav -->
+        <div id="mo_almost_nav" class="mobile_onboard_nav">
+        	
+            <div>
+    			<a href="javascript:void(0);" class="mobile_onboard_nav_button csp_mobileOnboardTrans_almost_deposit inline_block">Continue</a><br />
+			</div>
+            
+        </div>
+        <!-- END Alerts Nav -->
+        
+        
+        
+        
+        
+        
+        <!-- END Mobile Onboarding Navs -->
+        <!-- -------------------------- -->
+        
+    </div>
+        
+    <!-- END  Mobile Onboarding Container --> 
+    
+</div> 
+
+<!-- END Mobile Onboarding  -->
+<!-- -----------------------------  --><!--END Section Mobile Onboarding -->
+
+<!--BEGIN Section Mobile Onboarding -->
+
+<script src="modules/calendar/underscore-umd-min.js"></script>
+
+
+<script src="modules/calendar/clndr.js"></script>
+<link rel="stylesheet" href="modules/calendar/ios-clndr.css">
+
+<div class="calendar_template">
+    <div id="ios-cal">
+      <script type="text/template" id="ios-cal-template">
+        <div class="controls">
+          <div class="clndr-previous-button rotate_180 disabled"><svg class="icon_arrow_right_blue"><title>arrow icon</title></svg></div><div class="month"><%= month %> <%= year %></div><div class="clndr-next-button"><svg class="icon_arrow_right_blue"><title>arrow icon</title></svg></div>
+        </div>
+        <div class="clndr-grid">
+          <div class="days-of-the-week clearfix">
+            <% _.each(daysOfTheWeek, function(day) { %>
+              <div class="header-day"><%= day %></div>
+            <% }); %>
+          </div>
+          <div class="days clearfix">
+            <% _.each(days, function(day) { %>
+              <div class="<%= day.classes %>" id="<%= day.id %>">
+                <span class="day-number"><%= day.day %></span>
+              </div>
+            <% }); %>
+          </div>
+        </div>
+      </script>
+    </div>
+</div>
+<!--END Section Mobile Onboarding -->
+
+<!-- *********************************** -->
+<!-- ******** All the remaining sections are loaded by ajax_each_section.js ********-->
+<!-- *********************************** -->
+
+</body>
+
+<!-- Mirrored from message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 20:21:29 GMT -->
+</html>

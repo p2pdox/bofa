@@ -1,0 +1,1289 @@
+/* Erica Help Search */
+
+.erica_help_search {
+	position: relative;
+    width: 75% !important;
+    margin: 75px 10px 10px 15px;
+}
+.header_erica_search .erica_help_search {
+    margin: 0 10px 10px 15px;
+    position: absolute;
+    top: 100px;
+}
+.erica_help_search input {
+	padding: 20px 0 20px 35px!important;
+    width: 100%;
+    height: 26px;
+    border-radius: 12px;
+    background-image: url(../common/css/images/icon_search_25.png);
+    background-color: #eeeeef;
+    text-align: left;
+    font-size: 17px!important;
+    color: #646464!important;
+    background-position: 8px 10px;
+    background-repeat: no-repeat;
+}
+/*    BEGIN New Erica Search Help Icon    */
+
+.erica_help_icon {
+    position: absolute;
+    top: -14px;
+    right: -53px;
+}
+.erica_help_icon a {
+    color: transparent;
+    font-size: .000px;
+}
+.erica_help_icon img {
+    height: 35px;
+}
+.erica_help_barker {
+    background-color: #3267A3;
+    border-radius: 6px;
+    border: 1px solid white;
+    font: 10px arial;
+    color: white;
+    left: 23px;
+    padding: 4px;
+    position: relative;
+    text-align: center;
+    top: 15px;
+    width: 8px;
+    z-index: 100;
+    height: 8px;
+    line-height: 8px;
+    display: none;
+}
+
+/*    END New Erica Search Help Icon    */
+
+/* For Toolkit */
+.erica_light_blue {
+	color: #96c5e9;
+}
+/*end for Toolkit */
+
+#erica_cta {
+	z-index:1000;
+	position:absolute;
+	bottom: 55px;
+    right: 10px;
+}
+#erica, 
+#erica_about,
+#erica_enrollment {
+	width: 100%;
+	/*min-height: 667px;*/
+	top: 680px;
+	z-index: 8000;
+    background:rgba(24, 33, 56, .96);
+	font-family: sfns_displayregular, connectionsregular, arial, helvetica, san-serif;
+	color:#fff;
+	float:left;
+    height: 100%;
+    overflow-y: scroll;
+    /* padding-right: 17px;  Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+#erica h3,
+#erica_about h3{
+	color: #96c5e9;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.1em;
+	text-shadow: none;
+	margin-top: 25px;
+ }
+ #erica_enrollment h3,
+ #erica_enroll_screens h3 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.1em;
+	text-shadow: none;
+	margin: 38px 0 0 0;
+	color:#000a23;
+	font-weight: 600;
+ }
+#erica h4,
+#erica_enrollment h4 {
+	color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 -5px 0;
+    padding: 10px 0 0 15px;
+ }
+#erica .erica_container,
+#erica_about .erica_container,
+#erica_enrollment .erica_container,
+#erica_enroll_screens  .erica_container {
+	position: absolute;
+	top: 0;
+	min-width: 95%;
+	width:95%;
+}
+#erica .scroll_me, 
+#erica_about .scroll_me {
+    min-height: 667px;
+    height: 11000px;
+    overflow: hidden;
+    width: 105%;
+}
+#erica_enrollment .scroll_me  {
+	min-height: 667px;
+	height: 1000px;
+	overflow: hidden; /* to hide scrollbar on #stage */
+	width:105%;
+}
+#erica_enroll_screens .scroll_me  {
+	min-height: 667px;
+	height: 667px;
+	overflow: hidden; /* to hide scrollbar on #stage */
+	width:105%;
+}
+.erica_header { 
+	background-color: #000a23;
+	width: 100%;
+	height:60px;
+	position:fixed;
+	z-index: 10;
+	padding-top: 28px;
+}
+.erica_header .erica_header_close {
+	display:block;
+	background:url("images/erica_header_close_x.png") 15px 25px no-repeat;
+ 	width: 50px;
+	height:50px;
+	margin-top: 6px;
+	float:left;
+}
+.erica_header_info {
+	float:right;
+	display:block;
+	background:url("images/erica_header_info.png") 15px 25px no-repeat;
+ 	width: 50px;
+	height:50px;
+	margin-top: 3px;
+}
+.erica_header_skip{
+	float: right;
+    display: block;
+    width: 50px;
+    margin-top: 30px;
+    color: #fff;
+}
+.erica_header_demo {
+	float: right;
+    width: 100px;
+    margin-top: 30px;
+    color: #fff;
+}
+.erica_greeting {
+	width:100%;
+	padding-top: 60px;
+    margin-top: 60px;
+	text-align:center;
+	display:none;
+	position: relative;
+	top:100px;
+}
+.erica_greeting_enroll {
+	width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.erica_greeting_afternoon {
+	background:url("images/erica_greeting_afternoon.png") 0 0 no-repeat;
+	background-size:  auto;
+}
+.erica_greeting_afternoon p {
+	margin-top: 145px;
+    font-size: 36px;
+}
+.erica_first_time_greeting {
+	width:100%;
+	padding-top: 60px;
+    margin-top: 50px;
+	text-align:center;
+	display:none;
+	position: relative;
+	top:100px;
+	background:url("images/erica_first_time_greeting.png") 0 0 no-repeat;
+	background-size:  contain;
+}
+.erica_first_time_greeting p {
+	margin-top: 80px;
+    font-size: 36px;
+}
+.erica_enroll_greeting_logo {
+	background:url("images/erica_enroll_greeting_logo.png") center 0 no-repeat;
+	background-size:  auto;
+}
+.erica_enroll_greeting_logo p {
+	margin-top: 75px;
+    font-size: 36px;
+}
+#erica_today {
+	margin-top: 10px;
+    font-size: 12px;
+}
+#erica_enroll_greeting_subheader {
+	margin-top: 10px;
+    font-size: 18px;
+	
+}
+#erica_enroll_quote {
+    font-size: 14px;
+    color: #969aac;
+    text-align: left;
+    padding: 0 13%;
+    margin: 75px 0 0 0;
+}
+p.erica_enroll_quote::before {
+	content:url("images/erica_enroll_begin_quote.png");
+    position: absolute;
+    margin-left: -2.2em;
+    margin-top: -1em;
+}
+
+p.erica_enroll_quote span::after {
+    content:url("images/erica_enroll_end_quote.png");
+    position: absolute;
+    padding-left: .5em;
+    margin-top: -.5em;
+}
+#erica_enroll_quote span.erica_large_font {
+	font-size: 32px;
+}
+/*erica_enroll_greeting_subheader*/
+#erica_stage,
+#erica_enroll_stage,
+#erica_enroll_stage_1 {
+	position:relative;
+	/*top:375px;*/
+}
+#erica_nav {
+	position: fixed;
+    bottom: -600px;
+	padding-bottom: 15px;
+    width: 100%;
+    height: 58px;
+	border-top:1px solid #515151;
+	background-color:#000a23;
+}
+#erica_nav_enroll_start {
+	position: fixed;
+    bottom: -600px;
+    width: 100%;
+    height: 180px;
+	background-color:#fff;
+	color:#000a23;
+}
+
+#erica_nav_enroll_start div {
+	margin-top: 60px; 
+	width: 90%!important; 
+	margin-left: 15%;
+}
+.erica_nav_button {
+	color: #fff!important;
+    background-color: #0a6aa5;
+    border: none;
+    box-sizing: border-box;
+    min-height: 27px;
+    padding-top: 1px;
+    width: 80%;
+    height: 48px;
+    font-size: 18px;
+    line-height: 48px;
+	display: inline-block;
+	border-radius: 5.35px;
+	text-align: center;
+}
+#erica_nav p {
+	color:#fff;
+	font-size:18px;
+	line-height:24px;
+	float:left;
+}
+
+.erica_nav_submit {
+	float:right;
+	display:block;
+ 	width: 75px;
+	height:60px;
+	margin-top: 1px;
+}
+.erica_thinking {
+	background:url("images/dot_bounce.gif") 0 0 no-repeat;
+	display:block;
+	height:12px;
+	width:28px;
+	position: relative;
+    left: 20px;
+}
+.erica_wait {
+	background:url("images/erica_microphone.png") 0 0 no-repeat;
+}
+.erica_listen {
+	background:url("images/erica_microphone_listening.png") 0 0 no-repeat;
+}
+.response1 {
+    background-color: #0A6AA5;
+    background-image: none;
+    border-radius: 8px;
+    clear: both;
+    display: table;
+    margin: 20px 25px 0 15px;
+    text-align: left;
+}
+.response1 p {
+    background-image: url("images/affordance.png");
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    margin: -5px 0 0 -10px;
+    padding: 15px 20px 12px 40px;
+	
+}
+.response {
+    background-color: #0A6AA5;
+    background-image: none;
+    border-radius: 8px;
+    clear: both;
+    display: table;
+    margin: 10px 30px 10px 15px;
+    text-align: left;
+    top: 10px;
+}
+.response p {
+    background-image: url("images/affordance.png");
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    margin: -5px 0 0 -10px;
+    padding: 15px 20px 12px 40px;
+	
+}
+.response2 {
+    background-color: #0A6AA5;
+    background-image: none;
+    border-radius: 8px;
+    clear: both;
+    display: table;
+    margin: 30px 30px 20px 15px;
+    text-align: left;
+}
+.response2 p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 10px 20px 10px 26px;
+}
+.userutterance {
+    background-color: #184173;
+    border-radius: 8px;
+    clear: both;
+    float: right;
+    margin: 30px 30px 10px 10px;
+}
+.userutterance p, .userutterance span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 10px 20px;
+}
+.erica_utterance {
+	position:relative;
+	top:10px;
+}
+#erica_search_help_spacer {
+	display: none;
+	height: 75px;
+}
+#ways_i_can_help_footer {
+    margin: 120px 30px 10px;
+    position: relative;
+}
+#ways_i_can_help_footer .erica_ways_btn {
+	border:1px solid #0a6aa5;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+	text-transform: unset;
+    line-height: 1.25em;
+    margin: 5px 0;
+    padding: 8px 20px;
+	clear: both;
+    float: right;
+}
+#ways_i_can_help_footer div {
+	border:none;
+    color: white;
+    font-size: 16px;
+	text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 10px 0;
+	clear: both;
+    float: right;
+}
+.choice_text1 {
+    border: 1px solid #8D8D8D;
+    border-radius: 0;
+    clear: both;
+    margin: 20px 30px 0 15px;
+}
+.choice_text1 p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 20px 10px 20px 25px;
+}
+.choice_text1 p span {
+    color: #96c5e9;
+}
+.erica_routing_choices {
+    top: 10px;
+    margin-bottom: 20px;
+}
+.erica_data_list {
+    top: 30px;
+    margin: 0 30px 20px 5px;
+}
+.erica_data_list p {
+	margin: -5px 5px 15px 0;
+}
+.erica_row_display {
+    border-radius: 0;
+    clear: both;
+    margin: 20px 10px -1px 12px;
+    width: 97%;
+}
+.erica_row_display.border {
+	border-bottom: 1px solid #8D8D8D;
+}
+.erica_routing_text {
+	font-size:16px;
+    width: 55%;
+	float:left;
+	display:inline-block;
+}
+.erica_routing_text p {
+    line-height: 1.25em;
+    margin: 0;
+    padding: 20px 10px 20px 0px;
+}
+.erica_routing_text_footer {
+	font-size: 18px;
+    font-weight: bold;
+    padding: 15px 2px 15px 30px;
+}
+.erica_routing_number {
+	font-size: 22px;
+	float:right;
+	display:inline-block;
+	font-weight: bold;
+}
+#erica_fico_score {
+    margin: 20px 20px 0px 12px;
+    width: 90%;
+    font-size: 12px;
+}
+.erica_fico_title {
+	margin-bottom: 20px;
+}
+.erica_fico_scale {
+	font-size: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-right: 5px;
+	margin-top: 40px;
+}
+.erica_fico_grad {
+	height: 35px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, red, orange 20%, yellow 30%, green); /* Standard syntax (must be last) */
+	margin-right: 5px;
+    top: 5px;
+    margin-bottom: 20px;
+	position: relative;
+	display: flex;
+  	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.erica_fico_grad_rating {
+	font-size: 11px;
+    line-height: 36px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    color: #000;
+    padding: 0 10px;
+}
+.erica_fico_number {
+	font-size: 92px;
+    line-height: 70px;
+    width: 40%;
+    float: left;
+    margin-left: 20px!important;
+    display: inline-block;
+}
+.erica_fico_rating {
+	font-size: 20px;
+    float: left;
+    display: inline-block;
+    margin-left: 20px!important;
+    margin-top: 25px!important;
+}
+.erica_fico_pointer {
+	background-image: url(images/erica_fico_pointer.png);
+    background-position-x: 69%;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: 23px 30px;
+    height: 30px;
+    position: relative;
+    top: -20px;
+    margin-bottom: -25px;
+}
+.erica_fico_transunion {
+	display: flex;
+  	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin-bottom: 15px;
+}
+.erica_better_habits_text {
+	font-size:18px;
+	font-weight:bold;
+	margin:20px 0;
+}
+.erica_better_habits_button {
+	border: 1px solid #fff;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 5px 0;
+    padding: 8px 20px;
+    clear: both;
+    float: left;
+}
+.erica_balance_number {
+	font-size: 22px;
+	float:right;
+	display:inline-block;
+	color: #96c5e9;
+}
+.erica_transfer_between_confirm, 
+.erica_pay_bill_add_to, 
+.erica_pay_bill_confirm_pay_from, 
+.erica_pay_bill_confirm_btns, 
+.erica_lock_debit_confirm, 
+.erica_spendpath_category_choices, 
+.erica_spendpath_bytime_choices {
+    margin: 25px 15px;
+    position: relative;
+    display: flex;
+    width: 1000px;
+}
+.erica_pay_bill_add_to {
+	width:150%;
+}
+.erica_choice_btn {
+	border: 1px solid #fff;
+	border-radius: 8px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 5px 10px 0 0;
+	padding: 10px 20px;
+	width: auto;
+}
+#erica_transfer_between_complete, 
+.erica_lock_debit_terms {
+    margin-right: 30px;
+    top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+}
+	
+body .erica_lock_debit_terms p {
+	margin-left:0;
+	margin-right:0;
+}
+#erica_transfer_between_complete span {
+	font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+    display: inline-block;
+ }
+.erica_search_cc_transactions {
+    position: relative;
+    top: 10px;
+    margin: 0 17px 20px 1px;
+}
+.erica_search_cc_transactions .erica_query_summary {
+	line-height: 26px;
+    font-size: 14px;
+    width: 100%;
+    background-color: #000a23;
+ }
+ .erica_search_cc_transactions .erica_query_summary p {
+	margin: 20px 0 20px 10px;
+    padding: 20px 0;
+ }
+  .erica_query_summary img {
+	float: right;
+    position: relative;
+    top: -10px;
+    padding-right: 10px;
+ }
+.erica_transaction_row {
+    margin: 0 20px 0 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #8D8D8D;
+}
+ .erica_search_cc_transactions span.erica_trans_date {
+	position: relative;
+	top: -20px;
+	left: -13%;
+	background-color: rgba(24, 33, 56, 1);
+	padding: 2PX;
+	clear: both;
+	font-size: 12px;
+}
+  .erica_transaction_row.border_top {
+	border-top: 1px solid #8D8D8D;
+ }
+ .erica_transaction_text {
+    font-size: 16px;
+    width: 55%;
+    float: left;
+    margin: 15px 0 0 0!important;
+}
+ .erica_transaction_text span {
+    font-size: 12px;
+    padding-bottom: 20px;
+    float: left;
+    margin: 10px 0 0 0!important;
+}
+ .erica_transaction_amount {
+    font-size: 16px;
+    float: right;
+    display: inline-block;
+}
+.erica_white_outline_left_btn {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 5px 12px;
+    padding: 8px 20px;
+    clear: both;
+    float: left;
+}
+#erica_pay_bill_choices .choice_text1 p span {
+    font-size: 16px;
+}
+#erica_pay_bill_how_much_to_pay,
+#erica_pay_bill_when_to_pay{
+	padding-top:1px;
+	position:relative;
+}
+.erica_pay_bill_confirm p {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+/* Erica Settings */
+/******************/
+
+#erica_about {
+	position: absolute;
+	top: 0;
+	min-width: 100%;
+}
+#erica_about ul, #erica_about li {
+	background-color:transparent!important;
+    border: none!important;
+	border-bottom: none!important;
+    list-style: none;
+	padding: 10px 0 10px 10px;
+    font-size: 14px
+}
+#erica_about .erica_header h4 {
+	width: 100%;
+    display: block;
+    margin-top: 23px;
+    font-size: 14px;
+    text-align: center;
+}
+ #erica_about h4 {
+	color: #96c5e9;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 15px;
+ }
+.erica_header_back {
+	display:block;
+	background:url("images/erica_header_back.png") 15px 26px no-repeat;
+ 	width: 50px;
+	height:50px;
+	margin-top: 6px;
+	float:left;
+}
+.erica_header_settings {
+	float:right;
+	display:block;
+	background:url("images/erica_header_settings.png") 15px 26px no-repeat;
+ 	width: 50px;
+	height:50px;
+	margin-top: 3px;
+}
+.erica_about_logo {
+	background: url(images/erica_help_logo.png) 10px 30px no-repeat;
+    background-size: auto;
+    width: 100%;
+    padding-top: 60px;
+    margin: 50px auto 30px auto;
+    text-align: center;
+    font-size: 20px;
+}
+#erica_about .erica_about_logo p {
+	margin: 15px 65px 30px 80px;
+    text-align: left;
+    font-size: 18px;
+}
+#erica_about .erica_about_logo p span {
+    font-size: 30px;
+}
+.erica_about_sections {
+	border-top: 1px solid #fff;
+    padding: 20px 0;
+}
+.erica_show_more {
+    padding: 5px 0 0 35px;
+    background: url(images/erica_about_more_arrow.png) 14px 10px no-repeat;
+    background-size: auto;
+    font-size: 14px;
+}
+.erica_show_more::after {
+	content: "MORE"
+}
+
+.erica_show_less {
+    padding: 5px 0 0 35px;
+    background: url(images/erica_about_less_arrow.png) 14px 10px no-repeat;
+    background-size: auto;
+    font-size: 14px;
+}
+.erica_show_less::after {
+	content: "LESS"
+}
+li.about_display {
+	display:none;
+}
+
+/* Erica Enrollment */
+/******************/
+
+#erica_enroll_screens {
+	width: 100%;
+	min-height: 667px;
+	top: 0px;
+	z-index: 8000;
+    background:rgba(24, 33, 56, .96);
+	font-family: sfns_displayregular, connectionsregular, arial, helvetica, san-serif;
+	color:#fff;
+	float:left;
+	left:100%;
+	width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* padding-right: 17px;  Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+/*#erica_nav_enroll p,
+#erica_nav_enroll_2 p,
+#erica_nav_enroll_3 p {
+    font-size: 18px;
+    line-height: 24px;
+    float: left;
+    text-align: center;
+    width: 100%;
+    line-height: 18px;
+}*/
+.erica_nav_enroll p {
+	font-size: 18px;
+    line-height: 24px;
+    float: left;
+    text-align: center;
+    width: 100%;
+    line-height: 18px;
+}
+#erica_nav_enroll p {
+	margin: 22px 0 0 0;
+}
+#erica_nav_enroll_2 p,
+#erica_nav_enroll_3 p,
+#erica_nav_enroll_4 p,
+#erica_nav_enroll_5 p,
+#erica_nav_enroll_6 p {
+	margin: 10px 0 0 0;
+}
+.erica_enroll_audio {
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    background: url(images/erica_enroll_audio_off.png) 15px 10px no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.erica_enroll_next {
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    display: block;
+    width: 50px;
+    margin-top: 25px;
+    color: #999999;
+    font-size: 18px;
+}
+.enroll_dots_set {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 38%;
+}
+.enroll_nav_dots {
+    height: 6px;
+    width: 6px;
+    background-color: #000a23;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+	opacity: 0.3;
+}
+.enroll_nav_dots.current {
+    height: 6px;
+    width: 6px;
+    background-color: #000a23;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+	opacity: 1;
+}
+/*#erica_nav_enroll,
+#erica_nav_enroll_2,
+#erica_nav_enroll_3, 
+#erica_nav_enroll_4 {
+    position: fixed;
+    bottom: 1px;
+    min-width: 100%;
+    width: 100%;
+    height: 180px;
+	background-color:#fff;
+	color:#000a23;
+} */
+.erica_nav_enroll {
+	position: fixed;
+    bottom: 1px;
+    min-width: 100%;
+    width: 100%;
+    height: 180px;
+	background-color:#fff;
+	color:#000a23;
+}
+/*#erica_nav_enroll_2,
+#erica_nav_enroll_3,
+#erica_nav_enroll_4 {
+	display:none;
+}*/
+
+.erica_header h4 {
+	width: 100%;
+    display: block;
+    margin-top: 23px;
+    font-size: 14px;
+    text-align: center;
+}
+.erica_nav_enroll h4 {
+	color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 -5px 0;
+    padding: 10px 0 0 15px;
+ }
+ #erica_enroll_available_1 {
+    margin-top: 125px;
+    font-size: 48px;
+    text-align: center;
+	position:relative;
+}
+.erica_enroll_talk_1,
+.erica_enroll_type_1,
+.erica_enroll_tap_1 {
+    position: relative;
+    top: 50px;
+	opacity:0;
+}
+.erica_enroll_talk_2,
+.erica_enroll_type_2{
+	position:relative;
+    display: block;
+    height: 60px;
+    width: 80%;
+    background-color: #000a23;
+    font-size: 18px;
+    margin: 70px auto 0;
+    line-height: 58px;
+	top:50px;
+	opacity:0;
+}
+.erica_enroll_type_2{
+	width: 90%;
+}
+.erica_enroll_tap_2 {
+    top: 10px;
+    position: relative;
+    height: 60px;
+    width: 80%;
+    font-size: 18px;
+    margin: 20px 10px 30px 15px;
+    line-height: 58px;
+    left: -350px;
+}
+.erica_enroll_move_cash_2,
+.erica_enroll_bill_details_2,
+.erica_enroll_find_transaction_2,
+.erica_enroll_lost_card_2,
+.erica_enroll_routing_number_2 {
+	top:10px;
+	position: relative;
+   /* height: 60px;*/
+    width: 80%;
+    font-size: 18px;
+    line-height: 58px;
+    left: -350px;
+ }
+ .erica_enroll_tap_3_group{
+	 position: relative;
+	 top: 50px;
+	 opacity:0;
+ }
+ 
+.erica_enroll_tap_3 {
+    position: relative;
+    margin: 70px auto 0;
+    line-height: 58px;
+    border: 1px solid #8D8D8D;
+    border-radius: 0;
+    clear: both;
+    margin: 20px 35px 0 20px;
+    text-align: left;
+}
+ 
+ .enroll_choice_text1 p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 20px 10px 20px 25px;
+ }
+
+.erica_enroll_talk_2 span,
+.erica_enroll_type_2 span {
+	background: url(images/erica_microphone.png) 0 0 no-repeat;
+	float: right;
+    display: block;
+    width: 75px;
+    height: 60px;
+    margin-top: 1px;
+}
+#erica_enroll_move_cash,
+#erica_enroll_bill_details,
+#erica_enroll_find_transaction,
+#erica_enroll_lost_card,
+#erica_enroll_routing_number,
+#erica_enroll_final_points {
+	position:relative;
+}
+.erica_enroll_final_points_1 {
+	position: relative;
+    top: 700px;
+	text-align:center;
+}
+#erica_enroll_final_points .erica_enroll_final_points_1  h3 {
+	font-size: 18px;
+    text-align: center;
+    text-shadow: none;
+    margin: 38px 0 0 0;
+    color: #ffffff;
+	font-weight: bold;
+ }
+#erica_enroll_final_points .erica_enroll_final_points_1 ul {
+    background-color: transparent!important;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    list-style: disc outside none;
+    margin: 0 20px 20px 0px;
+    padding: 0;
+    padding-left: 15px;
+    position: relative;
+    font-weight: normal;
+    height: 345px;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    line-height: 18px;
+}
+ #erica_enroll_final_points .erica_enroll_final_points_1 ul li {
+	padding: 10px 0px 0px 0;
+    position: relative;
+    font-size: 18px;
+	margin: 0 10px 0 20px;
+    list-style: disc outside none;
+	border-bottom: none;
+ }
+ #erica_enroll_final_points .erica_enroll_final_points_1 a {
+	 color:#ffffff;
+	 text-align:center;
+	 text-decoration: underline;
+ }
+.erica_enroll_move_cash_1,
+.erica_enroll_bill_details_1,
+.erica_enroll_find_transaction_1,
+.erica_enroll_lost_card_1,
+.erica_enroll_routing_number_1 {
+	right: -375px;
+    margin-top: 75px;
+	width: auto;
+}
+.erica_enroll_move_cash_3 {
+	margin: 25px 10px;
+    position: relative;
+    display: flex;
+	right: -375px;
+}
+.erica_enroll_bill_details_3,
+.erica_enroll_lost_card_3,
+.erica_enroll_routing_number_3 {
+	margin-top:30px;
+	position: relative;
+	right: -375px;
+}
+.erica_enroll_billpay_carousel {
+	background: url(images/erica_enroll_billpay_carousel.png) 0 0 no-repeat;
+	width:100%;
+	height:194px;
+}
+.erica_search_cc_transactions.erica_enroll_find_transaction_3 {
+	margin-top:20px;
+	position: relative;
+	right: -375px;
+}
+.erica_search_cc_transactions.erica_enroll_find_transaction_3 h3 {
+	font-size: 22px;
+    text-align: center;
+    text-shadow: none;
+    margin: 0 0 20px 0;
+    color: #96c5e9;
+}
+.erica_search_cc_transactions.erica_enroll_find_transaction_3 h3 span {
+	font-size: 18px;
+}
+#erica_nav_enroll_7 div {
+	margin: 50px;
+    margin-left: 15%;
+}
+
+
+/* -------------------------------
+  Erica Insights for 7.9 Update
+  -------------------------------- */
+  
+  .barker {
+    background-color: #3267A3;
+    border-radius: 50px;
+    border: 1px solid white;
+    font: 13px/1em arial;
+    color: white;
+    left: 30px;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+    top: 15px;
+    width: 15px;
+    z-index: 1001;
+    height: 13px;
+	display:none;
+}
+#erica_insights {
+    margin-top: 20px;
+}
+.erica_insight_spend_summary_graph {
+    margin: 10px 15px 10px 15px;
+    display: block;
+}
+#erica_stage h5 {
+	color: #96c5e9;
+    text-align: center;
+}
+p.erica_subtitle {
+	text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.erica_insight_flexbox {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+.erica_insight_flexbox > div {
+	width: 45%;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+#erica_spendpath_info h6 {
+	font-size:24px;
+}
+#erica_spendpath_info p {
+	font-size:14px;
+}
+.erica_insight_flexbox div:first-child {
+	border-right:1px solid #666666;
+}
+.erica_spendcategories {
+	margin-right:20px;
+	top:10px;
+	margin-bottom: 20px;
+}
+.erica_spendcategory_box {
+    border: 1px solid #8D8D8D;
+    border-radius: 0;
+    clear: both;
+    margin: 20px 15px 0 15px;
+    padding: 20px 0 20px 0;
+}
+.category_label_info {
+	font-size: 18px;
+    float: left;
+	margin-left: 10px;
+}
+.category_label {
+	font-size: 14px;
+}
+.erica_spend_category_icon {
+	display: inline-block;
+    width: 35px;
+    height: 35px;
+	margin-left: 20px;
+    background-size: 35px 35px!important;
+}
+.erica_bar_chart_shorty {
+    clear: both;
+    display: block;
+    width: 250px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #999999;
+    margin-top: 5px;
+}
+.erica_bar_chart_foreground {
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+}
+.erica_bar_chart_foreground.under {
+    background-color: #0073cf;
+}
+.erica_bar_chart_foreground.over {
+	background-color: #dc2031;
+}
+.erica_spending_home {
+	background: url(images/spending/icon_spending_category_home.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_transportation {
+	background: url(images/spending/icon_spending_category_transportation.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_groceries {
+	background: url(images/spending/icon_spending_category_groceries.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_personal {
+	background: url(images/spending/icon_spending_category_personal.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_health {
+	background: url(images/spending/icon_spending_category_health.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_restaurant {
+	background: url(images/spending/icon_spending_category_restaurant.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_shopping {
+	background: url(images/spending/icon_spending_category_shopping.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_travel {
+	background: url(images/spending/icon_spending_category_travel.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_cash {
+	background: url(images/spending/icon_spending_category_cash.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_giving {
+	background: url(images/spending/icon_spending_category_giving.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_business {
+	background: url(images/spending/icon_spending_category_business.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_education {
+	background: url(images/spending/icon_spending_category_education.png) 0 center no-repeat;
+    float: left;
+}
+.erica_spending_other {
+	background: url(images/spending/icon_spending_category_other.png) 0 center no-repeat;
+    float: left;
+}
+#enroll_text_block_2 {
+	margin-right: 30px;
+    top: 20px;
+    margin-bottom: 20px;
+    padding: 0 0 15px 15px;
+}
+
